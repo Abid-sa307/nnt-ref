@@ -1,17 +1,24 @@
 import React from "react";
-// import Logo from "../../static/images/Logo.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import { Link } from "react-router-dom";
+import Logo from '../Assests/Logo.png';
 
 const Header = () => {
   return (
     <header className="sticky-top bg-white shadow-sm">
       <nav className="navbar navbar-expand-md navbar-light bg-white container position-relative">
 
-        {/* Logo on the left */}
-        {/* <img src={Logo} className="Logo" alt="NNT Refinery Clay Supplier" height={51}/> */}
+        {/* ✅ Logo */}
+        <Link className="navbar-brand fw-bold text-primary d-flex align-items-center" to="/">
+          <img
+            src={Logo}
+            alt="Company Logo"
+            style={{ height: "60px", marginLeft: "160px", width: "auto" }}
+          />
+          NNT
+        </Link>
 
-        {/* Hamburger button (mobile view) */}
         <button
           className="navbar-toggler"
           type="button"
@@ -24,76 +31,61 @@ const Header = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Navigation menu & CTA button */}
         <div className="collapse navbar-collapse justify-content-center" id="navbarContent">
-  <ul
-    className="navbar-nav align-items-center gap-3"
-    style={{ position: "relative", left: "5px" }}
-  >
-
-            {/* Home */}
+          <ul className="navbar-nav align-items-center gap-3" style={{ position: "relative", left: "5px" }}>
+            
             <li className="nav-item">
-              <a className="nav-link" href="#">Home</a>
+              <Link to="/" className="nav-link">Home</Link>
             </li>
 
-            {/* Our Products Dropdown */}
+            {/* ✅ Our Products Dropdown */}
             <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
+              <button
+                className="nav-link dropdown-toggle btn btn-link"
                 id="productsDropdown"
-                role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 Our Products
-              </a>
+              </button>
               <ul className="dropdown-menu" aria-labelledby="productsDropdown">
-                <li><a className="dropdown-item" href="#">Caustic Soda Flakes</a></li>
-                <li><a className="dropdown-item" href="#">Bleaching Earth</a></li>
-                <li><a className="dropdown-item" href="#">Filter Flow Aid</a></li>
-                <li><a className="dropdown-item" href="#">Citric Acid</a></li>
+                <li><Link className="dropdown-item" to="/our-products/caustic-soda">Caustic Soda Flakes</Link></li>
+                <li><Link className="dropdown-item" to="/our-products/bleaching-earth">Bleaching Earth</Link></li>
+                <li><Link className="dropdown-item" to="/our-products/filter-flow-aid">Filter Flow Aid</Link></li>
+                <li><Link className="dropdown-item" to="/our-products/citric-acid">Citric Acid</Link></li>
               </ul>
             </li>
 
-            {/* Industries Served */}
+            {/* ✅ Industries Served */}
             <li className="nav-item">
-              <a className="nav-link" href="#">Industries Served</a>
+              <Link to="/industries" className="nav-link">Industries Served</Link>
             </li>
 
-            {/* Quality Assurance */}
+            {/* ✅ Quality Assurance (create page later) */}
             <li className="nav-item">
-              <a className="nav-link" href="#">Quality Assurance</a>
+              <Link to="/quality-assurance" className="nav-link">Quality Assurance</Link>
             </li>
 
-            {/* Company Dropdown */}
+            {/* ✅ Company Dropdown */}
             <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
+              <button
+                className="nav-link dropdown-toggle btn btn-link"
                 id="companyDropdown"
-                role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 Company
-              </a>
+              </button>
               <ul className="dropdown-menu" aria-labelledby="companyDropdown">
-                <li><a className="dropdown-item" href="#">About Us</a></li>
-                <li><a className="dropdown-item" href="#">Blog / Insights</a></li>
+                <li><Link className="dropdown-item" to="/about">About Us</Link></li>
+                <li><Link className="dropdown-item" to="/blog">Blog / Insights</Link></li>
               </ul>
             </li>
 
-            {/* CTA Button */}
-            
-<li className="nav-item">
-  <button className="btn btn-primary">
-    Contact Us
-  </button>
-</li>
-
-
-            
+            {/* ✅ Contact Us */}
+            <li className="nav-item">
+              <Link to="/contact" className="btn btn-primary">Contact Us</Link>
+            </li>
           </ul>
         </div>
       </nav>
@@ -101,4 +93,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Header;
