@@ -1,0 +1,18 @@
+.latest-blogs .card {
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.latest-blogs .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.latest-blogs .card-title {
+  font-size: 1.1rem;
+}
+
+.latest-blogs .card-text {
+  font-size: 0.95rem;
+  color: #555;
+}

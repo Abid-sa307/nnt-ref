@@ -194,9 +194,13 @@
 // export default Home;
 
 
+// src/components/Home.js
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../components/home.css';
+import ProductsPreview from './Productpreview.js';
+import WhyChooseUs from './Whychooseus.js';
+import LatestBlogs from './Latestblog.js';
 import HeroImage from '../Assests/hero-image.png';
 
 // ✅ Hero Banner
@@ -220,39 +224,39 @@ const HeroBanner = () => (
   </section>
 );
 
-// ✅ Products Preview
-const ProductsPreview = () => (
-  <section id="products" className="py-5 bg-light">
-    <div className="container">
-      <h2 className="text-center text-primary fw-bold mb-5">Our Products</h2>
-      <div className="row row-cols-1 row-cols-md-4 g-4">
-        {[
-          { title: 'Caustic Soda Flakes', text: 'Used in paper, textiles, detergents.' },
-          { title: 'Bleaching Earth', text: 'Ideal for purifying oils and fats.' },
-          { title: 'Filter Flow Aid', text: 'Helps improve filtration systems.' },
-          { title: 'Citric Acid', text: 'Common in food & pharmaceuticals.' },
-        ].map((product, idx) => (
-          <div key={idx} className="col">
-            <div className="card h-100 shadow-sm">
-              <img
-                src={`https://via.placeholder.com/300x200?text=${product.title.replace(/\s+/g, '+')}`}
-                className="card-img-top"
-                alt={product.title}
-              />
-              <div className="card-body text-center">
-                <h5 className="card-title">{product.title}</h5>
-                <p className="card-text">{product.text}</p>
-                <a href={`/our-products/${product.title.toLowerCase().replace(/\s+/g, '-')}`} className="btn btn-outline-primary">
-                  View Details
-                </a>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-);
+// // ✅ Products Preview
+// const ProductsPreview = () => (
+//   <section id="products" className="py-5 bg-light">
+//     <div className="container">
+//       <h2 className="text-center text-primary fw-bold mb-5">Our Products</h2>
+//       <div className="row row-cols-1 row-cols-md-4 g-4">
+//         {[
+//           { title: 'Caustic Soda Flakes', text: 'Used in paper, textiles, detergents.' },
+//           { title: 'Bleaching Earth', text: 'Ideal for purifying oils and fats.' },
+//           { title: 'Filter Flow Aid', text: 'Helps improve filtration systems.' },
+//           { title: 'Citric Acid', text: 'Common in food & pharmaceuticals.' },
+//         ].map((product, idx) => (
+//           <div key={idx} className="col">
+//             <div className="card h-100 shadow-sm">
+//               <img
+//                 src={`https://via.placeholder.com/300x200?text=${product.title.replace(/\s+/g, '+')}`}
+//                 className="card-img-top"
+//                 alt={product.title}
+//               />
+//               <div className="card-body text-center">
+//                 <h5 className="card-title">{product.title}</h5>
+//                 <p className="card-text">{product.text}</p>
+//                 <a href={`/our-products/${product.title.toLowerCase().replace(/\s+/g, '-')}`} className="btn btn-outline-primary">
+//                   View Details
+//                 </a>
+//               </div>
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   </section>
+// );
 
 // ✅ Industries Served
 const IndustriesServed = () => (
@@ -268,33 +272,66 @@ const IndustriesServed = () => (
   </section>
 );
 
-// ✅ Why Choose Us
-const WhyChooseUs = () => (
-  <section className="bg-light py-5">
-    <div className="container text-center">
-      <h2 className="mb-4">Why Choose Us</h2>
-      <div className="row row-cols-1 row-cols-md-3 g-4">
-        {[
-          "Trusted Global Supplier",
-          "ISO Certified",
-          "Strict Quality Control",
-          "Reliable Delivery",
-          "Competitive Pricing",
-          "Customer Satisfaction"
-        ].map((item, idx) => (
-          <div key={idx} className="col">
-            <div className="card border-0 h-100 bg-transparent">
-              <div className="card-body">
-                <span className="fs-3">✅</span>
-                <p className="card-text mt-2">{item}</p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-);
+// ✅ Updated Why Choose Us (as per design image)
+// const WhyChooseUs = () => {
+//   const features = [
+//     {
+//       icon: 'https://via.placeholder.com/64?text=TG', // Replace with your icon source
+//       title: 'Trusted Global Supplier',
+//       description: 'Supplying quality products worldwide with a trusted reputation.',
+//     },
+//     {
+//       icon: 'https://via.placeholder.com/64?text=ISO',
+//       title: 'ISO Certified',
+//       description: 'Maintaining high standards with internationally recognized certifications.',
+//     },
+//     {
+//       icon: 'https://via.placeholder.com/64?text=QC',
+//       title: 'Strict Quality Control',
+//       description: 'Ensuring every product meets our stringent quality benchmarks.',
+//     },
+//     {
+//       icon: 'https://via.placeholder.com/64?text=RD',
+//       title: 'Reliable Delivery',
+//       description: 'Timely and efficient delivery, every time.',
+//     },
+//     {
+//       icon: 'https://via.placeholder.com/64?text=CP',
+//       title: 'Competitive Pricing',
+//       description: 'Offering top-quality products at competitive prices.',
+//     },
+//     {
+//       icon: 'https://via.placeholder.com/64?text=CS',
+//       title: 'Customer Satisfaction',
+//       description: 'Our commitment to customer service is unparalleled.',
+//     },
+//   ];
+
+//   return (
+//     <section className="bg-light py-5">
+//       <div className="container text-center">
+//         <h2 className="mb-5 fw-bold">Why Choose Us</h2>
+//         <div className="row">
+//           {features.map((feature, index) => (
+//             <div key={index} className="col-md-4 mb-4">
+//               <div className="card h-100 border-0 shadow-sm p-4">
+//                 <div className="mb-3">
+//                   <img
+//                     src={feature.icon}
+//                     alt={feature.title}
+//                     style={{ width: '64px', height: '64px' }}
+//                   />
+//                 </div>
+//                 <h5 className="fw-bold">{feature.title}</h5>
+//                 <p className="text-muted">{feature.description}</p>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
 
 // ✅ Quality Commitment
 const QualityCommitment = () => (
@@ -325,7 +362,7 @@ const Testimonials = () => (
   </section>
 );
 
-/// ✅ Ready to Step Forward Section (No Map)
+// ✅ Ready to Step Forward Section (No Map)
 const ReadyToStepForward = () => (
   <section className="py-5 bg-white">
     <div className="container">
@@ -358,33 +395,32 @@ const ReadyToStepForward = () => (
   </section>
 );
 
-
-// ✅ Latest Blogs
-const LatestBlogs = () => (
-  <section className="py-5 bg-light">
-    <div className="container text-center">
-      <h2 className="mb-4">Latest Blogs</h2>
-      <div className="row row-cols-1 row-cols-md-3 g-4">
-        {[1, 2, 3].map((num) => (
-          <div key={num} className="col">
-            <div className="card h-100 shadow-sm">
-              <img
-                src={`https://via.placeholder.com/300x180?text=Blog+${num}`}
-                className="card-img-top"
-                alt={`Blog ${num}`}
-              />
-              <div className="card-body">
-                <h5 className="card-title">Blog Title {num}</h5>
-                <p className="card-text">A short summary of blog post {num} to engage users and provide value.</p>
-                <a href="#" className="btn btn-outline-primary">Read More</a>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-);
+// // ✅ Latest Blogs
+// const LatestBlogs = () => (
+//   <section className="py-5 bg-light">
+//     <div className="container text-center">
+//       <h2 className="mb-4">Latest Blogs</h2>
+//       <div className="row row-cols-1 row-cols-md-3 g-4">
+//         {[1, 2, 3].map((num) => (
+//           <div key={num} className="col">
+//             <div className="card h-100 shadow-sm">
+//               <img
+//                 src={`https://via.placeholder.com/300x180?text=Blog+${num}`}
+//                 className="card-img-top"
+//                 alt={`Blog ${num}`}
+//               />
+//               <div className="card-body">
+//                 <h5 className="card-title">Blog Title {num}</h5>
+//                 <p className="card-text">A short summary of blog post {num} to engage users and provide value.</p>
+//                 <a href="#" className="btn btn-outline-primary">Read More</a>
+//               </div>
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   </section>
+// );
 
 // ✅ Chat Widget Placeholder (Re-enabled)
 const ChatWidget = () => (
@@ -418,10 +454,11 @@ const Home = () => (
     <ProductsPreview />
     <IndustriesServed />
     <WhyChooseUs />
+    <LatestBlogs />
     <QualityCommitment />
     <Testimonials />
     <ReadyToStepForward />
-    <LatestBlogs />
+    
     <ChatWidget />
     <Footer />
   </>

@@ -1,0 +1,31 @@
+/* WhyChooseUs.css
+.why-card {
+  border: none;
+  background-color: #f8f9fa;
+  transition: transform 0.3s ease;
+}
+
+.why-card:hover {
+  transform: scale(1.03);
+} */
+
+
+.why-card {
+  border: none;
+  background-color: #f8f9fa;
+  transition: transform 0.3s ease;
+}
+
+.why-card:hover {
+  transform: scale(1.03);
+}
+
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  background: #e6f0ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
