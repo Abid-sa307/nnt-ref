@@ -1,5 +1,12 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+// import edibleOilImg from '../assets/industries/edible-oil.jpg';
+// import soapImg from '../assets/industries/soap.jpg';
+// import waterTreatmentImg from '../assets/industries/water-treatment.jpg';
+// import foodBeverageImg from '../assets/industries/food-beverage.jpg';
+// import petrochemicalImg from '../assets/industries/petrochemical.jpg';
+// import pharmaceuticalImg from '../assets/industries/pharmaceutical.jpg';
+
 
 const industries = [
   {
