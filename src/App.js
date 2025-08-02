@@ -16,10 +16,14 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Header from './components/header'; 
 import Home from './components/home';
 import IndustriesServed from './components/IndustriesServed';
+import QualityAssurance from './components/qualityassurance';
 
 import CausticSoda from './components/ourproducts/Caustic';
 import BleachingEarth from './components/ourproducts/Bleaching';
@@ -38,6 +42,7 @@ function App() {
           <Route path="/our-products/bleaching-earth" element={<BleachingEarth />} />
           <Route path="/our-products/filter-flow-aid" element={<FilterFlowAid />} />
           <Route path="/our-products/citric-acid" element={<CitricAcid />} />
+          <Route path="/quality-assurance" element={<QualityAssurance />} />
         </Routes>
       </Router>
     </div>

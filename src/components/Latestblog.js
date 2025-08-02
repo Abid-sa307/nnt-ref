@@ -95,16 +95,15 @@ const LatestBlogs = () => (
       <p className="mb-5">
         Browse the most recent blog & news from N&T. Engineering, Procurement, and Construction-related articles.
       </p>
-      <div className="row row-cols-1 row-cols-md-3 g-4">
+
+      <div className="row row-cols-1 row-cols-md-3 g-4 mb-4">
         {blogData.map((blog, i) => (
           <div key={i} className="col">
             <div className="card h-100 shadow-sm rounded-4">
-              {/* Gray Placeholder Image */}
               <div
                 className="bg-secondary rounded-top-4"
                 style={{ height: '200px', width: '100%', backgroundColor: '#ccc' }}
               ></div>
-
               <div className="card-body text-start px-4 py-3">
                 <p className="text-muted mb-1">{blog.date}</p>
                 <h5 className="fw-semibold">{blog.title}</h5>
@@ -117,9 +116,15 @@ const LatestBlogs = () => (
           </div>
         ))}
       </div>
+
+      {/* ✅ View More Button */}
+      <div className="text-center">
+        <a href="/blog" className="btn btn-outline-primary rounded-pill px-4">
+          View More Blogs
+        </a>
+      </div>
     </div>
   </section>
 );
 
 export default LatestBlogs;
-
