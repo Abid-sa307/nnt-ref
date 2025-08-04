@@ -202,26 +202,62 @@ import ProductsPreview from './Productpreview.js';
 import WhyChooseUs from './Whychooseus.js';
 import LatestBlogs from './Latestblog.js';
 import HeroImage from '../Assests/hero-image.png';
+import Footer from './footer.js';
+import Contact from './contact.js';
 
 // ✅ Hero Banner
 const HeroBanner = () => (
-  <section className="hero-section d-flex align-items-center text-white" style={{ paddingTop: '100px', minHeight: '100vh' }}>
-    <div className="container">
-      <div className="row align-items-center">
-        <div className="col-md-6 text-center text-md-start">
-          <h1 className="display-5 fw-bold">
-            Global Supplier of Caustic Soda, Bleaching Earth & High-Purity Industrial Chemicals
-          </h1>
-          <p className="lead mt-3">
-            Your reliable source for premium-grade refinery chemicals and raw materials with a proven global logistics network. Trusted by partners in 50+ countries.
-          </p>
-        </div>
-        <div className="col-md-6 text-center">
-          <img src={HeroImage} alt="Hero Visual" className="img-fluid hero-img" />
-        </div>
+  // <section className="hero-section d-flex align-items-center text-white" style={{ paddingTop: '100px', minHeight: '100vh' }}>
+  //   <div className="container">
+  //     <div className="row align-items-center">
+  //       <div className="col-md-6 text-center text-md-start">
+  //         <h1 className="display-5 fw-bold">
+  //           Global Supplier of Caustic Soda, Bleaching Earth & High-Purity Industrial Chemicals
+  //         </h1>
+  //         <p className="lead mt-3">
+  //           Your reliable source for premium-grade refinery chemicals and raw materials with a proven global logistics network. Trusted by partners in 50+ countries.
+  //         </p>
+  //       </div>
+  //       <div className="col-md-6 text-center">
+  //         <img src={HeroImage} alt="Hero Visual" className="img-fluid hero-img" />
+  //       </div>
+  //     </div>
+  //   </div>
+  // </section>
+
+  <section className="hero-section d-flex align-items-center" style={{ paddingTop: '100px', minHeight: '100vh', background: 'linear-gradient(to right, #4ba2c5, #64c2a1)' }}>
+  <div className="container">
+    <div className="row align-items-center">
+      {/* Left side - Text */}
+      <div className="col-md-6 text-white text-center text-md-start">
+        <h1 className="display-5 fw-bold mb-3">
+        {/* Top refinery chemical supplier */}
+         Global Supplier of Caustic Soda, Bleaching Earth & High-Purity Industrial Chemicals
+        </h1>
+        <p className="lead">
+          Your reliable source for premium-grade refinery chemicals and raw materials with a proven global logistics network. Trusted by partners in 50+ countries.
+        </p>
+        
+      </div>
+
+      {/* Right side - Image */}
+      <div className="col-md-6 text-center">
+        <img
+          src={HeroImage}
+          alt="Refinery Chemical Plant"
+          className="img-fluid"
+          style={{
+            maxHeight: '480px',
+            width: '100%',
+            objectFit: 'cover',
+            borderRadius: '20px'
+          }}
+        />
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 );
 
 // // ✅ Products Preview
@@ -363,37 +399,37 @@ const Testimonials = () => (
 );
 
 // ✅ Ready to Step Forward Section (No Map)
-const ReadyToStepForward = () => (
-  <section className="py-5 bg-white">
-    <div className="container">
-      <h2 className="text-center fw-bold text-primary mb-4">Ready to step forward</h2>
-      <div className="row justify-content-center">
-        <div className="col-md-8">
-          <form className="row g-3">
-            <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="Full Name*" required />
-            </div>
-            <div className="col-md-6">
-              <input type="email" className="form-control" placeholder="Email ID*" required />
-            </div>
-            <div className="col-md-6">
-              <input type="tel" className="form-control" placeholder="+91 Mobile Number*" required />
-            </div>
-            <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="Company Name" />
-            </div>
-            <div className="col-12">
-              <textarea className="form-control" rows="4" placeholder="Enquiry*" required></textarea>
-            </div>
-            <div className="col-12 text-center">
-              <button type="submit" className="btn btn-success px-4">Submit</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-);
+// const ReadyToStepForward = () => (
+//   <section className="py-5 bg-white">
+//     <div className="container">
+//       <h2 className="text-center fw-bold text-primary mb-4">Ready to step forward</h2>
+//       <div className="row justify-content-center">
+//         <div className="col-md-8">
+//           <form className="row g-3">
+//             <div className="col-md-6">
+//               <input type="text" className="form-control" placeholder="Full Name*" required />
+//             </div>
+//             <div className="col-md-6">
+//               <input type="email" className="form-control" placeholder="Email ID*" required />
+//             </div>
+//             <div className="col-md-6">
+//               <input type="tel" className="form-control" placeholder="+91 Mobile Number*" required />
+//             </div>
+//             <div className="col-md-6">
+//               <input type="text" className="form-control" placeholder="Company Name" />
+//             </div>
+//             <div className="col-12">
+//               <textarea className="form-control" rows="4" placeholder="Enquiry*" required></textarea>
+//             </div>
+//             <div className="col-12 text-center">
+//               <button type="submit" className="btn btn-success px-4">Submit</button>
+//             </div>
+//           </form>
+//         </div>
+//       </div>
+//     </div>
+//   </section>
+// );
 
 // // ✅ Latest Blogs
 // const LatestBlogs = () => (
@@ -432,20 +468,20 @@ const ChatWidget = () => (
 );
 
 // ✅ Footer
-const Footer = () => (
-  <footer className="bg-dark text-white py-4">
-    <div className="container text-center">
-      <p className="mb-2">© 2025 Your Company Name. All Rights Reserved.</p>
-      <p className="mb-0">
-        ISO Certified |
-        <a href="#" className="text-white text-decoration-none mx-1"> Sitemap </a>|
-        <a href="#" className="text-white text-decoration-none mx-1"> Contact </a>|
-        <a href="#" className="text-white text-decoration-none mx-1"> Facebook </a>|
-        <a href="#" className="text-white text-decoration-none mx-1"> LinkedIn </a>
-      </p>
-    </div>
-  </footer>
-);
+// const Footer = () => (
+//   <footer className="bg-dark text-white py-4">
+//     <div className="container text-center">
+//       <p className="mb-2">© 2025 Your Company Name. All Rights Reserved.</p>
+//       <p className="mb-0">
+//         ISO Certified |
+//         <a href="#" className="text-white text-decoration-none mx-1"> Sitemap </a>|
+//         <a href="#" className="text-white text-decoration-none mx-1"> Contact </a>|
+//         <a href="#" className="text-white text-decoration-none mx-1"> Facebook </a>|
+//         <a href="#" className="text-white text-decoration-none mx-1"> LinkedIn </a>
+//       </p>
+//     </div>
+//   </footer>
+// );
 
 // ✅ Main Home Component
 const Home = () => (
@@ -457,7 +493,7 @@ const Home = () => (
     <LatestBlogs />
     <QualityCommitment />
     <Testimonials />
-    <ReadyToStepForward />
+    <Contact />
     
     <ChatWidget />
     <Footer />
