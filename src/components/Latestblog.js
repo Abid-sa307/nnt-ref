@@ -68,7 +68,6 @@
 
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Latestblog.css';
 
 const blogData = [
   {
@@ -90,6 +89,24 @@ const blogData = [
 
 const LatestBlogs = () => (
   <section className="py-5 bg-light latest-blogs">
+    <style>{`
+      .latest-blogs .card {
+        border: none;
+        transition: transform 0.3s ease;
+      }
+      .latest-blogs .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      }
+      .latest-blogs .card-title {
+        font-size: 1.1rem;
+      }
+      .latest-blogs .card-text {
+        font-size: 0.95rem;
+        color: #555;
+      }
+    `}</style>
+
     <div className="container text-center">
       <h2 className="mb-4">Our Blog</h2>
       <p className="mb-5">
@@ -117,7 +134,6 @@ const LatestBlogs = () => (
         ))}
       </div>
 
-      {/* ✅ View More Button */}
       <div className="text-center">
         <a href="/blog" className="btn btn-outline-primary rounded-pill px-4">
           View More Blogs

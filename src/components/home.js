@@ -197,7 +197,6 @@
 // src/components/Home.js
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../components/home.css';
 import ProductsPreview from './Productpreview.js';
 import WhyChooseUs from './Whychooseus.js';
 import LatestBlogs from './Latestblog.js';
@@ -207,92 +206,47 @@ import Contact from './contact.js';
 
 // ✅ Hero Banner
 const HeroBanner = () => (
-  // <section className="hero-section d-flex align-items-center text-white" style={{ paddingTop: '100px', minHeight: '100vh' }}>
-  //   <div className="container">
-  //     <div className="row align-items-center">
-  //       <div className="col-md-6 text-center text-md-start">
-  //         <h1 className="display-5 fw-bold">
-  //           Global Supplier of Caustic Soda, Bleaching Earth & High-Purity Industrial Chemicals
-  //         </h1>
-  //         <p className="lead mt-3">
-  //           Your reliable source for premium-grade refinery chemicals and raw materials with a proven global logistics network. Trusted by partners in 50+ countries.
-  //         </p>
-  //       </div>
-  //       <div className="col-md-6 text-center">
-  //         <img src={HeroImage} alt="Hero Visual" className="img-fluid hero-img" />
-  //       </div>
-  //     </div>
-  //   </div>
-  // </section>
+  <section
+    className="hero-section d-flex align-items-center"
+    style={{
+      paddingTop: '100px',
+      minHeight: '100vh',
+      background: 'linear-gradient(135deg, #005b96, #6db3f2)',
+      paddingBottom: '60px',
+      position: 'relative',
+    }}
+  >
+    <div className="container">
+      <div className="row align-items-center">
+        {/* Left side - Text */}
+        <div className="col-md-6 text-white text-center text-md-start">
+          <h1 className="display-5 fw-bold mb-3" style={{ lineHeight: '1.3', color: '#fff' }}>
+            Global Supplier of Caustic Soda, Bleaching Earth & High-Purity Industrial Chemicals
+          </h1>
+          <p className="lead" style={{ color: '#e0e0e0' }}>
+            Your reliable source for premium-grade refinery chemicals and raw materials with a proven global logistics network. Trusted by partners in 50+ countries.
+          </p>
+        </div>
 
-  <section className="hero-section d-flex align-items-center" style={{ paddingTop: '100px', minHeight: '100vh', background: 'linear-gradient(to right, #4ba2c5, #64c2a1)' }}>
-  <div className="container">
-    <div className="row align-items-center">
-      {/* Left side - Text */}
-      <div className="col-md-6 text-white text-center text-md-start">
-        <h1 className="display-5 fw-bold mb-3">
-        {/* Top refinery chemical supplier */}
-         Global Supplier of Caustic Soda, Bleaching Earth & High-Purity Industrial Chemicals
-        </h1>
-        <p className="lead">
-          Your reliable source for premium-grade refinery chemicals and raw materials with a proven global logistics network. Trusted by partners in 50+ countries.
-        </p>
-        
-      </div>
-
-      {/* Right side - Image */}
-      <div className="col-md-6 text-center">
-        <img
-          src={HeroImage}
-          alt="Refinery Chemical Plant"
-          className="img-fluid"
-          style={{
-            maxHeight: '480px',
-            width: '100%',
-            objectFit: 'cover',
-            borderRadius: '20px'
-          }}
-        />
+        {/* Right side - Image */}
+        <div className="col-md-6 text-center">
+          <img
+            src={HeroImage}
+            alt="Refinery Chemical Plant"
+            className="img-fluid hero-img"
+            style={{
+              maxHeight: '400px',
+              objectFit: 'cover',
+              borderRadius: '12px',
+              boxShadow: '0 4px 16px rgba(0,0,0,0.2)',
+              width: '100%',
+            }}
+          />
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
+  </section>
 );
-
-// // ✅ Products Preview
-// const ProductsPreview = () => (
-//   <section id="products" className="py-5 bg-light">
-//     <div className="container">
-//       <h2 className="text-center text-primary fw-bold mb-5">Our Products</h2>
-//       <div className="row row-cols-1 row-cols-md-4 g-4">
-//         {[
-//           { title: 'Caustic Soda Flakes', text: 'Used in paper, textiles, detergents.' },
-//           { title: 'Bleaching Earth', text: 'Ideal for purifying oils and fats.' },
-//           { title: 'Filter Flow Aid', text: 'Helps improve filtration systems.' },
-//           { title: 'Citric Acid', text: 'Common in food & pharmaceuticals.' },
-//         ].map((product, idx) => (
-//           <div key={idx} className="col">
-//             <div className="card h-100 shadow-sm">
-//               <img
-//                 src={`https://via.placeholder.com/300x200?text=${product.title.replace(/\s+/g, '+')}`}
-//                 className="card-img-top"
-//                 alt={product.title}
-//               />
-//               <div className="card-body text-center">
-//                 <h5 className="card-title">{product.title}</h5>
-//                 <p className="card-text">{product.text}</p>
-//                 <a href={`/our-products/${product.title.toLowerCase().replace(/\s+/g, '-')}`} className="btn btn-outline-primary">
-//                   View Details
-//                 </a>
-//               </div>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   </section>
-// );
 
 // ✅ Industries Served
 const IndustriesServed = () => (
@@ -308,67 +262,6 @@ const IndustriesServed = () => (
   </section>
 );
 
-// ✅ Updated Why Choose Us (as per design image)
-// const WhyChooseUs = () => {
-//   const features = [
-//     {
-//       icon: 'https://via.placeholder.com/64?text=TG', // Replace with your icon source
-//       title: 'Trusted Global Supplier',
-//       description: 'Supplying quality products worldwide with a trusted reputation.',
-//     },
-//     {
-//       icon: 'https://via.placeholder.com/64?text=ISO',
-//       title: 'ISO Certified',
-//       description: 'Maintaining high standards with internationally recognized certifications.',
-//     },
-//     {
-//       icon: 'https://via.placeholder.com/64?text=QC',
-//       title: 'Strict Quality Control',
-//       description: 'Ensuring every product meets our stringent quality benchmarks.',
-//     },
-//     {
-//       icon: 'https://via.placeholder.com/64?text=RD',
-//       title: 'Reliable Delivery',
-//       description: 'Timely and efficient delivery, every time.',
-//     },
-//     {
-//       icon: 'https://via.placeholder.com/64?text=CP',
-//       title: 'Competitive Pricing',
-//       description: 'Offering top-quality products at competitive prices.',
-//     },
-//     {
-//       icon: 'https://via.placeholder.com/64?text=CS',
-//       title: 'Customer Satisfaction',
-//       description: 'Our commitment to customer service is unparalleled.',
-//     },
-//   ];
-
-//   return (
-//     <section className="bg-light py-5">
-//       <div className="container text-center">
-//         <h2 className="mb-5 fw-bold">Why Choose Us</h2>
-//         <div className="row">
-//           {features.map((feature, index) => (
-//             <div key={index} className="col-md-4 mb-4">
-//               <div className="card h-100 border-0 shadow-sm p-4">
-//                 <div className="mb-3">
-//                   <img
-//                     src={feature.icon}
-//                     alt={feature.title}
-//                     style={{ width: '64px', height: '64px' }}
-//                   />
-//                 </div>
-//                 <h5 className="fw-bold">{feature.title}</h5>
-//                 <p className="text-muted">{feature.description}</p>
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
 // ✅ Quality Commitment
 const QualityCommitment = () => (
   <section className="py-5">
@@ -382,83 +275,102 @@ const QualityCommitment = () => (
 );
 
 // ✅ Client Testimonials
-const Testimonials = () => (
-  <section className="bg-light py-5">
-    <div className="container text-center">
-      <h2 className="mb-4">What Our Clients Say</h2>
-      <div className="row justify-content-center">
-        <div className="col-md-8">
-          <blockquote className="blockquote">
-            <p className="mb-3">"Outstanding service and consistent product quality. We've trusted them for years."</p>
-            <footer className="blockquote-footer">John Doe, CEO of IndustryCorp</footer>
-          </blockquote>
-        </div>
-      </div>
-    </div>
-  </section>
-);
-
-// ✅ Ready to Step Forward Section (No Map)
-// const ReadyToStepForward = () => (
-//   <section className="py-5 bg-white">
-//     <div className="container">
-//       <h2 className="text-center fw-bold text-primary mb-4">Ready to step forward</h2>
+// const Testimonials = () => (
+//   <section className="bg-light py-5">
+//     <div className="container text-center">
+//       <h2 className="mb-4">What Our Clients Say</h2>
 //       <div className="row justify-content-center">
 //         <div className="col-md-8">
-//           <form className="row g-3">
-//             <div className="col-md-6">
-//               <input type="text" className="form-control" placeholder="Full Name*" required />
-//             </div>
-//             <div className="col-md-6">
-//               <input type="email" className="form-control" placeholder="Email ID*" required />
-//             </div>
-//             <div className="col-md-6">
-//               <input type="tel" className="form-control" placeholder="+91 Mobile Number*" required />
-//             </div>
-//             <div className="col-md-6">
-//               <input type="text" className="form-control" placeholder="Company Name" />
-//             </div>
-//             <div className="col-12">
-//               <textarea className="form-control" rows="4" placeholder="Enquiry*" required></textarea>
-//             </div>
-//             <div className="col-12 text-center">
-//               <button type="submit" className="btn btn-success px-4">Submit</button>
-//             </div>
-//           </form>
+//           <blockquote className="blockquote">
+//             <p className="mb-3">"Outstanding service and consistent product quality. We've trusted them for years."</p>
+//             <footer className="blockquote-footer">John Doe, CEO of IndustryCorp</footer>
+//           </blockquote>
 //         </div>
 //       </div>
 //     </div>
 //   </section>
-// );
+// )
 
-// // ✅ Latest Blogs
-// const LatestBlogs = () => (
-//   <section className="py-5 bg-light">
-//     <div className="container text-center">
-//       <h2 className="mb-4">Latest Blogs</h2>
-//       <div className="row row-cols-1 row-cols-md-3 g-4">
-//         {[1, 2, 3].map((num) => (
-//           <div key={num} className="col">
-//             <div className="card h-100 shadow-sm">
-//               <img
-//                 src={`https://via.placeholder.com/300x180?text=Blog+${num}`}
-//                 className="card-img-top"
-//                 alt={`Blog ${num}`}
-//               />
-//               <div className="card-body">
-//                 <h5 className="card-title">Blog Title {num}</h5>
-//                 <p className="card-text">A short summary of blog post {num} to engage users and provide value.</p>
-//                 <a href="#" className="btn btn-outline-primary">Read More</a>
-//               </div>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   </section>
-// );
+const Testimonials = () => (
+  <>
+    <style>
+      {`
+        .testimonial-card {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
-// ✅ Chat Widget Placeholder (Re-enabled)
+        .testimonial-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+
+        .testimonial-stars {
+          font-size: 1.2rem;
+          color: #ffc107;
+        }
+
+        .testimonial-footer {
+          font-weight: 500;
+          font-size: 0.9rem;
+          color: #555;
+        }
+
+        .testimonial-text {
+          font-style: italic;
+          color: #333;
+        }
+      `}
+    </style>
+
+    <section className="bg-light py-5">
+      <div className="container">
+        <h2 className="text-center fw-bold mb-5 text-primary">
+          What Our Refinery Clients Say
+        </h2>
+        <div className="row justify-content-center g-4">
+          <div className="col-md-4">
+            <div className="p-4 border rounded bg-white shadow-sm h-100 testimonial-card">
+              <div className="testimonial-stars mb-2">★★★★★</div>
+              <p className="mb-3 testimonial-text">
+                "We've been sourcing Caustic Soda and Bleaching Earth from N&T for over 2 years. Reliable delivery and consistent quality every time."
+              </p>
+              <footer className="testimonial-footer">
+                Rahul Jain, Procurement Head – Sunrise Oil Refinery
+              </footer>
+            </div>
+          </div>
+
+          <div className="col-md-4">
+            <div className="p-4 border rounded bg-white shadow-sm h-100 testimonial-card">
+              <div className="testimonial-stars mb-2">★★★★★</div>
+              <p className="mb-3 testimonial-text">
+                "Excellent technical support and custom packaging solutions tailored to our refinery needs. Highly professional team."
+              </p>
+              <footer className="testimonial-footer">
+                Fatima Noor, Plant Manager – GulfRef UAE
+              </footer>
+            </div>
+          </div>
+
+          <div className="col-md-4">
+            <div className="p-4 border rounded bg-white shadow-sm h-100 testimonial-card">
+              <div className="testimonial-stars mb-2">★★★★★</div>
+              <p className="mb-3 testimonial-text">
+                "N&T is our trusted partner for bulk chemical shipments. Their REACH-compliant materials meet all our regulatory needs."
+              </p>
+              <footer className="testimonial-footer">
+                Jacob Mensah, Head Chemist – Ghana Petrochemicals
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </>
+);
+
+
+// ✅ Chat Widget Placeholder
 const ChatWidget = () => (
   <div className="chat-widget position-fixed bottom-0 end-0 p-3" style={{ zIndex: 1050 }}>
     <a href="https://wa.me/your-number" target="_blank" rel="noopener noreferrer">
@@ -466,22 +378,6 @@ const ChatWidget = () => (
     </a>
   </div>
 );
-
-// ✅ Footer
-// const Footer = () => (
-//   <footer className="bg-dark text-white py-4">
-//     <div className="container text-center">
-//       <p className="mb-2">© 2025 Your Company Name. All Rights Reserved.</p>
-//       <p className="mb-0">
-//         ISO Certified |
-//         <a href="#" className="text-white text-decoration-none mx-1"> Sitemap </a>|
-//         <a href="#" className="text-white text-decoration-none mx-1"> Contact </a>|
-//         <a href="#" className="text-white text-decoration-none mx-1"> Facebook </a>|
-//         <a href="#" className="text-white text-decoration-none mx-1"> LinkedIn </a>
-//       </p>
-//     </div>
-//   </footer>
-// );
 
 // ✅ Main Home Component
 const Home = () => (
@@ -494,7 +390,6 @@ const Home = () => (
     <QualityCommitment />
     <Testimonials />
     <Contact />
-    
     <ChatWidget />
     <Footer />
   </>

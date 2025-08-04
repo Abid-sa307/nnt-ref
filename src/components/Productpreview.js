@@ -64,10 +64,8 @@
 
 // export default ProductsPreview;
 
-
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Productpreview.css';
 import { FaFlask, FaLeaf, FaFilter, FaLemon } from 'react-icons/fa';
 
 const ProductsPreview = () => {
@@ -103,30 +101,52 @@ const ProductsPreview = () => {
   ];
 
   return (
-    <section id="products" className="py-5 bg-light">
-      <div className="container">
-        <h2 className="text-center text-primary fw-bold mb-5">Our Products</h2>
-        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
-          {products.map((product, idx) => (
-            <div key={idx} className="col">
-              <div className="custom-card p-4 h-100 text-center">
-                <div className="d-flex flex-column align-items-center">
-                  <div className="mb-3">{product.icon}</div>
-                  <h5 className="fw-bold mb-2">{product.title}</h5>
-                  <p className="text-muted mb-3">{product.description}</p>
-                  <a
-                    href={`/ourproducts/${product.slug}`}
-                    className="text-primary fw-medium text-decoration-none d-inline-flex align-items-center"
-                  >
-                    Know More <span className="ms-1">&rarr;</span>
-                  </a>
+    <>
+      {/* ✅ Embedded CSS */}
+      <style>{`
+        .custom-card {
+          border: 1px solid #e0e0e0;
+          border-radius: 20px;
+          transition: all 0.3s ease;
+          background-color: #fff;
+        }
+
+        .custom-card:hover {
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+          transform: translateY(-3px);
+        }
+
+        .product-icon {
+          font-size: 40px;
+          color: #007bff;
+        }
+      `}</style>
+
+      <section id="products" className="py-5 bg-light">
+        <div className="container">
+          <h2 className="text-center text-primary fw-bold mb-5">Our Products</h2>
+          <div className="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            {products.map((product, idx) => (
+              <div key={idx} className="col">
+                <div className="custom-card p-4 h-100 text-center">
+                  <div className="d-flex flex-column align-items-center">
+                    <div className="mb-3">{product.icon}</div>
+                    <h5 className="fw-bold mb-2">{product.title}</h5>
+                    <p className="text-muted mb-3">{product.description}</p>
+                    <a
+                      href={`/ourproducts/${product.slug}`}
+                      className="text-primary fw-medium text-decoration-none d-inline-flex align-items-center"
+                    >
+                      Know More <span className="ms-1">&rarr;</span>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

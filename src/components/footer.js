@@ -112,7 +112,7 @@ const Footer = () => {
               <Image src={Logo} alt="N&T Cement Logo" width={228} />
             </Link>
             <p className="text-muted" style={{ fontSize: "17px", lineHeight: "1.6", marginTop: "-90px" }}>
-              Cement plant Home page structure Cement plant Home page structure Cement plant Home page structure
+              Refinery chemicals homepage structure Refinery chemicals homepage structure Refinery chemicals homepage structure
             </p>
             <div className="d-flex gap-4 mt-2">
               <a href="https://facebook.com" target="_blank" rel="noreferrer">

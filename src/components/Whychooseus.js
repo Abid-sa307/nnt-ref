@@ -62,10 +62,9 @@
 
 
 // src/components/WhyChooseUs.js
+
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Whychooseus.css';
-
 import { FaBoxOpen, FaFlask, FaMoneyBillWave, FaUserGraduate, FaClock, FaHandshake } from 'react-icons/fa';
 
 const features = [
@@ -108,8 +107,27 @@ const WhyChooseUs = () => (
       <div className="row g-4">
         {features.map((item, index) => (
           <div className="col-md-4" key={index}>
-            <div className="why-card p-4 rounded-4 shadow-sm h-100">
-              <div className="icon-circle mb-3 mx-auto">
+            <div
+              className="p-4 rounded-4 shadow-sm h-100"
+              style={{
+                backgroundColor: '#fff',
+                borderRadius: '20px',
+                boxShadow: '0 0 15px rgba(0, 0, 0, 0.06)',
+                transition: 'all 0.3s ease',
+              }}
+            >
+              <div
+                className="mb-3 mx-auto"
+                style={{
+                  width: '80px',
+                  height: '80px',
+                  borderRadius: '50%',
+                  backgroundColor: '#f0f0f0',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              >
                 {item.icon}
               </div>
               <h5 className="fw-bold">{item.title}</h5>
