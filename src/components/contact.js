@@ -278,12 +278,12 @@ const Contact = () => {
       setDisable(true);
       setIsLoading(true);
 
-      const serviceId = 'service_6zlhmj9';
-      const templateId = 'template_22xtlm9';
-      const publicKey = 'uMIUlIY9Rm6rN5PGo';
+      const serviceId = 'service_d40q2ns';
+      const templateId = 'template_2ze2p5a';
+      const publicKey = 'G1Fzsqj7dPy0VjcfQ';
 
       const formValues = {
-        to_email: 'info@nntcement.com',
+        to_email: 'nntrefinaryclay.development@gmail.ccom',
         content: "New enquiry from",
         full_name: values.full_name,
         email: values.email,
@@ -294,6 +294,7 @@ const Contact = () => {
         city: curCity,
         country: curCountry
       };
+      
 
       try {
         const response = await emailjs.send(serviceId, templateId, formValues, publicKey);
