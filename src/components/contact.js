@@ -278,12 +278,13 @@ const Contact = () => {
       setDisable(true);
       setIsLoading(true);
 
-      const serviceId = 'service_b456zw8';
+      const serviceId = 'service_d40q2ns';
       const templateId = 'template_2ze2p5a';
-      const publicKey = 'uMIUlIY9Rm6rN5PGo';
+      const publicKey = 'G1Fzsqj7dPy0VjcfQ';
 
       const formValues = {
-        to_email: 'nntrefinaryclay.development@gmail.com',
+        to_email: 'nntrefinaryclay.development@gmail.ccom',
+      //  153a62bf2c322177efa5bff05f9eeedff8c31802
         content: "New enquiry from",
         full_name: values.full_name,
         email: values.email,
@@ -294,6 +295,7 @@ const Contact = () => {
         city: curCity,
         country: curCountry
       };
+      
 
       try {
         const response = await emailjs.send(serviceId, templateId, formValues, publicKey);
@@ -445,7 +447,7 @@ const Contact = () => {
       “We've been sourcing Caustic Soda and Bleaching Earth from N&T for over 2 years. Reliable delivery and consistent quality every time.”
     </p>
   </div>
-
+packaging
   <div className="mt-3 p-3 border rounded shadow-sm bg-light">
     <div className="text-warning mb-1">★★★★★</div>
     <strong>Fatima Noor – Refining Plant Manager, UAE</strong>

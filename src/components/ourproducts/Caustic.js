@@ -1,137 +1,558 @@
+
+
 // import React from 'react';
 // import 'bootstrap/dist/css/bootstrap.min.css';
+// import Seo from '../../components/seo';
+// import Footer from '../../components/footer';
+// import Contact from '../../components/contact';
+// import { CausticSodaFlakesMeta } from '../../data/metaData';
 
 // const Caustic = () => {
 //   return (
-//     <div className="container py-5">
-//       <div className="card shadow-lg border-0">
-//         <div className="card-body p-5">
-//           <h2 className="mb-4 text-primary border-bottom pb-2">Caustic Soda Flakes</h2>
+//     <>
+//       <Seo meta={CausticSodaFlakesMeta} />
 
-//           <section className="mb-4">
-//             <h5 className="text-secondary">📌 Description</h5>
-//             <p className="text-muted">
-//               Caustic Soda Flakes (Sodium Hydroxide) are widely used in industries like textiles, paper, detergents, and chemical processing.
-//             </p>
-//           </section>
+//       {/* ✅ Hero-style section */}
+//       <section
+//         className="hero-section d-flex align-items-center"
+//         style={{
+//           paddingTop: '100px',
+//           minHeight: '100vh',
+//           background: 'linear-gradient(135deg, #005b96, #6db3f2)',
+//           paddingBottom: '60px',
+//         }}
+//       >
+//         <div className="container">
+//           <div className="row align-items-center">
+//             {/* Left - Content */}
+//             <div className="col-md-6 text-white text-center text-md-start">
+//               <h1 className="display-5 fw-bold mb-3" style={{ lineHeight: '1.3', color: '#fff' }}>
+//                 Caustic Soda Flakes (NaOH)
+//               </h1>
+//               <p className="lead" style={{ color: '#e0e0e0' }}>
+//                 High-purity Sodium Hydroxide used in detergent, textile, water treatment, and paper industries. 
+//                 Manufactured in ISO-certified facilities, compliant with REACH & SGS standards.
+//               </p>
+//               <ul className="text-start text-light fs-6 mt-3">
+//                 <li>Soap & Detergent Manufacturing</li>
+//                 <li>Water Purification and Treatment</li>
+//                 <li>Textile Dyeing and Scouring</li>
+//                 <li>Pulp and Paper Processing</li>
+//               </ul>
+//             </div>
 
-//           <section className="mb-4">
-//             <h5 className="text-secondary">📄 Specifications / MSDS</h5>
-//             <ul className="list-group list-group-flush mb-2">
-//               <li className="list-group-item">Purity: ≥ 99%</li>
-//               <li className="list-group-item">Appearance: White flakes</li>
-//               <li className="list-group-item">CAS No: 1310-73-2</li>
-//               <li className="list-group-item">HS Code: 2815.11</li>
-//             </ul>
-//           </section>
-
-//           <section className="mb-4">
-//             <h5 className="text-secondary">🛠️ Applications</h5>
-//             <ul className="list-group list-group-flush mb-2">
-//               <li className="list-group-item">Textile processing</li>
-//               <li className="list-group-item">Soap and detergent manufacturing</li>
-//               <li className="list-group-item">Water treatment</li>
-//               <li className="list-group-item">Paper and pulp industry</li>
-//             </ul>
-//           </section>
-
-//           <section className="mb-4">
-//             <h5 className="text-secondary">📦 Packaging & Delivery</h5>
-//             <p className="text-muted">
-//               25 kg PE-lined PP bags / 50 kg drums. Prompt delivery within 1–2 weeks.
-//             </p>
-//           </section>
-
-//           <section className="mb-4">
-//             <h5 className="text-secondary">✅ Quality & Compliance</h5>
-//             <p className="text-muted">
-//               Manufactured under ISO-certified plants. Complies with REACH and SGS standards.
-//             </p>
-//           </section>
-
-//           <div className="text-center">
-//             <a href="/contact" className="btn btn-lg btn-primary px-5">
-//               Request a Quote
-//             </a>
+//             {/* Right - Image */}
+//             <div className="col-md-6 text-center">
+//               <img
+//                 src="https://via.placeholder.com/590x450?text=Caustic+Soda+Flakes"
+//                 alt="Caustic Soda Flakes Packaging"
+//                 className="img-fluid"
+//                 style={{
+//                   maxHeight: '400px',
+//                   objectFit: 'cover',
+//                   borderRadius: '12px',
+//                   boxShadow: '0 4px 16px rgba(0,0,0,0.2)',
+//                   width: '100%',
+//                 }}
+//               />
+//             </div>
 //           </div>
 //         </div>
-//       </div>
-//     </div>
+//       </section>
+
+//       {/* ✅ Specifications & Packaging */}
+//       <section className="py-5 bg-light">
+//         <div className="container">
+//           <h2 className="text-center text-primary fw-bold mb-4">Product Specifications</h2>
+//           <div className="row justify-content-center">
+//             <div className="col-md-6">
+//               <ul className="list-group list-group-flush">
+//                 <li className="list-group-item">Purity: ≥ 99%</li>
+//                 <li className="list-group-item">Appearance: White Flakes</li>
+//                 <li className="list-group-item">CAS No.: 1310-73-2</li>
+//                 <li className="list-group-item">HS Code: 2815.11</li>
+//               </ul>
+//             </div>
+//             <div className="col-md-6">
+//               <ul className="list-group list-group-flush">
+//                 <li className="list-group-item">Packaging: 25 kg PE-lined PP bags / 50 kg drums</li>
+//                 <li className="list-group-item">Delivery: Prompt dispatch in 1–2 weeks</li>
+//                 <li className="list-group-item">Certifications: ISO, REACH, SGS Compliant</li>
+//                 <li className="list-group-item">Support: Custom Formulations & Logistics</li>
+//               </ul>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* ✅ Contact Section */}
+//       <Contact />
+
+//       {/* ✅ Footer */}
+//       <Footer />
+//     </>
+//   );
+// };
+
+// export default Caustic;
+
+// import React from 'react';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import Seo from '../../components/seo';
+// import Footer from '../../components/footer';
+// import Contact from '../../components/contact';
+// import { CausticSodaFlakesMeta } from '../../data/metaData';
+
+// const Caustic = () => {
+//   return (
+//     <>
+//       <Seo meta={CausticSodaFlakesMeta} />
+
+//       {/* ✅ Hero-style section with description */}
+//       <section
+//         className="hero-section d-flex align-items-center"
+//         style={{
+//           paddingTop: '100px',
+//           minHeight: '100vh',
+//           background: 'linear-gradient(135deg, #005b96, #6db3f2)',
+//           paddingBottom: '60px',
+//         }}
+//       >
+//         <div className="container">
+//           <div className="row align-items-center">
+//             {/* Left - Content */}
+//             <div className="col-md-6 text-white text-center text-md-start">
+//               <h1 className="display-5 fw-bold mb-3" style={{ lineHeight: '1.3' }}>
+//                 Caustic Soda Flakes (NaOH)
+//               </h1>
+//               <p className="lead text-light">
+//                 High-purity Sodium Hydroxide used in detergent, textile, water treatment, and paper industries. 
+//                 Manufactured in ISO-certified facilities, compliant with REACH & SGS standards.
+//               </p>
+//             </div>
+
+//             {/* Right - Image */}
+//             <div className="col-md-6 text-center">
+//               <img
+//                 src="https://via.placeholder.com/590x450?text=Caustic+Soda+Flakes"
+//                 alt="Caustic Soda Flakes Packaging"
+//                 className="img-fluid"
+//                 style={{
+//                   maxHeight: '400px',
+//                   objectFit: 'cover',
+//                   borderRadius: '12px',
+//                   boxShadow: '0 4px 16px rgba(0,0,0,0.2)',
+//                   width: '100%',
+//                 }}
+//               />
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* ✅ Specifications / MSDS */}
+//       <section className="py-5 bg-light">
+//         <div className="container">
+//           <h2 className="text-center text-primary fw-bold mb-4">Specifications & MSDS</h2>
+//           <div className="row justify-content-center">
+//             <div className="col-md-6">
+//               <ul className="list-group list-group-flush">
+//                 <li className="list-group-item">Purity: ≥ 99%</li>
+//                 <li className="list-group-item">Appearance: White Flakes</li>
+//                 <li className="list-group-item">CAS No.: 1310-73-2</li>
+//                 <li className="list-group-item">HS Code: 2815.11</li>
+//               </ul>
+//             </div>
+//             <div className="col-md-6">
+//               <ul className="list-group list-group-flush">
+//                 <li className="list-group-item">MSDS: Available Upon Request</li>
+//                 <li className="list-group-item">Certifications: ISO, REACH, SGS Compliant</li>
+//               </ul>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* ✅ Applications */}
+//       <section className="py-5">
+//         <div className="container">
+//           <h2 className="text-center text-primary fw-bold mb-4">Applications</h2>
+//           <div className="row justify-content-center">
+//             <div className="col-md-8">
+//               <ul className="list-group list-group-flush fs-5">
+//                 <li className="list-group-item">Soap & Detergent Manufacturing</li>
+//                 <li className="list-group-item">Water Purification and Treatment</li>
+//                 <li className="list-group-item">Textile Dyeing and Scouring</li>
+//                 <li className="list-group-item">Pulp and Paper Processing</li>
+//                 <li className="list-group-item">Petrochemical Industry Processes</li>
+//               </ul>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* ✅ Packaging & Delivery */}
+//       <section className="py-5 bg-light">
+//         <div className="container">
+//           <h2 className="text-center text-primary fw-bold mb-4">Packaging & Delivery Options</h2>
+//           <div className="row justify-content-center">
+//             <div className="col-md-8">
+//               <ul className="list-group list-group-flush fs-5">
+//                 <li className="list-group-item">25 kg PE-lined PP bags</li>
+//                 <li className="list-group-item">50 kg UN-approved drums</li>
+//                 <li className="list-group-item">Flexible loading: palletized or bulk</li>
+//                 <li className="list-group-item">Delivery Time: 1–2 weeks globally</li>
+//                 <li className="list-group-item">Logistics Support: Export documents & MSDS</li>
+//               </ul>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* ✅ Quality & Compliance */}
+//       <section className="py-5">
+//         <div className="container">
+//           <h2 className="text-center text-primary fw-bold mb-4">Quality & Compliance Notes</h2>
+//           <div className="row justify-content-center">
+//             <div className="col-md-10">
+//               <p className="lead text-center">
+//                 Our Caustic Soda Flakes are manufactured under strict ISO-certified quality management systems.
+//                 Each batch is tested for purity and consistency. We ensure compliance with international regulations including REACH and provide full traceability for export documentation and MSDS.
+//               </p>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* ✅ Request a Quote */}
+//       <Contact />
+
+//       {/* ✅ Footer */}
+//       <Footer />
+//     </>
+//   );
+// };
+
+// export default Caustic;
+
+// import React from 'react';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import Seo from '../../components/seo';
+// import Header from '../header';
+// import Footer from '../../components/footer';
+// import Contact from '../../components/contact';
+// import { CausticSodaFlakesMeta } from '../../data/metaData';
+
+
+// const Caustic = () => {
+//   return (
+//     <>
+    
+//       <Seo meta={CausticSodaFlakesMeta} />
+      
+
+
+//       {/* ✅ Hero-style section with description */}
+//       <section
+//         className="hero-section d-flex align-items-center"
+//         style={{
+//           paddingTop: '100px',
+//           minHeight: '100vh',
+//           background: 'linear-gradient(135deg, #005b96, #6db3f2)',
+//           paddingBottom: '60px',
+//         }}
+//       >
+//         <div className="container">
+//           <div className="row align-items-center">
+//             {/* Left - Content */}
+//             <div className="col-md-6 text-white text-center text-md-start">
+//               <h1 className="display-5 fw-bold mb-3" style={{ lineHeight: '1.3' }}>
+//                 Caustic Soda Flakes (NaOH)
+//               </h1>
+//               <p className="lead text-light">
+//                 High-purity Sodium Hydroxide used in detergent, textile, water treatment, and paper industries. 
+//                 Manufactured in ISO-certified facilities, compliant with REACH & SGS standards.
+//               </p>
+//             </div>
+
+//             {/* Right - Image */}
+//             <div className="col-md-6 text-center">
+//               <img
+//                 src="https://via.placeholder.com/590x450?text=Caustic+Soda+Flakes"
+//                 alt="Caustic Soda Flakes Packaging"
+//                 className="img-fluid"
+//                 style={{
+//                   maxHeight: '400px',
+//                   objectFit: 'cover',
+//                   borderRadius: '12px',
+//                   boxShadow: '0 4px 16px rgba(0,0,0,0.2)',
+//                   width: '100%',
+//                 }}
+//               />
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* ✅ Updated Specifications / MSDS */}
+//       <section className="py-5 bg-light">
+//         <div className="container">
+//           <h2 className="text-center text-primary fw-bold mb-4">Specifications & MSDS</h2>
+//           <div className="row align-items-center">
+//             {/* Left - Specs Text */}
+//             <div className="col-md-6">
+//               <ul className="list-group list-group-flush fs-5">
+//                 <li className="list-group-item">Purity: ≥ 99%</li>
+//                 <li className="list-group-item">Appearance: White Flakes</li>
+//                 <li className="list-group-item">CAS No.: 1310-73-2</li>
+//                 <li className="list-group-item">HS Code: 2815.11</li>
+//                 <li className="list-group-item">MSDS: Available Upon Request</li>
+//                 <li className="list-group-item">Certifications: ISO, REACH, SGS Compliant</li>
+//               </ul>
+//             </div>
+
+//             {/* Right - Image Placeholder */}
+//             <div className="col-md-6 text-center">
+//               <div
+//                 style={{
+//                   height: '300px',
+//                   backgroundColor: '#e0e0e0',
+//                   display: 'flex',
+//                   justifyContent: 'center',
+//                   alignItems: 'center',
+//                   borderRadius: '12px',
+//                   fontSize: '1.2rem',
+//                   color: '#555',
+//                   boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+//                 }}
+//               >
+//                 <span>Caustic Soda Flakes Packaging (Alt Image)</span>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* ✅ Applications */}
+//       <section className="py-5">
+//         <div className="container">
+//           <h2 className="text-center text-primary fw-bold mb-4">Applications</h2>
+//           <div className="row justify-content-center">
+//             <div className="col-md-8">
+//               <ul className="list-group list-group-flush fs-5">
+//                 <li className="list-group-item">Soap & Detergent Manufacturing</li>
+//                 <li className="list-group-item">Water Purification and Treatment</li>
+//                 <li className="list-group-item">Textile Dyeing and Scouring</li>
+//                 <li className="list-group-item">Pulp and Paper Processing</li>
+//                 <li className="list-group-item">Petrochemical Industry Processes</li>
+//               </ul>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* ✅ Packaging & Delivery */}
+//       <section className="py-5 bg-light">
+//         <div className="container">
+//           <h2 className="text-center text-primary fw-bold mb-4">Packaging & Delivery Options</h2>
+//           <div className="row justify-content-center">
+//             <div className="col-md-8">
+//               <ul className="list-group list-group-flush fs-5">
+//                 <li className="list-group-item">25 kg PE-lined PP bags</li>
+//                 <li className="list-group-item">50 kg UN-approved drums</li>
+//                 <li className="list-group-item">Flexible loading: palletized or bulk</li>
+//                 <li className="list-group-item">Delivery Time: 1–2 weeks globally</li>
+//                 <li className="list-group-item">Logistics Support: Export documents & MSDS</li>
+//               </ul>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* ✅ Quality & Compliance */}
+//       <section className="py-5">
+//         <div className="container">
+//           <h2 className="text-center text-primary fw-bold mb-4">Quality & Compliance Notes</h2>
+//           <div className="row justify-content-center">
+//             <div className="col-md-10">
+//               <p className="lead text-center">
+//                 Our Caustic Soda Flakes are manufactured under strict ISO-certified quality management systems.
+//                 Each batch is tested for purity and consistency. We ensure compliance with international regulations including REACH and provide full traceability for export documentation and MSDS.
+//               </p>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+//       <Header/>
+//       {/* ✅ Request a Quote */}
+//       <Contact />
+
+//       {/* ✅ Footer */}
+//       <Footer />
+//     </>
 //   );
 // };
 
 // export default Caustic;
 
 import React from 'react';
-import Seo from "../../components/seo";
-import SolutionsTemplate from "../../components/solutionTemplate";
-import { CausticSodaFlakesMeta } from "../../data/metaData";
-
-// ✅ Placeholder image URLs (no need to import local images)
-const placeholderBanner = "https://via.placeholder.com/1200x400?text=Caustic+Soda+Flakes+Banner";
-const placeholderMain = "https://via.placeholder.com/590x450?text=Main+Image";
-const placeholderVertical1 = "https://via.placeholder.com/400x300?text=Image+1";
-const placeholderVertical2 = "https://via.placeholder.com/400x300?text=Image+2";
-const placeholderVertical3 = "https://via.placeholder.com/400x300?text=Image+3";
-const placeholderService = "https://via.placeholder.com/100x100?text=Icon";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Seo from '../../components/seo';
+import Footer from '../../components/footer';
+import Contact from '../../components/contact';
+import { CausticSodaFlakesMeta } from '../../data/metaData';
 
 const Caustic = () => {
   return (
     <>
       <Seo meta={CausticSodaFlakesMeta} />
-      <SolutionsTemplate
-        productName="Caustic Soda Flakes"
-        bannerSection={{
-          title: "Caustic Soda Flakes",
-          subtitle: "High-purity Sodium Hydroxide used in detergent, textile, and chemical industries.",
-          img: placeholderBanner,
+      
+
+      {/* ✅ Hero-style section with description */}
+      <section
+        className="hero-section d-flex align-items-center"
+        style={{
+          paddingTop: '100px',
+          minHeight: '100vh',
+          background: 'linear-gradient(135deg, #005b96, #6db3f2)',
+          paddingBottom: '60px',
         }}
-        aboutSection={{
-          img: placeholderMain,
-          desc: "Caustic Soda Flakes (NaOH) are essential in chemical, textile, detergent, and pulp industries due to their strong alkalinity and reactivity.",
-          title: "Caustic Soda Applications",
-          bullets: [
-            "Used in soap & detergent manufacturing",
-            "Water purification and treatment",
-            "Textile dyeing and scouring",
-            "Pulp and paper processing",
-          ],
-        }}
-        verticalImages={[placeholderVertical1, placeholderVertical2, placeholderVertical3]}
-        specification={[
-          { label: "Purity", value: "≥ 99%" },
-          { label: "Appearance", value: "White Flakes" },
-          { label: "CAS No.", value: "1310-73-2" },
-          { label: "HS Code", value: "2815.11" },
-        ]}
-        application={[
-          "Textile Processing",
-          "Soap and Detergent Manufacturing",
-          "Water Treatment Plants",
-          "Pulp and Paper Industry",
-        ]}
-        packaging="25 kg PE-lined PP bags / 50 kg drums. Prompt global delivery in 1–2 weeks."
-        quality="Produced in ISO-certified facilities. Compliant with REACH and SGS standards."
-        otherServices={[
-          {
-            img: placeholderService,
-            title: "Custom Formulations",
-            desc: "Tailored chemical concentrations based on industry needs.",
-          },
-          {
-            img: placeholderService,
-            title: "Technical Support",
-            desc: "Expert advice for optimal chemical use and handling.",
-          },
-          {
-            img: placeholderService,
-            title: "Bulk Logistics",
-            desc: "Secure and timely delivery across global ports.",
-          },
-        ]}
-      />
+      >
+        <div className="container">
+          <div className="row align-items-center">
+            {/* Left - Content */}
+            <div className="col-md-6 text-white text-center text-md-start">
+              <h1 className="display-5 fw-bold mb-3" style={{ lineHeight: '1.3' }}>
+                Caustic Soda Flakes (NaOH)
+              </h1>
+              <p className="lead text-light">
+                High-purity Sodium Hydroxide used in detergent, textile, water treatment, and paper industries.
+                Manufactured in ISO-certified facilities, compliant with REACH & SGS standards.
+              </p>
+            </div>
+
+            {/* Right - Styled Box Instead of Image */}
+            <div className="col-md-6 text-center">
+              <div
+                style={{
+                  height: '400px',
+                  width: '100%',
+                  backgroundColor: '#ffffff33',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  borderRadius: '12px',
+                  boxShadow: '0 4px 16px rgba(0,0,0,0.2)',
+                  color: '#fff',
+                  fontSize: '1.25rem',
+                  fontWeight: '500',
+                }}
+              >
+                Caustic Soda Flakes Packaging Preview
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ✅ Specifications / MSDS */}
+      <section className="py-5 bg-light">
+        <div className="container">
+          <h2 className="text-center text-primary fw-bold mb-4">Specifications & MSDS</h2>
+          <div className="row align-items-center">
+            {/* Left - Specs */}
+            <div className="col-md-6">
+              <ul className="list-group list-group-flush fs-5">
+                <li className="list-group-item">Purity: ≥ 99%</li>
+                <li className="list-group-item">Appearance: White Flakes</li>
+                <li className="list-group-item">CAS No.: 1310-73-2</li>
+                <li className="list-group-item">HS Code: 2815.11</li>
+                <li className="list-group-item">MSDS: Available Upon Request</li>
+                <li className="list-group-item">Certifications: ISO, REACH, SGS Compliant</li>
+              </ul>
+            </div>
+
+            {/* Right - Styled Box Instead of Image */}
+            <div className="col-md-6 text-center">
+              <div
+                style={{
+                  height: '300px',
+                  backgroundColor: '#e0e0e0',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  borderRadius: '12px',
+                  fontSize: '1.2rem',
+                  color: '#555',
+                  boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+                }}
+              >
+                Caustic Soda Packaging Visual
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ✅ Applications */}
+      <section className="py-5">
+        <div className="container">
+          <h2 className="text-center text-primary fw-bold mb-4">Applications</h2>
+          <div className="row justify-content-center">
+            <div className="col-md-8">
+              <ul className="list-group list-group-flush fs-5">
+                <li className="list-group-item">Soap & Detergent Manufacturing</li>
+                <li className="list-group-item">Water Purification and Treatment</li>
+                <li className="list-group-item">Textile Dyeing and Scouring</li>
+                <li className="list-group-item">Pulp and Paper Processing</li>
+                <li className="list-group-item">Petrochemical Industry Processes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ✅ Packaging & Delivery */}
+      <section className="py-5 bg-light">
+        <div className="container">
+          <h2 className="text-center text-primary fw-bold mb-4">Packaging & Delivery Options</h2>
+          <div className="row justify-content-center">
+            <div className="col-md-8">
+              <ul className="list-group list-group-flush fs-5">
+                <li className="list-group-item">25 kg PE-lined PP bags</li>
+                <li className="list-group-item">50 kg UN-approved drums</li>
+                <li className="list-group-item">Flexible loading: palletized or bulk</li>
+                <li className="list-group-item">Delivery Time: 1–2 weeks globally</li>
+                <li className="list-group-item">Logistics Support: Export documents & MSDS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ✅ Quality & Compliance */}
+      <section className="py-5">
+        <div className="container">
+          <h2 className="text-center text-primary fw-bold mb-4">Quality & Compliance Notes</h2>
+          <div className="row justify-content-center">
+            <div className="col-md-10">
+              <p className="lead text-center">
+                Our Caustic Soda Flakes are manufactured under strict ISO-certified quality management systems.
+                Each batch is tested for purity and consistency. We ensure compliance with international regulations including REACH and provide full traceability for export documentation and MSDS.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ✅ Contact / Quote Form */}
+      <Contact />
+
+      {/* ✅ Footer */}
+      <Footer />
     </>
   );
 };
 
 export default Caustic;
+

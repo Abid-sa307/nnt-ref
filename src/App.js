@@ -24,7 +24,7 @@ import Header from './components/header';
 import Home from './components/home';
 import IndustriesServed from './components/IndustriesServed';
 import QualityAssurance from './components/qualityassurance';
-
+import Contact from './components/contact';
 
 import CausticSoda from './components/ourproducts/Caustic';
 import BleachingEarth from './components/ourproducts/Bleaching';
@@ -38,6 +38,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/industries" element={<IndustriesServed />} />
           <Route path="/our-products/caustic-soda" element={<CausticSoda />} />
           <Route path="/our-products/bleaching-earth" element={<BleachingEarth />} />
