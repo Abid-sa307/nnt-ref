@@ -24,8 +24,8 @@ import Header from './components/header';
 import Home from './components/home';
 import IndustriesServed from './components/IndustriesServed';
 import QualityAssurance from './components/qualityassurance';
-import Contact from './components/contact';
-
+import Contact from './pages/contact-us';
+import AboutUs from './pages/about-us';
 import CausticSoda from './components/ourproducts/Caustic';
 import BleachingEarth from './components/ourproducts/Bleaching';
 import FilterFlowAid from './components/ourproducts/Filter';
@@ -45,6 +45,8 @@ function App() {
           <Route path="/our-products/filter-flow-aid" element={<FilterFlowAid />} />
           <Route path="/our-products/citric-acid" element={<CitricAcid />} />
           <Route path="/quality-assurance" element={<QualityAssurance />} />
+          <Route path="/about-us" element={<AboutUs />} />
+
         </Routes>
       </Router>
     </div>

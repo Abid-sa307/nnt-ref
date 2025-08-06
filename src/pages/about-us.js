@@ -1,126 +1,295 @@
 // import React from 'react';
-// import Header from '../components/header';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import Seo from '../components/seo';
 // import Footer from '../components/footer';
 // import Contact from '../components/contact';
-//  import Seo from '../component/seo';
-// import Brand from '../component/Brand';
-
-//  import bannerImage from '../Assests/about-us-banner.jpg'; // make sure this file exists
-//  import AboutMainImg from '../Assests/about-main.jpg'; // make sure this file exists
-
-//  import { AboutUsMeta } from '../data/metaData';
-
-// import { FaBullseye, FaEye, FaFlag, FaCheckDouble } from 'react-icons/fa';
-
-// const OurValuesIcon = <FaCheckDouble size={40} className="text-primary" />;
-// const OurVisionIcon = <FaEye size={40} className="text-success" />;
-// const OurMissionIcon = <FaFlag size={40} className="text-danger" />;
-// const WhyChoseIcon = <FaBullseye size={40} className="text-warning" />;
 
 // const AboutUs = () => {
 //   return (
 //     <>
-//       {/* <Seo
-//         title={AboutUsMeta.title}
-//         description={AboutUsMeta.description}
-//         keywords={AboutUsMeta.keywords}
-//         url={AboutUsMeta.url}
-//       /> */}
+//       <Seo meta={{ title: "About Us - N&T Refinery Clay Supplier" }} />
 
-//       <Header />
-
-//       {/* Banner */}
-//       {/* <div
-//         className="hero-section d-flex align-items-center text-white"
+//       {/* ✅ Hero Section */}
+//       <section
+//         className="hero-section d-flex align-items-center"
 //         style={{
-//           backgroundImage: `url(${bannerImage})`,
-//           backgroundSize: 'cover',
-//           backgroundPosition: 'center',
-//           height: '50vh',
+//           paddingTop: '100px',
+//           minHeight: '100vh',
+//           background: 'linear-gradient(135deg, #005b96, #6db3f2)',
+//           paddingBottom: '60px',
 //         }}
-//       > */}
-//         <div className="container text-center">
-//           <h1 className="display-4 fw-bold">About Us</h1>
-//           <p className="lead">Delivering quality industrial solutions across the globe.</p>
-//         </div>
-//       </div>
-
-//       {/* About Main Section */}
-//       <section className="py-5 bg-light">
+//       >
 //         <div className="container">
 //           <div className="row align-items-center">
+//             {/* Left Content */}
+//             <div className="col-md-6 text-white text-center text-md-start">
+//               <h1 className="display-5 fw-bold mb-3">About N&T Refinery Clay Supplier</h1>
+//               <p className="lead text-light">
+//                 A global leader in high-quality industrial clay solutions, driving sustainability and excellence
+//                 across industries.
+//               </p>
+//             </div>
+
+//             {/* Right Box */}
+//             <div className="col-md-6 text-center">
+//               <div
+//                 style={{
+//                   height: '400px',
+//                   width: '100%',
+//                   backgroundColor: '#ffffff33',
+//                   display: 'flex',
+//                   justifyContent: 'center',
+//                   alignItems: 'center',
+//                   borderRadius: '12px',
+//                   boxShadow: '0 4px 16px rgba(0,0,0,0.2)',
+//                   color: '#fff',
+//                   fontSize: '1.25rem',
+//                   fontWeight: '500',
+//                 }}
+//               >
+//                 Company Overview Visual
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* ✅ Company Background */}
+//       <section className="py-5 bg-light">
+//         <div className="container">
+//           <h2 className="text-center text-primary fw-bold mb-4">Company Background</h2>
+//           <p className="lead text-center">
+//             N&T Refinery Clay Supplier has been a trusted name in industrial clay products for over a decade.
+//             With a presence in multiple countries, we serve clients across various sectors including oil refining,
+//             food processing, and environmental remediation.
+//           </p>
+//         </div>
+//       </section>
+
+//       {/* ✅ Mission & Vision */}
+//       <section className="py-5">
+//         <div className="container">
+//           <h2 className="text-center text-primary fw-bold mb-4">Mission & Vision</h2>
+//           <div className="row">
 //             <div className="col-md-6">
-//               <h2 className="fw-bold mb-3">Who We Are</h2>
-//               <p className="lead">
-//                 N&T is a trusted global supplier of industrial chemicals, raw materials, and cementitious solutions. With a legacy of excellence, we serve over 50 countries, providing quality products and unmatched logistics support.
+//               <h5 className="fw-bold">Our Mission</h5>
+//               <p>
+//                 To deliver premium quality refinery clay products that enhance industrial processes while promoting
+//                 environmental responsibility.
 //               </p>
 //             </div>
 //             <div className="col-md-6">
-//               <img
-//                 src={AboutMainImg}
-//                 alt="Global supplier of industrial chemicals"
-//                 className="img-fluid rounded shadow"
-//               />
+//               <h5 className="fw-bold">Our Vision</h5>
+//               <p>
+//                 To be the world’s most reliable and innovative supplier of sustainable clay-based solutions for
+//                 industrial and environmental use.
+//               </p>
 //             </div>
 //           </div>
 //         </div>
 //       </section>
 
-//       {/* Our Vision, Mission, Values */}
-//       <section className="py-5">
-//         <div className="container text-center">
-//           <div className="row g-4">
-//             <div className="col-md-4">
-//               {OurVisionIcon}
-//               <h4 className="mt-3">Our Vision</h4>
-//               <p>To be a globally recognized brand for reliability and sustainability in industrial supply.</p>
-//             </div>
-//             <div className="col-md-4">
-//               {OurMissionIcon}
-//               <h4 className="mt-3">Our Mission</h4>
-//               <p>To deliver superior products and services while exceeding client expectations every time.</p>
-//             </div>
-//             <div className="col-md-4">
-//               {OurValuesIcon}
-//               <h4 className="mt-3">Our Values</h4>
-//               <p>Integrity, innovation, quality, and long-term partnerships guide all our actions.</p>
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* Why Choose Us */}
+//       {/* ✅ Global Presence */}
 //       <section className="py-5 bg-light">
-//         <div className="container text-center">
-//           <h2 className="mb-5 fw-bold">Why Choose Us</h2>
-//           <div className="row g-4">
-//             {[
-//               '50+ Countries Served',
-//               'ISO-Certified Processes',
-//               'Customized Packaging',
-//               'Reliable Logistics Network',
-//               'Prompt Support & Response',
-//               'Decades of Industry Experience',
-//             ].map((point, idx) => (
-//               <div className="col-md-4" key={idx}>
-//                 {WhyChoseIcon}
-//                 <h5 className="mt-3">{point}</h5>
-//               </div>
-//             ))}
-//           </div>
+//         <div className="container">
+//           <h2 className="text-center text-primary fw-bold mb-4">Global Presence</h2>
+//           <p className="lead text-center">
+//             With operational hubs and partners across Asia, Europe, and the Middle East, we ensure timely delivery
+//             and local expertise wherever our clients are located.
+//           </p>
 //         </div>
 //       </section>
 
-//       {/* Brand Logos */}
-//       <Brand />
+//       {/* ✅ Factory/Logistics Capabilities */}
+//       <section className="py-5">
+//         <div className="container">
+//           <h2 className="text-center text-primary fw-bold mb-4">Factory & Logistics Capabilities</h2>
+//           <p className="lead text-center">
+//             Our state-of-the-art manufacturing facility and logistics network allow for scalable production and
+//             efficient global distribution. We maintain ISO-certified processes and export-compliant documentation.
+//           </p>
+//         </div>
+//       </section>
 
-//       {/* Contact CTA */}
+//       {/* ✅ Leadership Team */}
+//       <section className="py-5 bg-light">
+//         <div className="container">
+//           <h2 className="text-center text-primary fw-bold mb-4">Leadership Team</h2>
+//           <p className="lead text-center">
+//             N&T is led by industry veterans with decades of experience in industrial chemistry, operations, and
+//             international business. Our team is driven by innovation and customer-centric values.
+//           </p>
+//         </div>
+//       </section>
+
+//       {/* ✅ Partner Brands */}
+//       <section className="py-5">
+//         <div className="container">
+//           <h2 className="text-center text-primary fw-bold mb-4">Partner Brands</h2>
+//           <p className="lead text-center">
+//             We collaborate with globally recognized brands in refining and environmental sectors to deliver
+//             best-in-class solutions. Our strategic alliances enable shared growth and sustainable impact.
+//           </p>
+//         </div>
+//       </section>
+
+//       {/* ✅ Contact Form */}
 //       <Contact />
 
-//       {/* Footer */}
+//       {/* ✅ Footer */}
 //       <Footer />
 //     </>
 //   );
 // };
 
 // export default AboutUs;
+
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Seo from '../components/seo';
+import Footer from '../components/footer';
+import Contact from '../components/contact';
+
+const AboutUs = () => {
+  return (
+    <>
+      {/* ✅ Meta Tags for SEO */}
+      <Seo
+        meta={{
+          title: 'About Us - N&T Refinery Clay Supplier',
+          description: 'Learn about N&T Refinery Clay Supplier: our mission, global reach, factory logistics, leadership, and partnerships driving innovation in industrial clay solutions.',
+          keywords: 'N&T Refinery Clay, industrial clay supplier, refinery clay, bleaching earth, global supplier, logistics, ISO certified, partner brands',
+        }}
+      />
+
+      {/* ✅ Hero Section */}
+      <section
+        className="hero-section d-flex align-items-center"
+        style={{
+          paddingTop: '100px',
+          minHeight: '100vh',
+          background: 'linear-gradient(135deg, #005b96, #6db3f2)',
+          paddingBottom: '60px',
+        }}
+      >
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-md-6 text-white text-center text-md-start">
+              <h1 className="display-5 fw-bold mb-3">About N&T Refinery Clay Supplier</h1>
+              <p className="lead text-light">
+                A global leader in high-quality industrial clay solutions, driving sustainability and excellence
+                across industries.
+              </p>
+            </div>
+            <div className="col-md-6 text-center">
+              <div
+                style={{
+                  height: '400px',
+                  width: '100%',
+                  backgroundColor: '#ffffff33',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  borderRadius: '12px',
+                  boxShadow: '0 4px 16px rgba(0,0,0,0.2)',
+                  color: '#fff',
+                  fontSize: '1.25rem',
+                  fontWeight: '500',
+                }}
+              >
+                Company Overview Visual
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ✅ Company Background */}
+      <section className="py-5 bg-light">
+        <div className="container">
+          <h2 className="text-center text-primary fw-bold mb-4">Company Background</h2>
+          <p className="lead text-center">
+            N&T Refinery Clay Supplier has been a trusted name in industrial clay products for over a decade.
+            With a presence in multiple countries, we serve clients across various sectors including oil refining,
+            food processing, and environmental remediation.
+          </p>
+        </div>
+      </section>
+
+      {/* ✅ Mission & Vision */}
+      <section className="py-5">
+        <div className="container">
+          <h2 className="text-center text-primary fw-bold mb-4">Mission & Vision</h2>
+          <div className="row">
+            <div className="col-md-6">
+              <h5 className="fw-bold">Our Mission</h5>
+              <p>
+                To deliver premium quality refinery clay products that enhance industrial processes while promoting
+                environmental responsibility.
+              </p>
+            </div>
+            <div className="col-md-6">
+              <h5 className="fw-bold">Our Vision</h5>
+              <p>
+                To be the world’s most reliable and innovative supplier of sustainable clay-based solutions for
+                industrial and environmental use.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ✅ Global Presence */}
+      <section className="py-5 bg-light">
+        <div className="container">
+          <h2 className="text-center text-primary fw-bold mb-4">Global Presence</h2>
+          <p className="lead text-center">
+            With operational hubs and partners across Asia, Europe, and the Middle East, we ensure timely delivery
+            and local expertise wherever our clients are located.
+          </p>
+        </div>
+      </section>
+
+      {/* ✅ Factory/Logistics Capabilities */}
+      <section className="py-5">
+        <div className="container">
+          <h2 className="text-center text-primary fw-bold mb-4">Factory & Logistics Capabilities</h2>
+          <p className="lead text-center">
+            Our state-of-the-art manufacturing facility and logistics network allow for scalable production and
+            efficient global distribution. We maintain ISO-certified processes and export-compliant documentation.
+          </p>
+        </div>
+      </section>
+
+      {/* ✅ Leadership Team */}
+      <section className="py-5 bg-light">
+        <div className="container">
+          <h2 className="text-center text-primary fw-bold mb-4">Leadership Team</h2>
+          <p className="lead text-center">
+            N&T is led by industry veterans with decades of experience in industrial chemistry, operations, and
+            international business. Our team is driven by innovation and customer-centric values.
+          </p>
+        </div>
+      </section>
+
+      {/* ✅ Partner Brands */}
+      <section className="py-5">
+        <div className="container">
+          <h2 className="text-center text-primary fw-bold mb-4">Partner Brands</h2>
+          <p className="lead text-center">
+            We collaborate with globally recognized brands in refining and environmental sectors to deliver
+            best-in-class solutions. Our strategic alliances enable shared growth and sustainable impact.
+          </p>
+        </div>
+      </section>
+
+      {/* ✅ Contact Form */}
+      <Contact />
+
+      {/* ✅ Footer */}
+      <Footer />
+    </>
+  );
+};
+
+export default AboutUs;

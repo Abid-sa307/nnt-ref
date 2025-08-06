@@ -256,12 +256,20 @@ const Header = () => {
                     Company
                   </button>
                   <ul className="dropdown-menu">
-                    <li><Link to="/about" className="dropdown-item">About Us</Link></li>
+                    {/* <li><Link to="/about" className="dropdown-item">About Us</Link></li> */}
+                    <li className="nav-item">
+                  <Link to="/about-us" className="dropdown-item">AboutUs</Link>
+                </li>
                     <li><Link to="/blog" className="dropdown-item">Blog / Insights</Link></li>
                   </ul>
                 </li>
                 <li className="nav-item">
-  <a className="btn btn-light text-primary fw-semibold px-4" href="#contact">Contact Us</a>
+  {/* <a className="btn btn-light text-primary fw-semibold px-4" href="#contact">Contact Us</a> */}
+
+  
+  <Link to="/contact">
+    <button className="btn btn-primary">Contact Us</button>
+  </Link>
 </li>
 
 
