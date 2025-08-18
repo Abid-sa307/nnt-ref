@@ -14,3 +14,24 @@
   font-weight: 600;
   border-radius: 8px;
 }
+
+/* index.css or App.css */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+}
+ */
+/* index.css or App.css */
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Optional: Override Bootstrap default font on all elements */
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+

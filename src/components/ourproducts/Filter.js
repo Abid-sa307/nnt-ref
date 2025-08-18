@@ -4,6 +4,7 @@ import Seo from '../../components/seo';
 import Footer from '../../components/footer';
 import Contact from '../../components/contact';
 import { FilterFlowAidMeta } from '../../data/metaData'; // Add this in your metadata file
+import WhyChooseUs from '../Whychooseus';
 
 const Filter = () => {
   return (
@@ -29,7 +30,7 @@ const Filter = () => {
               </h1>
               <p className="lead text-light">
                 High-purity filtration medium for precoat and body feed applications in liquid filtration systems.
-                Designed for industrial, food-grade, and pharmaceutical use.
+                Designed for industrial, food-grade and pharmaceutical use.
               </p>
             </div>
 
@@ -64,15 +65,15 @@ const Filter = () => {
 
       {/* Left - Content */}
       <div className="col-md-6">
-        <h2 className="fw-bold mb-4 text-primary">
+        <h2 className="fw-bold mb-4 " style={{ color: '#3366cc' }}>
           High-Performance Filter Flow Aid for Superior Filtration
         </h2>
         <p className="text-secondary mb-4">
-          Our Filter Aid is a fine-grade filtration medium designed to enhance the clarity and purity of liquids across food, pharmaceutical, and industrial applications. It ensures efficient solid-liquid separation with minimal product loss.
+          Our Filter Aid is a fine-grade filtration medium designed to enhance the clarity and purity of liquids across food, pharmaceutical and industrial applications. It ensures efficient solid-liquid separation with minimal product loss.
         </p>
         <ul className="list-unstyled text-secondary fs-5">
           <li className="mb-2">• Neutral pH and low moisture content for consistent filtration.</li>
-          <li className="mb-2">• Suitable for edible oil, beverage, and chemical filtration systems.</li>
+          <li className="mb-2">• Suitable for edible oil, beverage and chemical filtration systems.</li>
           <li className="mb-2">• Compliant with ISO and Food Grade safety standards.</li>
         </ul>
       </div>
@@ -129,7 +130,7 @@ const Filter = () => {
 {/* ✅ Specifications / MSDS */}
 <section className="py-5 bg-light">
   <div className="container">
-    <h2 className="text-center text-primary fw-bold mb-5">Specifications & MSDS</h2>
+    <h2 className="text-center  fw-bold mb-5" style={{ color: '#3366cc' }}>Specifications & MSDS</h2>
     <div className="row g-4 align-items-center">
       
       {/* Left - Specs List */}
@@ -202,120 +203,125 @@ const Filter = () => {
   </div>
 </section>
 
-      {/* ✅ Applications */}
-      <section className="py-5">
-        <div className="container">
-          <h2 className="text-center text-primary fw-bold mb-4">Applications</h2>
-          <div className="row justify-content-center">
-            <div className="col-md-8">
-              <ul className="list-group list-group-flush fs-5">
-                <li className="list-group-item">Edible oil filtration</li>
-                <li className="list-group-item">Beverage and juice clarification</li>
-                <li className="list-group-item">Pharmaceutical liquids</li>
-                <li className="list-group-item">Wastewater treatment</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-     
-      {/* ✅ Packaging & Delivery Options
+    {/* ✅ Applications - Styled UI */}
 <section className="py-5 bg-light">
-  <div className="container">
-    <h2 className="text-center text-primary fw-bold mb-5">Packaging & Delivery Options</h2>
+  <style>
+    {`
+      .custom-list-item {
+        background-color: #ffffff;
+        padding: 15px 20px;
+        transition: all 0.3s ease;
+        position: relative;
+      }
 
-    <div className="row g-4 justify-content-center">
-      {[
-        "10 kg, 25 kg bags or custom bulk packaging",
-        "Delivery Time: 7–10 days worldwide",
-        "Packaging Type: PE-lined, moisture-protected",
-        "Export Support: Customs & logistics included"
-      ].map((item, idx) => (
-        <div key={idx} className="col-md-6">
-          <div className="card h-100 shadow-sm border-0 rounded-4">
-            <div className="card-body d-flex align-items-center">
-              <div
-                className="me-3 d-flex justify-content-center align-items-center"
-                style={{
-                  width: '50px',
-                  height: '50px',
-                  backgroundColor: '#0d6efd22',
-                  borderRadius: '50%',
-                  fontSize: '1.5rem',
-                  color: '#0d6efd'
-                }}
-              >
-                📦
-              </div>
-              <h5 className="mb-0 text-secondary">{item}</h5>
-            </div>
-          </div>
-        </div>
-      ))}
+      .custom-list-item:hover {
+        background-color: #f0f8ff;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 18px rgba(0, 123, 255, 0.1);
+        cursor: default;
+      }
+
+      .custom-list .list-group-item {
+        font-size: 1.05rem;
+        font-weight: 500;
+        color: #333;
+        border-left: 4px solid #007bff;
+      }
+
+      .custom-list-item::before {
+        content: '';
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: #007bff;
+        border-radius: 50%;
+        margin-right: 12px;
+      }
+    `}
+  </style>
+
+  <div className="container">
+    <h2 className="text-center fw-bold mb-5" style={{ color: '#3366cc' }}>
+      Applications
+    </h2>
+
+    <div className="row justify-content-center">
+      <div className="col-md-10 col-lg-8">
+        <ul className="list-group list-group-flush custom-list">
+          {[
+            "Edible oil filtration",
+            "Beverage and juice clarification",
+            "Pharmaceutical liquids",
+            "Wastewater treatment",
+          ].map((item, index) => (
+            <li
+              key={index}
+              className="list-group-item d-flex align-items-center shadow-sm mb-3 rounded border-0 custom-list-item"
+            >
+              <span className="fs-5">{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   </div>
 </section>
- */}
 
- {/* ✅ Packaging & Delivery Options - Filter Flow Aid */}
+{/* ✅ Packaging & Delivery Options - Styled UI */}
 <section className="py-5 bg-light">
+  <style>
+    {`
+      .package-card {
+        transition: all 0.3s ease;
+        border-left: 5px solid #0d6efd;
+        background-color: #fff;
+        padding: 20px 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      }
+
+      .package-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
+        background-color: #f8faff;
+      }
+
+      .package-text {
+        font-size: 1.1rem;
+        color: #444;
+        font-weight: 500;
+      }
+    `}
+  </style>
+
   <div className="container">
-    <h2 className="text-center text-primary fw-bold mb-5">
-      📦 Packaging & Delivery Options
+    <h2 className="text-center fw-bold mb-5" style={{ color: '#3366cc' }}>
+      Packaging & Delivery Options
     </h2>
 
     <div className="row g-4 justify-content-center">
       {[
-        {
-          icon: "🧃",
-          text: "10 kg & 25 kg moisture-resistant PE-lined paper bags",
-        },
-        {
-          icon: "🚚",
-          text: "Prompt global delivery: 7–10 working days",
-        },
-        {
-          icon: "🛡️",
-          text: "Packaging designed for long shelf-life and protection",
-        },
-        {
-          icon: "🌐",
-          text: "Export documentation and worldwide logistics support",
-        },
-      ].map((item, idx) => (
-        <div key={idx} className="col-lg-6 col-md-6">
-          <div className="card h-100 border-0 shadow-lg rounded-4 bg-white hover-effect">
-            <div className="card-body d-flex align-items-center">
-              <div
-                className="me-4 d-flex justify-content-center align-items-center flex-shrink-0"
-                style={{
-                  width: '60px',
-                  height: '60px',
-                  backgroundColor: '#e7f1ff',
-                  borderRadius: '50%',
-                  fontSize: '1.8rem',
-                  color: '#0d6efd',
-                }}
-              >
-                {item.icon}
-              </div>
-              <div>
-                <p className="mb-0 fw-semibold text-secondary fs-5">{item.text}</p>
-              </div>
-            </div>
+        "10 kg & 25 kg moisture-resistant PE-lined paper bags",
+        "Prompt global delivery: 7–10 working days",
+        "Packaging designed for long shelf-life and protection",
+        "Export documentation and worldwide logistics support",
+      ].map((text, idx) => (
+        <div key={idx} className="col-md-6">
+          <div className="package-card h-100">
+            <p className="package-text mb-0">{text}</p>
           </div>
         </div>
       ))}
     </div>
   </div>
 </section>
+
 
 
       {/* ✅ Quality & Compliance */}
       <section className="py-5">
         <div className="container">
-          <h2 className="text-center text-primary fw-bold mb-4">Quality & Compliance Notes</h2>
+          <h2 className="text-center  fw-bold mb-4" style={{ color: '#3366cc' }}>Quality & Compliance Notes</h2>
           <div className="row justify-content-center">
             <div className="col-md-10">
               <p className="lead text-center">
@@ -326,6 +332,47 @@ const Filter = () => {
           </div>
         </div>
       </section>
+
+      {/* ✅ Checklist Before You Buy */}
+<section className="py-5" style={{ background: '#f8fafd' }}>
+  <div className="container">
+    <h2 className="text-center fw-bold mb-5" style={{ color: "#3366cc" }}>
+      Checklist Before You Buy
+    </h2>
+
+    <div className="row justify-content-center">
+      <div className="col-md-10">
+        <div className="card border-0 shadow-sm p-4 rounded-4" style={{ background: '#ffffff' }}>
+          {[
+            { label: "FCC / BP / USP compliance" },
+            { label: "Purity", value: "≥ 99.5%" },
+            { label: "Granule type", value: "Coarse or fine mesh" },
+            { label: "Certification", value: "Allergen-free" },
+          ].map((item, index) => (
+            <div key={index} className="d-flex align-items-start gap-3 mb-4">
+              <div
+                className="rounded-circle flex-shrink-0"
+                style={{
+                  width: '12px',
+                  height: '12px',
+                  marginTop: '6px',
+                  backgroundColor: '#3366cc',
+                }}
+              ></div>
+              <div>
+                <h6 className="mb-1 fw-semibold text-dark">{item.label}</h6>
+                {item.value && <p className="mb-0 text-muted">{item.value}</p>}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <WhyChooseUs />
 
       {/* ✅ Contact / Quote Form */}
       <Contact />

@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { ArrowRight } from 'react-bootstrap-icons';
 import Footer from '../components/footer';
+import Seo from "../components/seo";
+import { ContactMeta } from "../data/metaData"; // adjust path if needed
+
 import * as yup from 'yup';
 import { useFormik } from 'formik';
 import axios from 'axios';
@@ -87,7 +90,8 @@ const Contact = () => {
 
   return (
     
-    <>
+    <> 
+    <Seo meta={ContactMeta} />
     //<section style={{ fontFamily: 'Inter, sans-serif', backgroundColor: '#fff', padding: '3rem 0' }}></section>
     <section id="contact" style={{ fontFamily: 'Inter, sans-serif', backgroundColor: '#fff', padding: '3rem 0' }}>
 
@@ -95,7 +99,7 @@ const Contact = () => {
         <Row className="align-items-start">
           {/* LEFT FORM */}
           <Col lg={7}>
-            <h2 style={{ color: '#0d6efd', fontWeight: 700, fontSize: '2.2rem', marginBottom: '1.5rem' }}>
+            <h2 style={{ color: '#3666cc', fontWeight: 700, fontSize: '2.2rem', marginBottom: '1.5rem' }}>
               Ready to step forward
             </h2>
             <Form onSubmit={formik.handleSubmit} className="row g-3">
@@ -209,7 +213,7 @@ const Contact = () => {
               ></iframe>
             </div>
 
-            <div className="mb-5">
+            {/* <div className="mb-5">
   <h5 className="mb-3 fw-bold">What Our Customers Say</h5>
 
   <div className="p-3 border rounded shadow-sm bg-light">
@@ -229,18 +233,18 @@ packaging
   </div>
 
   
-</div>
+</div> */}
 
 
             {/* Clickable Contact Info */}
             <div className="rounded shadow-sm p-3 bg-light">
               <a href="tel:+919687431287" className="d-flex align-items-start mb-3 text-decoration-none text-dark">
                 <div className="me-2 bg-success bg-opacity-10 p-2 rounded-circle">📞</div>
-                <div className="fw-semibold">+91 9687431287</div>
+                <div className="fw-semibold">+91 9723392753</div>
               </a>
               <a href="mailto:info@nntrefinery.com" className="d-flex align-items-start mb-3 text-decoration-none text-dark">
                 <div className="me-2 bg-success bg-opacity-10 p-2 rounded-circle">✉️</div>
-                <div className="fw-semibold">info@nntrefinery.com</div>
+                <div className="fw-semibold">mahemud@nandtengitech.com</div>
               </a>
               <a
                 href="https://www.google.com/maps?q=3rd+Floor,+Diamond+Complex,+SH+41,+Industrial+Area,+Chhapi,+North+Gujarat,+India+385210"

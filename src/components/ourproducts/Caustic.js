@@ -12,102 +12,6 @@
 //     <>
 //       <Seo meta={CausticSodaFlakesMeta} />
 
-//       {/* ✅ Hero-style section */}
-//       <section
-//         className="hero-section d-flex align-items-center"
-//         style={{
-//           paddingTop: '100px',
-//           minHeight: '100vh',
-//           background: 'linear-gradient(135deg, #005b96, #6db3f2)',
-//           paddingBottom: '60px',
-//         }}
-//       >
-//         <div className="container">
-//           <div className="row align-items-center">
-//             {/* Left - Content */}
-//             <div className="col-md-6 text-white text-center text-md-start">
-//               <h1 className="display-5 fw-bold mb-3" style={{ lineHeight: '1.3', color: '#fff' }}>
-//                 Caustic Soda Flakes (NaOH)
-//               </h1>
-//               <p className="lead" style={{ color: '#e0e0e0' }}>
-//                 High-purity Sodium Hydroxide used in detergent, textile, water treatment, and paper industries. 
-//                 Manufactured in ISO-certified facilities, compliant with REACH & SGS standards.
-//               </p>
-//               <ul className="text-start text-light fs-6 mt-3">
-//                 <li>Soap & Detergent Manufacturing</li>
-//                 <li>Water Purification and Treatment</li>
-//                 <li>Textile Dyeing and Scouring</li>
-//                 <li>Pulp and Paper Processing</li>
-//               </ul>
-//             </div>
-
-//             {/* Right - Image */}
-//             <div className="col-md-6 text-center">
-//               <img
-//                 src="https://via.placeholder.com/590x450?text=Caustic+Soda+Flakes"
-//                 alt="Caustic Soda Flakes Packaging"
-//                 className="img-fluid"
-//                 style={{
-//                   maxHeight: '400px',
-//                   objectFit: 'cover',
-//                   borderRadius: '12px',
-//                   boxShadow: '0 4px 16px rgba(0,0,0,0.2)',
-//                   width: '100%',
-//                 }}
-//               />
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* ✅ Specifications & Packaging */}
-//       <section className="py-5 bg-light">
-//         <div className="container">
-//           <h2 className="text-center text-primary fw-bold mb-4">Product Specifications</h2>
-//           <div className="row justify-content-center">
-//             <div className="col-md-6">
-//               <ul className="list-group list-group-flush">
-//                 <li className="list-group-item">Purity: ≥ 99%</li>
-//                 <li className="list-group-item">Appearance: White Flakes</li>
-//                 <li className="list-group-item">CAS No.: 1310-73-2</li>
-//                 <li className="list-group-item">HS Code: 2815.11</li>
-//               </ul>
-//             </div>
-//             <div className="col-md-6">
-//               <ul className="list-group list-group-flush">
-//                 <li className="list-group-item">Packaging: 25 kg PE-lined PP bags / 50 kg drums</li>
-//                 <li className="list-group-item">Delivery: Prompt dispatch in 1–2 weeks</li>
-//                 <li className="list-group-item">Certifications: ISO, REACH, SGS Compliant</li>
-//                 <li className="list-group-item">Support: Custom Formulations & Logistics</li>
-//               </ul>
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* ✅ Contact Section */}
-//       <Contact />
-
-//       {/* ✅ Footer */}
-//       <Footer />
-//     </>
-//   );
-// };
-
-// export default Caustic;
-
-// import React from 'react';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import Seo from '../../components/seo';
-// import Footer from '../../components/footer';
-// import Contact from '../../components/contact';
-// import { CausticSodaFlakesMeta } from '../../data/metaData';
-
-// const Caustic = () => {
-//   return (
-//     <>
-//       <Seo meta={CausticSodaFlakesMeta} />
-
 //       {/* ✅ Hero-style section with description */}
 //       <section
 //         className="hero-section d-flex align-items-center"
@@ -270,7 +174,7 @@
 //                 Caustic Soda Flakes (NaOH)
 //               </h1>
 //               <p className="lead text-light">
-//                 High-purity Sodium Hydroxide used in detergent, textile, water treatment, and paper industries. 
+//                 High-purity Sodium Hydroxide used in detergent, textile, water treatment paper industries. 
 //                 Manufactured in ISO-certified facilities, compliant with REACH & SGS standards.
 //               </p>
 //             </div>
@@ -400,6 +304,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Seo from '../../components/seo';
 import Footer from '../../components/footer';
 import Contact from '../../components/contact';
+import WhyChooseUs from '../Whychooseus';
 import { CausticSodaFlakesMeta } from '../../data/metaData';
 
 const Caustic = () => {
@@ -426,7 +331,7 @@ const Caustic = () => {
                 Caustic Soda Flakes (NaOH)
               </h1>
               <p className="lead text-light">
-                High-purity Sodium Hydroxide used in detergent, textile, water treatment, and paper industries.
+                High-purity Sodium Hydroxide used in detergent, textile, water treatment and paper industries.
                 Manufactured in ISO-certified facilities, compliant with REACH & SGS standards.
               </p>
             </div>
@@ -462,7 +367,8 @@ const Caustic = () => {
 
       {/* Left - Content */}
       <div className="col-md-6">
-        <h2 className="fw-bold mb-4 text-primary">
+        <h2 className="fw-bold mb-4 " style={{ color: '#3366cc' }}
+>
           High-Quality Caustic Soda Flakes From Trusted Manufacturers
         </h2>
         <p className="text-secondary mb-4">
@@ -470,8 +376,8 @@ const Caustic = () => {
         </p>
         <ul className="list-unstyled text-secondary fs-5">
           <li className="mb-2">• Exceptional purity (≥ 99%) for industrial-grade applications.</li>
-          <li className="mb-2">• Compliant with ISO, REACH, and SGS quality benchmarks.</li>
-          <li className="mb-2">• Ideal for textile, water treatment, and detergent sectors.</li>
+          <li className="mb-2">• Compliant with ISO, REACH and SGS quality benchmarks.</li>
+          <li className="mb-2">• Ideal for textile, water treatment and detergent sectors.</li>
         </ul>
       </div>
 
@@ -536,7 +442,8 @@ const Caustic = () => {
     {/* ✅ Specifications / MSDS */}
 <section className="py-5 bg-light">
   <div className="container">
-    <h2 className="text-center text-primary fw-bold mb-5">Specifications & MSDS</h2>
+    <h2 className="text-center  fw-bold mb-5" style={{ color: '#3366cc' }}
+>Specifications & MSDS</h2>
     <div className="row g-4 align-items-center">
       
       {/* Left - Specs List */}
@@ -623,109 +530,123 @@ const Caustic = () => {
 
 
 
-      {/* ✅ Applications */}
-      <section className="py-5">
-        <div className="container">
-          <h2 className="text-center text-primary fw-bold mb-4">Applications</h2>
-          <div className="row justify-content-center">
-            <div className="col-md-8">
-              <ul className="list-group list-group-flush fs-5">
-                <li className="list-group-item">Soap & Detergent Manufacturing</li>
-                <li className="list-group-item">Water Purification and Treatment</li>
-                <li className="list-group-item">Textile Dyeing and Scouring</li>
-                <li className="list-group-item">Pulp and Paper Processing</li>
-                <li className="list-group-item">Petrochemical Industry Processes</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      
-      {/* ✅ Packaging & Delivery Options
+     {/* ✅ Applications - Beautiful Styled */}
 <section className="py-5 bg-light">
-  <div className="container">
-    <h2 className="text-center text-primary fw-bold mb-5">Packaging & Delivery Options</h2>
+  <style>
+    {`
+      .custom-list-item {
+        background-color: #ffffff;
+        padding: 15px 20px;
+        transition: all 0.3s ease;
+        position: relative;
+      }
 
-    <div className="row g-4 justify-content-center">
-      {[
-        "25 kg PE-lined PP bags",
-        "50 kg UN-approved drums",
-        "Flexible loading: palletized or bulk",
-        "Delivery Time: 1–2 weeks globally",
-        "Logistics Support: Export documents & MSDS"
-      ].map((item, idx) => (
-        <div key={idx} className="col-md-6">
-          <div className="card h-100 shadow-sm border-0 rounded-4">
-            <div className="card-body d-flex align-items-center">
-              <div
-                className="me-3 d-flex justify-content-center align-items-center"
-                style={{
-                  width: '50px',
-                  height: '50px',
-                  backgroundColor: '#0d6efd22',
-                  borderRadius: '50%',
-                  fontSize: '1.5rem',
-                  color: '#0d6efd'
-                }}
-              >
-                📦
-              </div>
-              <h5 className="mb-0 text-secondary">{item}</h5>
-            </div>
-          </div>
-        </div>
-      ))}
+      .custom-list-item:hover {
+        background-color: #f0f8ff;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 18px rgba(0, 123, 255, 0.1);
+        cursor: default;
+      }
+
+      .custom-list .list-group-item {
+        font-size: 1.05rem;
+        font-weight: 500;
+        color: #333;
+        border-left: 4px solid #007bff;
+      }
+
+      .custom-list-item::before {
+        content: '';
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: #007bff;
+        border-radius: 50%;
+        margin-right: 12px;
+      }
+    `}
+  </style>
+
+  <div className="container">
+    {/* <h2 className="text-center text-primary fw-bold mb-5">
+      Applications
+    </h2> */}
+
+    <h2
+  className="text-center fw-bold mb-5"
+  style={{ color: '#3366cc' }}
+>
+  Applications
+</h2>
+
+    <div className="row justify-content-center">
+      <div className="col-md-10 col-lg-8">
+        <ul className="list-group list-group-flush custom-list">
+          {[
+            "Soap & Detergent Manufacturing",
+            "Water Purification and Treatment",
+            "Textile Dyeing and Scouring",
+            "Pulp and Paper Processing",
+            "Petrochemical Industry Processes",
+          ].map((item, index) => (
+            <li
+              key={index}
+              className="list-group-item d-flex align-items-center shadow-sm mb-3 rounded border-0 custom-list-item"
+            >
+              <span className="fs-5">{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   </div>
-</section> */}
+</section>
 
-{/* ✅ Packaging & Delivery Options - Caustic Soda Flakes */}
+      
+      
+
+{/* ✅ Packaging & Delivery Options - Styled (No Icons) */}
 <section className="py-5 bg-light">
-  <div className="container">
-    <h2 className="text-center text-primary fw-bold mb-5">
-      📦 Packaging & Delivery Options
-    </h2>
+  <style>
+    {`
+      .package-card {
+        transition: all 0.3s ease;
+        border-left: 5px solid #0d6efd;
+        background-color: #fff;
+        padding: 20px 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      }
 
+      .package-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
+        background-color: #f8faff;
+      }
+
+      .package-text {
+        font-size: 1.1rem;
+        color: #444;
+        font-weight: 500;
+      }
+    `}
+  </style>
+
+  <div className="container">
+    <h2 className="text-center  fw-bold mb-5" style={{ color: '#3366cc' }}
+>Packaging & Delivery Options
+    </h2>
+  
     <div className="row g-4 justify-content-center">
       {[
-        {
-          icon: "🧃",
-          text: "25 kg PE-lined PP bags with double-layer moisture protection",
-        },
-        {
-          icon: "🚚",
-          text: "Fast international delivery within 7–14 days",
-        },
-        {
-          icon: "🧳",
-          text: "Jumbo bags (500kg–1 MT) available for bulk supply",
-        },
-        {
-          icon: "🛡️",
-          text: "Export-compliant labeling & safety documents (MSDS)",
-        },
-      ].map((item, idx) => (
-        <div key={idx} className="col-lg-6 col-md-6">
-          <div className="card h-100 border-0 shadow-lg rounded-4 bg-white hover-effect">
-            <div className="card-body d-flex align-items-center">
-              <div
-                className="me-4 d-flex justify-content-center align-items-center flex-shrink-0"
-                style={{
-                  width: '60px',
-                  height: '60px',
-                  backgroundColor: '#e7f1ff',
-                  borderRadius: '50%',
-                  fontSize: '1.8rem',
-                  color: '#0d6efd',
-                }}
-              >
-                {item.icon}
-              </div>
-              <div>
-                <p className="mb-0 fw-semibold text-secondary fs-5">{item.text}</p>
-              </div>
-            </div>
+        "25 kg PE-lined PP bags with double-layer moisture protection",
+        "Fast international delivery within 7–14 days",
+        "Jumbo bags (500kg–1 MT) available for bulk supply",
+        "Export-compliant labeling & safety documents (MSDS)",
+      ].map((text, idx) => (
+        <div key={idx} className="col-md-6">
+          <div className="package-card h-100">
+            <p className="package-text mb-0">{text}</p>
           </div>
         </div>
       ))}
@@ -734,11 +655,11 @@ const Caustic = () => {
 </section>
 
 
-
       {/* ✅ Quality & Compliance */}
       <section className="py-5">
         <div className="container">
-          <h2 className="text-center text-primary fw-bold mb-4">Quality & Compliance Notes</h2>
+          <h2 className="text-center  fw-bold mb-4" style={{ color: '#3366cc' }}
+>Quality & Compliance Notes</h2>
           <div className="row justify-content-center">
             <div className="col-md-10">
               <p className="lead text-center">
@@ -749,6 +670,49 @@ const Caustic = () => {
           </div>
         </div>
       </section>
+
+    <section className="py-5" style={{ background: '#f8fafd' }}>
+  <div className="container">
+    <h2 className="text-center fw-bold mb-5" style={{ color: "#3366cc" }}>
+      Checklist Before You Buy
+    </h2>
+
+    <div className="row justify-content-center">
+      <div className="col-md-10">
+        <div className="card border-0 shadow-sm p-4 rounded-4" style={{ background: '#ffffff' }}>
+          {[
+            { label: "Surface area", value: "> 200 m²/g" },
+            { label: "Moisture", value: "< 8%" },
+            { label: "Low residual acid", value: "(pH 4–6)" },
+            { label: "Custom particle size" },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="d-flex align-items-start gap-3 mb-4"
+            >
+              <div
+                className="rounded-circle flex-shrink-0"
+                style={{
+                  width: '12px',
+                  height: '12px',
+                  marginTop: '6px',
+                  backgroundColor: '#3366cc',
+                }}
+              ></div>
+              <div>
+                <h6 className="mb-1 fw-semibold text-dark">{item.label}</h6>
+                {item.value && <p className="mb-0 text-muted">{item.value}</p>}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+      <WhyChooseUs />
 
       {/* ✅ Contact / Quote Form */}
       <Contact />

@@ -1,200 +1,4 @@
-// import React from "react";
-// import "bootstrap/dist/css/bootstrap.min.css";
 
-// // Hero Banner Section
-// const HeroBanner = () => (
-//   <section className="bg-primary text-white text-center py-5">
-//     <div className="container">
-//       <h1 className="display-5 fw-bold">Global Supplier of Quality Products</h1>
-//       <p className="lead">Delivering excellence across industries worldwide.</p>
-//       <a href="#quote" className="btn btn-light mt-3">Request a Quote</a>
-//     </div>
-//   </section>
-// );
-
-// // Products Preview Section
-// const ProductsPreview = () => (
-//   <section className="py-5 bg-light">
-//     <div className="container">
-//       <h2 className="text-center mb-4">Our Products</h2>
-//       <div className="row row-cols-1 row-cols-md-4 g-4">
-//         {[
-//           { title: "Caustic Soda Flakes", text: "Used in paper, textiles, detergents." },
-//           { title: "Bleaching Earth", text: "Ideal for purifying oils and fats." },
-//           { title: "Filter Flow Aid", text: "Helps improve filtration systems." },
-//           { title: "Citric Acid", text: "Common in food & pharmaceuticals." },
-//         ].map((product, idx) => (
-//           <div key={idx} className="col">
-//             <div className="card h-100 shadow-sm">
-//               <img src={`https://via.placeholder.com/300x200?text=${product.title.replace(/\s+/g, '+')}`} className="card-img-top" alt={product.title} />
-//               <div className="card-body text-center">
-//                 <h5 className="card-title">{product.title}</h5>
-//                 <p className="card-text">{product.text}</p>
-//                 <a href={`/products/${product.title.toLowerCase().replace(/\s+/g, '-')}`} className="btn btn-outline-primary mt-2">View Details</a>
-//               </div>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   </section>
-// );
-
-// // Industries Served Section
-// const IndustriesServed = () => (
-//   <section className="py-5">
-//     <div className="container text-center">
-//       <h2 className="mb-3">Industries We Serve</h2>
-//       <p className="lead">Automotive, Construction, Oil & Gas, Agriculture, Textiles, Food & Beverages, Water Treatment, and more.</p>
-//     </div>
-//   </section>
-// );
-
-// // Why Choose Us Section
-// const WhyChooseUs = () => (
-//   <section className="bg-light py-5">
-//     <div className="container text-center">
-//       <h2 className="mb-4">Why Choose Us</h2>
-//       <div className="row row-cols-1 row-cols-md-3 g-4">
-//         {["Trusted Global Supplier", "ISO Certified", "Strict Quality Control", "Reliable Delivery", "Competitive Pricing", "Customer Satisfaction"].map((item, idx) => (
-//           <div key={idx} className="col">
-//             <div className="card border-0 h-100 bg-transparent">
-//               <div className="card-body">
-//                 <span className="fs-3">✅</span>
-//                 <p className="card-text mt-2">{item}</p>
-//               </div>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   </section>
-// );
-
-// // Quality Commitment Section
-// const QualityCommitment = () => (
-//   <section className="py-5">
-//     <div className="container text-center">
-//       <h2 className="mb-3">Our Quality Commitment</h2>
-//       <p className="lead">We adhere to international standards including ISO certifications, providing consistent quality with full compliance and traceability.</p>
-//     </div>
-//   </section>
-// );
-
-// // Client Testimonials Section
-// const Testimonials = () => (
-//   <section className="bg-light py-5">
-//     <div className="container text-center">
-//       <h2 className="mb-4">What Our Clients Say</h2>
-//       <div className="row justify-content-center">
-//         <div className="col-md-8">
-//           <blockquote className="blockquote">
-//             <p className="mb-3">"Outstanding service and consistent product quality. We've trusted them for years."</p>
-//             <footer className="blockquote-footer">John Doe, CEO of IndustryCorp</footer>
-//           </blockquote>
-//         </div>
-//       </div>
-//     </div>
-//   </section>
-// );
-
-// // Request a Quote Section
-// const RequestQuote = () => (
-//   <section id="quote" className="py-5 bg-primary text-white">
-//     <div className="container">
-//       <h2 className="text-center mb-4">Request a Quote</h2>
-//       <form className="row g-3">
-//         <div className="col-md-6">
-//           <input type="text" className="form-control" placeholder="Your Name" required />
-//         </div>
-//         <div className="col-md-6">
-//           <input type="email" className="form-control" placeholder="Your Email" required />
-//         </div>
-//         <div className="col-12">
-//           <textarea className="form-control" rows="4" placeholder="Your Requirements" required></textarea>
-//         </div>
-//         <div className="col-12 text-center">
-//           <button type="submit" className="btn btn-light">Submit</button>
-//         </div>
-//       </form>
-//     </div>
-//   </section>
-// );
-
-// // Latest Blogs Section
-// const LatestBlogs = () => (
-//   <section className="py-5 bg-light">
-//     <div className="container text-center">
-//       <h2 className="mb-4">Latest Blogs</h2>
-//       <div className="row row-cols-1 row-cols-md-3 g-4">
-//         {[1, 2, 3].map((num) => (
-//           <div key={num} className="col">
-//             <div className="card h-100 shadow-sm">
-//               <img src={`https://via.placeholder.com/300x180?text=Blog+${num}`} className="card-img-top" alt={`Blog ${num}`} />
-//               <div className="card-body">
-//                 <h5 className="card-title">Blog Title {num}</h5>
-//                 <p className="card-text">A short summary of blog post {num} to engage users and provide value.</p>
-//                 <a href="#" className="btn btn-outline-primary">Read More</a>
-//               </div>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   </section>
-// );
-
-// // WhatsApp / Live Chat Widget
-// const ChatWidget = () => (
-//   <a
-//     href="https://wa.me/yourwhatsapplink"
-//     className="position-fixed bottom-0 end-0 m-4 btn btn-success rounded-circle d-flex justify-content-center align-items-center"
-//     style={{ width: '60px', height: '60px', zIndex: 999 }}
-//     target="_blank"
-//     rel="noopener noreferrer"
-//   >
-//     💬
-//   </a>
-// );
-
-// // Footer Section
-// const Footer = () => (
-//   <footer className="bg-dark text-white py-4">
-//     <div className="container text-center">
-//       <p className="mb-2">© 2025 Your Company Name. All Rights Reserved.</p>
-//       <p className="mb-0">
-//         <span>ISO Certified | </span>
-//         <a href="#" className="text-white text-decoration-none mx-1">Sitemap</a> | 
-//         <a href="#" className="text-white text-decoration-none mx-1">Contact</a> | 
-//         <a href="#" className="text-white text-decoration-none mx-1">Facebook</a> | 
-//         <a href="#" className="text-white text-decoration-none mx-1">LinkedIn</a>
-//       </p>
-//     </div>
-//   </footer>
-// );
-
-// // Main Home Component
-// const Home = () => {
-//   return (
-//     <>
-//       <HeroBanner />
-//       <ProductsPreview />
-//       <IndustriesServed />
-//       <WhyChooseUs />
-//       <QualityCommitment />
-//       <Testimonials />
-//       <RequestQuote />
-//       <LatestBlogs />
-//       <ChatWidget />
-//       <Footer />
-//     </>
-//   );
-// };
-
-// export default Home;
-
-
-// src/components/Home.js
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProductsPreview from './Productpreview.js';
@@ -203,6 +7,9 @@ import LatestBlogs from './Latestblog.js';
 import HeroImage from '../Assests/hero-image.png';
 import Footer from './footer.js';
 import Contact from './contact.js';
+import Seo from '../components/seo';
+import { HomeMeta } from '../data/metaData';
+
 
 // ✅ Hero Banner
 const HeroBanner = () => (
@@ -220,7 +27,7 @@ const HeroBanner = () => (
       <div className="row align-items-center">
         {/* Left side - Text */}
         <div className="col-md-6 text-white text-center text-md-start">
-          <h1 className="display-5 fw-bold mb-3" style={{ lineHeight: '1.3', color: '#fff' }}>
+          <h1 className="display-5 fw-bold mb-5" style={{ lineHeight: '1.3', color: '#fff' }}>
             Global Supplier of Caustic Soda, Bleaching Earth & High-Purity Industrial Chemicals
           </h1>
           <p className="lead" style={{ color: '#e0e0e0' }}>
@@ -250,29 +57,229 @@ const HeroBanner = () => (
 
 // ✅ Industries Served
 const IndustriesServed = () => (
-  <section className="py-5">
+  <section className="py-5 industries-section">
     <div className="container text-center">
-      <h2 className="text-primary mb-4 fw-bold">Industries We Serve</h2>
-      <p className="lead">
-        Edible Oil Refineries, Soap & Detergent Manufacturers, Water Treatment, Food & Beverage Industry,
-        Petrochemical & Pharmaceutical Manufacturing.
-      </p>
-      <a href="/industries" className="btn btn-outline-primary mt-3">View Industries</a>
+      <h2 className="mb-4 fw-bold section-heading">
+        Industries That Rely on Our Products
+      </h2>
+
+      {/* ✅ Industry Cards with Images */}
+      <div className="row mt-5">
+        <div className="col-md-4 mb-4">
+          <div className="card industry-card h-100">
+            <img
+              src="/images/edible-oil.jpg"
+              className="card-img-top"
+              alt="Edible Oil Refineries"
+            />
+            <div className="card-body">
+              <h5 className="card-title">Edible Oil Refineries</h5>
+              <p className="card-text">
+                Supplying high-purity chemicals that ensure maximum oil yield,
+                enhanced clarity, and long shelf life in edible oil processing plants.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-md-4 mb-4">
+          <div className="card industry-card h-100">
+            <img
+              src="/images/water-treatment.jpg"
+              className="card-img-top"
+              alt="Water Treatment Plants"
+            />
+            <div className="card-body">
+              <h5 className="card-title">Water Treatment Plants</h5>
+              <p className="card-text">
+                Providing safe and effective solutions for industrial and municipal
+                water treatment to meet global purity standards.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-md-4 mb-4">
+          <div className="card industry-card h-100">
+            <img
+              src="/images/soap-detergent.jpg"
+              className="card-img-top"
+              alt="Soap & Detergent Manufacturing"
+            />
+            <div className="card-body">
+              <h5 className="card-title">Soap & Detergent Manufacturing</h5>
+              <p className="card-text">
+                Delivering essential raw materials for producing high-quality soaps
+                and detergents with superior cleansing properties.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="/industries" className="btn btn-outline-primary mt-3">
+        View more Industries
+      </a>
     </div>
+
+    {/* 🎨 Inline CSS */}
+    <style>{`
+      .industries-section {
+        background: #f8faff;
+      }
+      .section-heading {
+        color: #3666cc;
+        font-size: 2rem;
+      }
+      .industry-card {
+        border: none;
+        border-radius: 15px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        background: #fff;
+      }
+      .industry-card img {
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+      .industry-card:hover img {
+        transform: scale(1.05);
+      }
+      .industry-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      }
+      .industry-card .card-title {
+        color: #3666cc;
+        font-weight: 700;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+      }
+      .industry-card .card-text {
+        color: #555;
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+    `}</style>
   </section>
 );
 
-// ✅ Quality Commitment
-const QualityCommitment = () => (
-  <section className="py-5">
-    <div className="container text-center">
-      <h2 className="mb-3">Our Quality Commitment</h2>
-      <p className="lead">
-        We adhere to international standards including ISO certifications, providing consistent quality with full compliance and traceability.
-      </p>
-    </div>
-  </section>
-);
+
+// // ✅ Quality Commitment
+// const QualityCommitment = () => (
+//   <section className="py-5">
+//     <div className="container text-center">
+//       <h2 className="fw-bold mb-4" style={{ color: '#3366cc' }}>Our Quality Commitment</h2>
+//       <p className="lead mb-3">
+//         We adhere to international standards including ISO certifications, providing consistent quality with full compliance and traceability.
+//       </p>
+//       <p className="lead mb-3">
+//         Our quality management system is designed to ensure that every product meets stringent safety, purity and performance criteria. We continually monitor and optimize our manufacturing processes to maintain excellence.
+//       </p>
+//       <p className="lead mb-3">
+//         Through rigorous testing protocols, state-of-the-art laboratory facilities and dedicated quality assurance teams, we guarantee product integrity from raw materials to final delivery.
+//       </p>
+//       <p className="lead mb-3">
+//         We embrace continuous improvement by incorporating customer feedback, adopting cutting-edge technologies and complying with evolving regulatory requirements across global markets.
+//       </p>
+//       <p className='lead mb-3'>
+//         Our commitment extends beyond compliance — it’s about building trust, fostering transparency and delivering reliable solutions that empower our clients and partners worldwide.
+//       </p>
+//     </div>
+//   </section>
+// );
+
+
+
+const QualityCommitment = () => {
+  const paragraphs = [
+    "We adhere to international standards including ISO certifications, providing consistent quality with full compliance and traceability.",
+    "Our quality management system is designed to ensure that every product meets stringent safety, purity and performance criteria. We continually monitor and optimize our manufacturing processes to maintain excellence.",
+    "Through rigorous testing protocols, state-of-the-art laboratory facilities and dedicated quality assurance teams, we guarantee product integrity from raw materials to final delivery.",
+    "We embrace continuous improvement by incorporating customer feedback, adopting cutting-edge technologies and complying with evolving regulatory requirements across global markets.",
+    "Our commitment extends beyond compliance — it’s about building trust, fostering transparency and delivering reliable solutions that empower our clients and partners worldwide."
+  ];
+
+  return (
+    <section
+      style={{
+        padding: "3rem 0",
+        backgroundColor: "#f8f9fa"
+      }}
+    >
+      <div className="container">
+        <h2
+          style={{
+            fontWeight: "bold",
+            marginBottom: "3rem",
+            textAlign: "center",
+            color: "#3666cc"
+          }}
+        >
+          Our Quality Commitment
+        </h2>
+
+        {paragraphs.map((text, index) => (
+          <div
+            key={index}
+            className="row mb-4"
+            style={{
+              flexDirection: index % 2 === 0 ? "row" : "row-reverse",
+              animation: "fadeIn 0.8s ease-in-out"
+            }}
+          >
+            <div className="col-md-6">
+              <div
+                className="quality-card"
+                style={{
+                  padding: "1.5rem",
+                  backgroundColor: "#ffffff",
+                  borderRadius: "12px",
+                  boxShadow: "0 4px 15px rgba(0, 0, 0, 0.05)",
+                  textAlign: index % 2 === 0 ? "left" : "right",
+                  transition: "all 0.3s ease"
+                }}
+              >
+                <p
+                  style={{
+                    fontSize: "1.1rem",
+                    marginBottom: "0",
+                    lineHeight: "1.6",
+                    color: "#555"
+                  }}
+                >
+                  {text}
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6"></div>
+          </div>
+        ))}
+      </div>
+
+      <style>
+        {`
+          @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+          }
+
+          .quality-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+            background-color: #f0f6ff;
+          }
+        `}
+      </style>
+    </section>
+  );
+};
+
+
+
+
 
 // ✅ Client Testimonials
 // const Testimonials = () => (
@@ -322,50 +329,133 @@ const Testimonials = () => (
       `}
     </style>
 
-    <section className="bg-light py-5">
-      <div className="container">
-        <h2 className="text-center fw-bold mb-5 text-primary">
-          What Our Refinery Clients Say
-        </h2>
-        <div className="row justify-content-center g-4">
-          <div className="col-md-4">
-            <div className="p-4 border rounded bg-white shadow-sm h-100 testimonial-card">
-              <div className="testimonial-stars mb-2">★★★★★</div>
-              <p className="mb-3 testimonial-text">
-                "We've been sourcing Caustic Soda and Bleaching Earth from N&T for over 2 years. Reliable delivery and consistent quality every time."
-              </p>
-              <footer className="testimonial-footer">
-                Rahul Jain, Procurement Head – Sunrise Oil Refinery
-              </footer>
-            </div>
-          </div>
+   <section className="bg-light py-5 position-relative overflow-hidden">
+  <style>
+    {`
+      /* Heading Styling */
+      .testimonial-heading {
+        font-size: 2.7rem;
+        font-weight: 700;
+        background: linear-gradient(90deg, #3366cc, #003366);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+        position: relative;
+        padding-bottom: 12px;
+        margin-bottom: 40px;
+      }
 
-          <div className="col-md-4">
-            <div className="p-4 border rounded bg-white shadow-sm h-100 testimonial-card">
-              <div className="testimonial-stars mb-2">★★★★★</div>
-              <p className="mb-3 testimonial-text">
-                "Excellent technical support and custom packaging solutions tailored to our refinery needs. Highly professional team."
-              </p>
-              <footer className="testimonial-footer">
-                Fatima Noor, Plant Manager – GulfRef UAE
-              </footer>
-            </div>
-          </div>
+      .testimonial-heading::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        width: 70px;
+        height: 4px;
+        background-color: #3366cc;
+        border-radius: 2px;
+      }
 
-          <div className="col-md-4">
-            <div className="p-4 border rounded bg-white shadow-sm h-100 testimonial-card">
-              <div className="testimonial-stars mb-2">★★★★★</div>
-              <p className="mb-3 testimonial-text">
-                "N&T is our trusted partner for bulk chemical shipments. Their REACH-compliant materials meet all our regulatory needs."
-              </p>
-              <footer className="testimonial-footer">
-                Jacob Mensah, Head Chemist – Ghana Petrochemicals
-              </footer>
+      /* Card Styling */
+      .testimonial-card {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(4px);
+        border-radius: 16px;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .testimonial-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+      }
+
+      .testimonial-stars {
+        font-size: 1.25rem;
+        color: #ffc107;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.75rem;
+        filter: drop-shadow(0 0 3px rgba(255, 193, 7, 0.5));
+      }
+
+      .testimonial-text {
+        font-style: italic;
+        color: #333;
+        font-size: 1rem;
+        text-align: center;
+      }
+
+      .testimonial-footer {
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: #666;
+        text-align: center;
+        margin-top: 15px;
+      }
+
+      /* Star Icons */
+      .star-icon {
+        margin: 0 2px;
+      }
+
+      /* Fade In Animation */
+      .testimonial-card {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 0.6s forwards;
+      }
+
+      .testimonial-card:nth-child(1) { animation-delay: 0.2s; }
+      .testimonial-card:nth-child(2) { animation-delay: 0.4s; }
+      .testimonial-card:nth-child(3) { animation-delay: 0.6s; }
+
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    `}
+  </style>
+
+  <div className="container">
+    <h2 className="text-center fw-bold mb-5"
+  style={{ color: '#3366cc' }}>What Our Refinery Clients Say</h2>
+
+    <div className="row justify-content-center g-4">
+      {[
+        {
+          text: "We've been sourcing Caustic Soda and Bleaching Earth from N&T for over 2 years. Reliable delivery and consistent quality every time.",
+          footer: "Rahul Jain, Procurement Head – Sunrise Oil Refinery",
+        },
+        {
+          text: "Excellent technical support and custom packaging solutions tailored to our refinery needs. Highly professional team.",
+          footer: "Fatima Noor, Plant Manager – GulfRef UAE",
+        },
+        {
+          text: "N&T is our trusted partner for bulk chemical shipments. Their REACH-compliant materials meet all our regulatory needs.",
+          footer: "Jacob Mensah, Head Chemist – Ghana Petrochemicals",
+        },
+      ].map((testimonial, idx) => (
+        <div className="col-md-4" key={idx}>
+          <div className="p-4 testimonial-card h-100">
+            <div className="testimonial-stars">
+              {[...Array(5)].map((_, i) => (
+                <i className="bi bi-star-fill star-icon" key={i}></i>
+              ))}
             </div>
+            <p className="testimonial-text">"{testimonial.text}"</p>
+            <footer className="testimonial-footer">{testimonial.footer}</footer>
           </div>
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
+  </div>
+</section>
+
   </>
 );
 
@@ -382,6 +472,7 @@ const ChatWidget = () => (
 // ✅ Main Home Component
 const Home = () => (
   <>
+     <Seo meta={HomeMeta} />
     <HeroBanner />
     <ProductsPreview />
     <IndustriesServed />

@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Seo from '../../components/seo';
 import Footer from '../../components/footer';
 import Contact from '../../components/contact';
+import WhyChooseUs from '../Whychooseus';
 
 const Citric = () => {
   return (
@@ -27,7 +28,7 @@ const Citric = () => {
                 Citric Acid (C₆H₈O₇)
               </h1>
               <p className="lead text-light">
-                Citric Acid is a natural preservative and flavoring agent used widely across food, pharmaceutical, and industrial applications. 
+                Citric Acid is a natural preservative and flavoring agent used widely across food, pharmaceutical and industrial applications. 
                 Manufactured under GMP & ISO-certified facilities.
               </p>
             </div>
@@ -63,16 +64,16 @@ const Citric = () => {
 
       {/* Left - Content */}
       <div className="col-md-6">
-        <h2 className="fw-bold mb-4 text-primary">
+        <h2 className="fw-bold mb-4 " style={{ color: '#3366cc' }}>
           Premium Citric Acid Monohydrate for Food & Industrial Use
         </h2>
         <p className="text-secondary mb-4">
-          Our Citric Acid is a high-purity, food-grade compound used widely in the food, pharmaceutical, and cleaning industries. Sourced from certified facilities, it ensures safe acidity regulation, preservation, and chelation across a variety of applications.
+          Our Citric Acid is a high-purity, food-grade compound used widely in the food, pharmaceutical and cleaning industries. Sourced from certified facilities, it ensures safe acidity regulation, preservation and chelation across a variety of applications.
         </p>
         <ul className="list-unstyled text-secondary fs-5">
           <li className="mb-2">• ≥ 99.5% assay purity for food and industrial applications.</li>
-          <li className="mb-2">• GRAS certified and compliant with FCC, BP, and USP standards.</li>
-          <li className="mb-2">• Highly soluble, odorless, and non-toxic — ideal for beverages, detergents, and effervescent tablets.</li>
+          <li className="mb-2">• GRAS certified and compliant with FCC, BP and USP standards.</li>
+          <li className="mb-2">• Highly soluble, odorless and non-toxic — ideal for beverages, detergents and effervescent tablets.</li>
         </ul>
       </div>
 
@@ -93,7 +94,7 @@ const Citric = () => {
  {/* ✅ Specifications / MSDS */}
 <section className="py-5 bg-light">
   <div className="container">
-    <h2 className="text-center text-primary fw-bold mb-5">Specifications & MSDS</h2>
+    <h2 className="text-center  fw-bold mb-5" style={{ color: '#3366cc' }}>Specifications & MSDS</h2>
     <div className="row g-4 align-items-center">
 
       {/* Left - Specs List */}
@@ -179,146 +180,111 @@ const Citric = () => {
 </section>
 
 
-      {/* ✅ Specifications / MSDS
-      <section className="py-5 bg-light">
-        <div className="container">
-          <h2 className="text-center text-primary fw-bold mb-4">Specifications & MSDS</h2>
-          <div className="row align-items-center">
-            <div className="col-md-6">
-              <ul className="list-group list-group-flush fs-5">
-                <li className="list-group-item">Form: White crystalline powder</li>
-                <li className="list-group-item">Assay: ≥ 99.5%</li>
-                <li className="list-group-item">CAS No: 77-92-9</li>
-                <li className="list-group-item">Solubility: Highly soluble in water</li>
-                <li className="list-group-item">MSDS: Available Upon Request</li>
-              </ul>
-            </div>
-
-            <div className="col-md-6 text-center">
-              <div
-                style={{
-                  height: '300px',
-                  backgroundColor: '#e0e0e0',
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  borderRadius: '12px',
-                  fontSize: '1.2rem',
-                  color: '#555',
-                  boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
-                }}
-              >
-                Citric Acid Packaging Visual
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
+    
      
-      {/* ✅ Applications */}
-      <section className="py-5">
-        <div className="container">
-          <h2 className="text-center text-primary fw-bold mb-4">Applications</h2>
-          <div className="row justify-content-center">
-            <div className="col-md-8">
-              <ul className="list-group list-group-flush fs-5">
-                <li className="list-group-item">Food and beverage additive</li>
-                <li className="list-group-item">Cleaning agents</li>
-                <li className="list-group-item">Cosmetics & personal care</li>
-                <li className="list-group-item">Pharmaceutical excipient</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+     <section className="py-5 bg-light">
+  <style>
+    {`
+      .custom-list-item {
+        background-color: #ffffff;
+        padding: 15px 20px;
+        transition: all 0.3s ease;
+        position: relative;
+      }
 
-      
+      .custom-list-item:hover {
+        background-color: #f0f8ff;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 18px rgba(0, 123, 255, 0.1);
+        cursor: default;
+      }
 
-      {/* ✅ Packaging & Delivery Options
-<section className="py-5 bg-light">
+      .custom-list .list-group-item {
+        font-size: 1.05rem;
+        font-weight: 500;
+        color: #333;
+        border-left: 4px solid #007bff;
+      }
+
+      .custom-list-item::before {
+        content: '';
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: #007bff;
+        border-radius: 50%;
+        margin-right: 12px;
+      }
+    `}
+  </style>
+
   <div className="container">
-    <h2 className="text-center text-primary fw-bold mb-5">Packaging & Delivery Options</h2>
+    <h2 className="text-center fw-bold mb-5" style={{ color: '#3366cc' }}>
+      Applications
+    </h2>
 
-    <div className="row g-4 justify-content-center">
-      {[
-        "25 kg kraft bags with inner liners",
-        "Shipment: Sea & Air available",
-        "Delivery Time: Within 1 week",
-        "Export Support: Full documentation"
-      ].map((item, idx) => (
-        <div key={idx} className="col-md-6">
-          <div className="card h-100 shadow-sm border-0 rounded-4">
-            <div className="card-body d-flex align-items-center">
-              <div
-                className="me-3 d-flex justify-content-center align-items-center"
-                style={{
-                  width: '50px',
-                  height: '50px',
-                  backgroundColor: '#0d6efd22',
-                  borderRadius: '50%',
-                  fontSize: '1.5rem',
-                  color: '#0d6efd'
-                }}
-              >
-                📦
-              </div>
-              <h5 className="mb-0 text-secondary">{item}</h5>
-            </div>
-          </div>
-        </div>
-      ))}
+    <div className="row justify-content-center">
+      <div className="col-md-10 col-lg-8">
+        <ul className="list-group list-group-flush custom-list">
+          {[
+            "Food and beverage additive",
+            "Cleaning agents",
+            "Cosmetics & personal care",
+            "Pharmaceutical excipient",
+          ].map((item, index) => (
+            <li
+              key={index}
+              className="list-group-item d-flex align-items-center shadow-sm mb-3 rounded border-0 custom-list-item"
+            >
+              <span className="fs-5">{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   </div>
-</section> */}
-
-
-{/* ✅ Packaging & Delivery Options - Enhanced UI */}
+</section>
 <section className="py-5 bg-light">
+  <style>
+    {`
+      .package-card {
+        transition: all 0.3s ease;
+        border-left: 5px solid #0d6efd;
+        background-color: #fff;
+        padding: 20px 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      }
+
+      .package-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(13, 110, 253, 0.1);
+        background-color: #f8faff;
+      }
+
+      .package-text {
+        font-size: 1.1rem;
+        color: #444;
+        font-weight: 500;
+      }
+    `}
+  </style>
+
   <div className="container">
-    <h2 className="text-center text-primary fw-bold mb-5">
-      📦 Packaging & Delivery Options
+    <h2 className="text-center fw-bold mb-5" style={{ color: '#3366cc' }}>
+      Packaging & Delivery Options
     </h2>
 
     <div className="row g-4 justify-content-center">
       {[
-        {
-          icon: "🧃",
-          text: "25 kg kraft bags with inner liners for moisture protection",
-        },
-        {
-          icon: "🚢",
-          text: "Flexible shipment modes: Sea & Air freight available",
-        },
-        {
-          icon: "⏱️",
-          text: "Fast dispatch: Delivery within 7 working days",
-        },
-        {
-          icon: "📝",
-          text: "Export-ready: Complete documentation & compliance",
-        },
-      ].map((item, idx) => (
-        <div key={idx} className="col-lg-6 col-md-6">
-          <div className="card h-100 border-0 shadow-lg rounded-4 bg-white hover-effect">
-            <div className="card-body d-flex align-items-center">
-              <div
-                className="me-4 d-flex justify-content-center align-items-center flex-shrink-0"
-                style={{
-                  width: '60px',
-                  height: '60px',
-                  backgroundColor: '#e7f1ff',
-                  borderRadius: '50%',
-                  fontSize: '1.8rem',
-                  color: '#0d6efd',
-                }}
-              >
-                {item.icon}
-              </div>
-              <div>
-                <p className="mb-0 fw-semibold text-secondary fs-5">{item.text}</p>
-              </div>
-            </div>
+        "25 kg kraft bags with inner liners for moisture protection",
+        "Flexible shipment modes: Sea & Air freight available",
+        "Fast dispatch: Delivery within 7 working days",
+        "Export-ready: Complete documentation & compliance",
+      ].map((text, idx) => (
+        <div key={idx} className="col-md-6">
+          <div className="package-card h-100">
+            <p className="package-text mb-0">{text}</p>
           </div>
         </div>
       ))}
@@ -330,11 +296,11 @@ const Citric = () => {
       {/* ✅ Quality & Compliance */}
       <section className="py-5">
         <div className="container">
-          <h2 className="text-center text-primary fw-bold mb-4">Quality & Compliance Notes</h2>
+          <h2 className="text-center  fw-bold mb-4"  style={{ color: '#3366cc' }}>Quality & Compliance Notes</h2>
           <div className="row justify-content-center">
             <div className="col-md-10">
               <p className="lead text-center">
-                Our Citric Acid is produced under GMP conditions and meets FSSC 22000, Kosher, Halal, and ISO 9001 standards.
+                Our Citric Acid is produced under GMP conditions and meets FSSC 22000, Kosher, Halal and ISO 9001 standards.
                 Full traceability and regulatory documents available upon request.
               </p>
             </div>
@@ -342,6 +308,46 @@ const Citric = () => {
         </div>
       </section>
 
+      <section className="py-5" style={{ background: '#f8fafd' }}>
+  <div className="container">
+    <h2 className="text-center fw-bold mb-5" style={{ color: "#3366cc" }}>
+      Checklist Before You Buy
+    </h2>
+
+    <div className="row justify-content-center">
+      <div className="col-md-10">
+        <div className="card border-0 shadow-sm p-4 rounded-4" style={{ background: '#ffffff' }}>
+          {[
+            { label: "FCC / BP / USP compliance" },
+            { label: "Purity", value: "≥ 99.5%" },
+            { label: "Granule type", value: "Coarse or fine mesh" },
+            { label: "Certification", value: "Allergen-free" },
+          ].map((item, index) => (
+            <div key={index} className="d-flex align-items-start gap-3 mb-4">
+              <div
+                className="rounded-circle flex-shrink-0"
+                style={{
+                  width: '12px',
+                  height: '12px',
+                  marginTop: '6px',
+                  backgroundColor: '#3366cc',
+                }}
+              ></div>
+              <div>
+                <h6 className="mb-1 fw-semibold text-dark">{item.label}</h6>
+                {item.value && <p className="mb-0 text-muted">{item.value}</p>}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+      <WhyChooseUs />
       {/* ✅ Contact / Quote Button */}
       <Contact />
 
