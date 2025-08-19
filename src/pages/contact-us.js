@@ -213,27 +213,7 @@ const Contact = () => {
               ></iframe>
             </div>
 
-            {/* <div className="mb-5">
-  <h5 className="mb-3 fw-bold">What Our Customers Say</h5>
-
-  <div className="p-3 border rounded shadow-sm bg-light">
-    <div className="text-warning mb-1">★★★★★</div>
-    <strong>Rahul Jain – Oil Refinery Procurement Head</strong>
-    <p className="mb-1">
-      “We've been sourcing Caustic Soda and Bleaching Earth from N&T for over 2 years. Reliable delivery and consistent quality every time.”
-    </p>
-  </div>
-packaging
-  <div className="mt-3 p-3 border rounded shadow-sm bg-light">
-    <div className="text-warning mb-1">★★★★★</div>
-    <strong>Fatima Noor – Refining Plant Manager, UAE</strong>
-    <p className="mb-1">
-      “Excellent technical support and custom packaging solutions tailored to our refinery needs. Highly professional team.”
-    </p>
-  </div>
-
-  
-</div> */}
+          
 
 
             {/* Clickable Contact Info */}

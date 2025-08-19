@@ -93,39 +93,7 @@ const Filter = () => {
 </section>
 
 
-      {/* ✅ Specifications / MSDS
-      <section className="py-5 bg-light">
-        <div className="container">
-          <h2 className="text-center text-primary fw-bold mb-4">Specifications & MSDS</h2>
-          <div className="row align-items-center">
-            <div className="col-md-6">
-              <ul className="list-group list-group-flush fs-5">
-                <li className="list-group-item">Form: Fine white powder</li>
-                <li className="list-group-item">pH: Neutral (6.5 – 7.5)</li>
-                <li className="list-group-item">Bulk Density: 0.20–0.25 g/cm³</li>
-                <li className="list-group-item">Moisture: ≤ 1%</li>
-              </ul>
-            </div>
-            <div className="col-md-6 text-center">
-              <div
-                style={{
-                  height: '300px',
-                  backgroundColor: '#e0e0e0',
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  borderRadius: '12px',
-                  fontSize: '1.2rem',
-                  color: '#555',
-                  boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
-                }}
-              >
-                Filter Aid Specs Visual
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
+     
 
 {/* ✅ Specifications / MSDS */}
 <section className="py-5 bg-light">

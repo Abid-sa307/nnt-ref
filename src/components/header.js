@@ -293,7 +293,7 @@ const Header = () => {
                   alt="NNT Refinery Logo"
                   style={{
                     height: '75px',
-                    marginTop: '12px',
+                    marginTop: '11px',
                     display: 'block',
                     transition: 'all 0.3s ease'
                   }}

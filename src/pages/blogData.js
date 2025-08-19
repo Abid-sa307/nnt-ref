@@ -1,61 +1,6 @@
 // src/data/blogData.js
 
-// const blogData = [
-//   {
-//    date: '12-March-2025',
-// title: 'Common Challenges in Cement Factory Setup & How to Address Them',
-// summary: 'Modern infrastructure relies heavily on cement, but setting up a cement plant is a complex process involving financing, logistics, environmental compliance and operational readiness...',
-// image: '/assets/blogs/blog1.jpg',
-// content: `
-//   <div style="font-family: 'Segoe UI', Tahoma, sans-serif; color: #2c3e50; line-height: 1.7; padding: 20px;">
-    
-//     <h2 style="color:#1a237e; font-size: 28px; margin-bottom: 15px; font-weight: 700; border-left: 6px solid #ff9800; padding-left: 14px;">
-//       Common Challenges in Cement Factory Setup & How to Address Them
-//     </h2>
-    
-//     <p style="font-size:17px; color:#555; margin-bottom: 18px; text-align: justify;">
-//       Cement manufacturing plays a critical role in infrastructure growth worldwide. However, establishing a cement plant is a 
-//       high-investment, multi-stage process that demands strategic planning. Investors and plant operators face 
-//       numerous hurdles—ranging from securing finances and equipment to adhering to environmental laws and ensuring a skilled workforce.
-//     </p>
 
-//     <div style="background-color: #f4f6f7; padding: 15px 20px; border-left: 4px solid #2196f3; border-radius: 6px; margin-bottom: 20px;">
-//       <strong style="color:#0d47a1;">📊 Industry Insight:</strong> Global cement production exceeds <b>4.1 billion metric tons annually</b>, yet only a fraction of new plants achieve optimum efficiency within their first two years due to poor planning and overlooked challenges.
-//     </div>
-
-//     <h3 style="margin-top:25px; color:#1565c0; font-size: 21px; border-bottom: 2px solid #eee; padding-bottom: 6px;">
-//       Key Challenges
-//     </h3>
-//     <ul style="padding-left:20px; list-style-type: disc; color:#444; font-size:16px; margin-bottom: 20px;">
-//       <li style="margin-bottom: 8px;"><b>High Initial Investment:</b> Cement plants require millions in capital, making financing delays a major bottleneck.</li>
-//       <li style="margin-bottom: 8px;"><b>Regulatory Approvals:</b> Obtaining environmental and safety permits often causes project delays of 6–12 months.</li>
-//       <li style="margin-bottom: 8px;"><b>Raw Material Security:</b> Cement production depends heavily on limestone and gypsum availability.</li>
-//       <li style="margin-bottom: 8px;"><b>Infrastructure Barriers:</b> Remote plant locations face logistical issues in transporting machinery and finished goods.</li>
-//       <li style="margin-bottom: 8px;"><b>Skilled Workforce Shortage:</b> Operating advanced machinery requires trained engineers and technicians.</li>
-//     </ul>
-
-//     <h3 style="margin-top:25px; color:#1565c0; font-size: 21px; border-bottom: 2px solid #eee; padding-bottom: 6px;">
-//       Strategic Solutions
-//     </h3>
-//     <ul style="padding-left:20px; list-style-type: disc; color:#444; font-size:16px; margin-bottom: 20px;">
-//       <li style="margin-bottom: 8px;"><b>Collaborate with EPC Experts:</b> Engage experienced Engineering, Procurement and Construction firms to ensure faster and smoother project execution.</li>
-//       <li style="margin-bottom: 8px;"><b>Opt for Modular Plant Design:</b> Prefabricated components reduce installation time and costs.</li>
-//       <li style="margin-bottom: 8px;"><b>Implement Advanced Automation:</b> AI and IoT-based monitoring improve quality control and reduce human error.</li>
-//       <li style="margin-bottom: 8px;"><b>Secure Long-Term Material Contracts:</b> Stable supply chains ensure uninterrupted production.</li>
-//       <li style="margin-bottom: 8px;"><b>Invest in Workforce Training:</b> Upskilling operators ensures efficient machinery usage and safety compliance.</li>
-//     </ul>
-
-//     <div style="background-color: #fff3e0; padding: 15px; border-left: 4px solid #ff9800; border-radius: 6px; margin-top: 25px;">
-//       <strong style="color:#e65100;">💡 Pro Tip:</strong> Early feasibility studies that consider local infrastructure, raw material proximity and government incentives 
-//       can reduce project delays by up to <b>40%</b>.
-//     </div>
-
-//   </div>
-
-
-
-//     `
-//   }
 
 
 const blogData = [
