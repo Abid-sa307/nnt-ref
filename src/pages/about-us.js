@@ -4,6 +4,7 @@ import Seo from '../components/seo';
 import Footer from '../components/footer';
 import Contact from '../components/contact';
 import metadata from '../data/metaData';
+import RefineryClaySupplier from '../assests/refinery-clay-supp.png';
 
 const AboutUs = () => {
   return (
@@ -31,23 +32,17 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="col-md-6 text-center">
-              <div
-                style={{
-                  height: '400px',
-                  width: '100%',
-                  backgroundColor: '#ffffff33',
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  borderRadius: '12px',
-                  boxShadow: '0 4px 16px rgba(0,0,0,0.2)',
-                  color: '#fff',
-                  fontSize: '1.25rem',
-                  fontWeight: '500',
-                }}
-              >
-                Company Overview Visual
-              </div>
+             <img
+                       src={RefineryClaySupplier} 
+                       alt="water treatment plant"
+                       style={{
+                         height: '400px',
+                         width: '100%',
+                         objectFit: 'cover',
+                         borderRadius: '12px',
+                         boxShadow: '0 4px 16px rgba(0,0,0,0.2)',
+                       }} 
+              />
             </div>
           </div>
         </div>
@@ -273,10 +268,10 @@ const AboutUs = () => {
               <p className="team-role">Managing Director</p>
               <p className="team-bio">
                 John has over 20 years of experience leading large-scale industrial operations, 
-            driving innovation, and ensuring world-class quality. He has successfully led 
+            driving innovation and ensuring world-class quality. He has successfully led 
             projects across multiple continents, building strong client relationships and 
             implementing sustainable business practices. John's vision focuses on expanding 
-            global presence while maintaining core values of trust, integrity, and excellence.
+            global presence while maintaining core values of trust, integrity and excellence.
               </p>
             </div>
           </div>
@@ -300,7 +295,7 @@ const AboutUs = () => {
                 Sarah brings 15 years of expertise in quality management systems, ISO certifications, 
             and process optimization. She has led multiple teams in implementing advanced 
             laboratory testing procedures and compliance protocols. Sarah’s dedication ensures 
-            that every product meets the highest safety, purity, and performance standards.
+            that every product meets the highest safety, purity and performance standards.
               </p>
             </div>
           </div>

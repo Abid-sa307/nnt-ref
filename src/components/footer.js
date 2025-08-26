@@ -18,7 +18,7 @@ const Footer = () => {
           {/* Section 1: Logo & Description */}
           <Col md={4} className="d-flex flex-column justify-content-start" style={{ marginTop: "-50px" }}>
             <Link to="/" className="mb-3">
-              <Image src={Logo} alt="N&T Cement Logo" width={228} />
+              <Image src={Logo} alt="N&T Refinery Logo" width={228} />
             </Link>
             <p className="text-muted" style={{ fontSize: "17px", lineHeight: "1.6", marginTop: "-90px" }}>
               Refinery chemicals homepage structure Refinery chemicals homepage structure Refinery chemicals homepage structure

@@ -4,12 +4,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ProductsPreview from './Productpreview.js';
 import WhyChooseUs from './Whychooseus.js';
 import LatestBlogs from './Latestblog.js';
-import HeroImage from '../Assests/hero-image.png';
+//import HeroImage from '../Assests/hero-image.png';
+import HeroImage from '../assests/refinery-clay-supp.png';
 import Footer from './footer.js';
 import Contact from './contact.js';
 import Seo from '../components/seo';
 import { HomeMeta } from '../data/metaData';
-
+import EdibleOil from '../static/images/edible.png';
+import WaterTreatment from '../static/images/water-treatment.png';
+import SoapDetergent from '../static/images/soap-&-detergent.png';
 
 // ✅ Hero Banner
 const HeroBanner = () => (
@@ -68,7 +71,7 @@ const IndustriesServed = () => (
         <div className="col-md-4 mb-4">
           <div className="card industry-card h-100">
             <img
-              src="/images/edible-oil.jpg"
+              src= {EdibleOil}
               className="card-img-top"
               alt="Edible Oil Refineries"
             />
@@ -76,7 +79,7 @@ const IndustriesServed = () => (
               <h5 className="card-title">Edible Oil Refineries</h5>
               <p className="card-text">
                 Supplying high-purity chemicals that ensure maximum oil yield,
-                enhanced clarity, and long shelf life in edible oil processing plants.
+                enhanced clarity and long shelf life in edible oil processing plants.
               </p>
             </div>
           </div>
@@ -85,7 +88,7 @@ const IndustriesServed = () => (
         <div className="col-md-4 mb-4">
           <div className="card industry-card h-100">
             <img
-              src="/images/water-treatment.jpg"
+              src={WaterTreatment}
               className="card-img-top"
               alt="Water Treatment Plants"
             />
@@ -102,7 +105,7 @@ const IndustriesServed = () => (
         <div className="col-md-4 mb-4">
           <div className="card industry-card h-100">
             <img
-              src="/images/soap-detergent.jpg"
+              src={SoapDetergent}
               className="card-img-top"
               alt="Soap & Detergent Manufacturing"
             />
@@ -167,29 +170,7 @@ const IndustriesServed = () => (
 );
 
 
-// // ✅ Quality Commitment
-// const QualityCommitment = () => (
-//   <section className="py-5">
-//     <div className="container text-center">
-//       <h2 className="fw-bold mb-4" style={{ color: '#3366cc' }}>Our Quality Commitment</h2>
-//       <p className="lead mb-3">
-//         We adhere to international standards including ISO certifications, providing consistent quality with full compliance and traceability.
-//       </p>
-//       <p className="lead mb-3">
-//         Our quality management system is designed to ensure that every product meets stringent safety, purity and performance criteria. We continually monitor and optimize our manufacturing processes to maintain excellence.
-//       </p>
-//       <p className="lead mb-3">
-//         Through rigorous testing protocols, state-of-the-art laboratory facilities and dedicated quality assurance teams, we guarantee product integrity from raw materials to final delivery.
-//       </p>
-//       <p className="lead mb-3">
-//         We embrace continuous improvement by incorporating customer feedback, adopting cutting-edge technologies and complying with evolving regulatory requirements across global markets.
-//       </p>
-//       <p className='lead mb-3'>
-//         Our commitment extends beyond compliance — it’s about building trust, fostering transparency and delivering reliable solutions that empower our clients and partners worldwide.
-//       </p>
-//     </div>
-//   </section>
-// );
+
 
 
 
@@ -481,7 +462,7 @@ const Home = () => (
     <QualityCommitment />
     <Testimonials />
     <Contact />
-    <ChatWidget />
+    
     <Footer />
   </>
 );

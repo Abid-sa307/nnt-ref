@@ -5,7 +5,9 @@ import Footer from '../../components/footer';
 import Contact from '../../components/contact';
 import { FilterFlowAidMeta } from '../../data/metaData'; // Add this in your metadata file
 import WhyChooseUs from '../Whychooseus';
-
+import FilterFlowAid from '../../static/images/filter-aid.jpg'
+import Clinkerization from '../../static/images/clinkerization.png';
+import MsdsImg from '../../assests/refinery-clay-supp.png';
 const Filter = () => {
   return (
     <>
@@ -36,23 +38,17 @@ const Filter = () => {
 
             {/* Right Box */}
             <div className="col-md-6 text-center">
-              <div
-                style={{
-                  height: '400px',
-                  width: '100%',
-                  backgroundColor: '#ffffff33',
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  borderRadius: '12px',
-                  boxShadow: '0 4px 16px rgba(0,0,0,0.2)',
-                  color: '#fff',
-                  fontSize: '1.25rem',
-                  fontWeight: '500',
-                }}
-              >
-                Filter Flow Aid Packaging Preview
-              </div>
+              <img
+                        src={FilterFlowAid} 
+                        alt="Filter Flow Aid  Packaging Preview"
+                        style={{
+                          height: '400px',
+                          width: '100%',
+                          objectFit: 'cover',
+                          borderRadius: '12px',
+                          boxShadow: '0 4px 16px rgba(0,0,0,0.2)',
+                        }}
+                      />
             </div>
           </div>
         </div>
@@ -81,8 +77,8 @@ const Filter = () => {
       {/* Right - Image */}
       <div className="col-md-6 text-center">
         <img
-          src="https://cdn-icons-png.flaticon.com/512/3039/3039427.png" // Replace with actual filter aid image
-          alt="Filter Aid Product"
+          src={Clinkerization} // Replace with actual filter aid image
+          alt="Filter Aid Product Plant"
           className="img-fluid rounded-4 shadow"
           style={{ maxHeight: '360px', objectFit: 'cover' }}
         />
@@ -150,21 +146,16 @@ const Filter = () => {
 
       {/* Right - Visual Placeholder for MSDS / Packaging */}
       <div className="col-md-6">
-        <div
-          className="rounded-4 shadow-sm d-flex align-items-center justify-content-center"
-          style={{
-            height: '100%',
-            minHeight: '480px',
-            backgroundColor: '#f8f9fa',
-            border: '2px dashed #0d6efd55',
-            color: '#0d6efd',
-            fontSize: '1.2rem',
-            textAlign: 'center',
-            padding: '30px'
-          }}
-        >
-          Visual Placeholder for Product Packaging, MSDS Sheet, or Certificates (ISO / Food Grade)
-        </div>
+        <img
+            src={MsdsImg} // ✅ import your MSDS image at the top
+            alt="MSDS Sheet - Filter Flow Aid"
+            className="img-fluid rounded-4 shadow"
+            style={{
+              maxHeight: '1000px',
+              objectFit: 'contain',
+              width: '100%',
+            }}
+          />
       </div>
 
     </div>

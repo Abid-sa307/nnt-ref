@@ -4,6 +4,8 @@ import Seo from "../components/seo";
 import Contact from "../components/contact";
 import Footer from "../components/footer";
 import { EdibleOilRefineriesMeta } from '../data/metaData';
+import EdibleOil from '../static/images/edible.png';
+import CausticSodaFlakes from "../static/images/caustic-soda.jpg";
 
 const EdibleOilRefineries = () => {
   return (
@@ -35,7 +37,7 @@ const EdibleOilRefineries = () => {
             {/* Right Image */}
             <Col md={6} className="text-center">
               <img
-                src="/assets/industries/edible-oil.jpg"
+                src={EdibleOil}
                 alt="Edible Oil Refinery"
                 className="img-fluid rounded-4 shadow"
                 style={{ maxHeight: '400px', objectFit: 'cover' }}
@@ -65,7 +67,7 @@ const EdibleOilRefineries = () => {
       {/* Right - Image */}
       <Col md={6} className="text-center">
         <img
-          src="https://cdn-icons-png.flaticon.com/512/1561/1561608.png"
+          src={CausticSodaFlakes}
           alt="Oil Refinery Chemicals"
           className="img-fluid rounded-4 shadow"
           style={{ maxHeight: '360px', objectFit: 'cover' }}

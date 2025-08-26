@@ -3,7 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import Seo from "../components/seo";
 import Contact from "../components/contact";
 import Footer from "../components/footer";
-import { AgricultureFertilizersMeta } from '../data/metaData'; // Make sure this exists
+import { AgricultureFertilizersMeta } from '../data/metaData'; 
+import AgricultureAndFertilizers from '../static/images/agricultureAndfetrilizer.png';
+import CitricAcid from '../static/images/citric-acid.jpg'
+
 
 const AgricultureFertilizers = () => {
   return (
@@ -35,7 +38,7 @@ const AgricultureFertilizers = () => {
             {/* Right Image */}
             <Col md={6} className="text-center">
               <img
-                src="/assets/industries/agriculture.jpg"
+                src={AgricultureAndFertilizers}
                 alt="Agricultural Application"
                 className="img-fluid rounded-4 shadow"
                 style={{ maxHeight: '400px', objectFit: 'cover' }}
@@ -66,7 +69,7 @@ const AgricultureFertilizers = () => {
             </Col>
             <Col md={6} className="text-center">
               <img
-                src="https://cdn-icons-png.flaticon.com/512/2942/2942927.png"
+                src={CitricAcid}
                 alt="Fertilizer Application"
                 className="img-fluid rounded-4 shadow"
                 style={{ maxHeight: '360px', objectFit: 'cover' }}

@@ -4,6 +4,8 @@ import Seo from "../components/seo";
 import Contact from "../components/contact";
 import Footer from "../components/footer";
 import { CitricAcidMeta } from "../data/metaData";
+import FoodAndBeverage from '../static/images/foodandbeverage.png'
+import CitricAcid from '../static/images/citric-acid.jpg'
 
 const FoodAndBeverageIndustry = () => {
   return (
@@ -32,7 +34,7 @@ const FoodAndBeverageIndustry = () => {
             </Col>
             <Col md={6} className="text-center">
               <img
-                src="/assets/industries/food-beverage.png"
+                src={FoodAndBeverage}
                 alt="Food Processing"
                 className="img-fluid rounded-4 shadow"
                 style={{ maxHeight: '400px', objectFit: 'cover' }}
@@ -110,7 +112,7 @@ const FoodAndBeverageIndustry = () => {
       {/* Image Section */}
       <Col md={6} className="text-center">
         <img
-          src="https://cdn-icons-png.flaticon.com/512/1869/1869638.png"
+          src={CitricAcid}
           alt="Citric Acid"
           className="img-fluid rounded-4 shadow"
           style={{

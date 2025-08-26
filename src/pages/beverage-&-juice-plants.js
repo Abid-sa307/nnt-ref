@@ -3,7 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import Seo from "../components/seo";
 import Contact from "../components/contact";
 import Footer from "../components/footer";
-import { BeverageJuicePlantsMeta } from '../data/metaData'; // Don't forget to define this in metaData.js
+import { BeverageJuicePlantsMeta } from '../data/metaData'; 
+import BeverageJuicePlant from '../static/images/beverageAndJuice-Plant.png';
+import CitricAcid from '../static/images/citric-acid.jpg'
 
 const BeverageJuicePlants = () => {
   return (
@@ -33,7 +35,7 @@ const BeverageJuicePlants = () => {
 
             <Col md={6} className="text-center">
               <img
-                src="/assets/industries/beverages.jpg"
+                src={BeverageJuicePlant}
                 alt="Beverage Processing"
                 className="img-fluid rounded-4 shadow"
                 style={{ maxHeight: '400px', objectFit: 'cover' }}
@@ -61,7 +63,7 @@ const BeverageJuicePlants = () => {
 
             <Col md={6} className="text-center">
               <img
-                src="https://cdn-icons-png.flaticon.com/512/1827/1827357.png"
+                src={CitricAcid}
                 alt="Citric Acid in Juice"
                 className="img-fluid rounded-4 shadow"
                 style={{ maxHeight: '350px', objectFit: 'cover' }}

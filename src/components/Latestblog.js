@@ -4,22 +4,28 @@ import { Link } from 'react-router-dom';
 import Seo from '../components/seo';
 import { OurBlogsMeta } from '../data/metaData';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import BlogImg1 from '../static/images/blogimg1.png';
+//import BlogImg2 from "../static/images/";
+//import BlogImg3 from "../static/images/";
 
 const blogData = [
   {
     date: '12‑March‑2025',
     title: 'Common Challenges in Cement Factory Setup & How to Address Them',
     summary: 'Modern infrastructure and construction require cement. The yearly output is always impacted by logistics and cost...',
+    image: BlogImg1,
   },
   {
     date: '06‑March‑2025',
     title: 'Improving Productivity in Cement Plants with Advanced Technology',
     summary: 'The global cement output stands at around 4.1 billion metric tons annually. Here’s how you can optimize your setup...',
+    //image: BlogImg2,
   },
   {
     date: '28‑February‑2025',
     title: 'Everything You Need to Know About Rotary Kiln Technology in Cement Plants',
     summary: 'Rotary kiln cement production heavily depends on heat transfer, rotation speed and consistent temperature management...',
+    //image: BlogImg3,
   },
 ];
 
@@ -55,10 +61,13 @@ const OurBlogs = () => (
         {blogData.map((blog, i) => (
           <div key={i} className="col">
             <div className="card h-100 shadow-sm rounded-4">
-              <div
-                className="bg-secondary rounded-top-4"
-                style={{ height: '200px', width: '100%', backgroundColor: '#ccc' }}
-              ></div>
+              <img
+  src={blog.image}
+  alt={blog.title}
+  className="card-img-top rounded-top-4"
+  style={{ height: '200px', objectFit: 'cover' }}
+/>
+
               <div className="card-body text-start px-4 py-3">
                 <p className="text-muted mb-1">{blog.date}</p>
                 <h5 className="fw-semibold">{blog.title}</h5>

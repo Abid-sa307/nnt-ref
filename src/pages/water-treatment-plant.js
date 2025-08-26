@@ -4,6 +4,8 @@ import Seo from "../components/seo";
 import Contact from "../components/contact";
 import Footer from "../components/footer";
 import { WaterTreatmentMeta } from '../data/metaData';
+import WaterTreatmentplant from '../static/images/water-treatment.png';
+import BleachingEarth from '../static/images/bleaching-earth.jpg';
 
 const WaterTreatmentPlant = () => {
   return (
@@ -35,7 +37,7 @@ const WaterTreatmentPlant = () => {
             {/* Right Image */}
             <Col md={6} className="text-center">
               <img
-                src="/assets/industries/water-treatment.jpg"
+                src={WaterTreatmentplant}
                 alt="Water Treatment Plant"
                 className="img-fluid rounded-4 shadow"
                 style={{ maxHeight: '400px', objectFit: 'cover' }}
@@ -140,11 +142,11 @@ const WaterTreatmentPlant = () => {
       {/* ✅ Right Side - Image */}
       <Col md={6} className="text-center">
         <img
-          src="https://cdn-icons-png.flaticon.com/512/2167/2167735.png"
+          src={BleachingEarth}
           alt="Water Treatment Chemicals"
           className="img-fluid rounded-4 shadow"
           style={{
-            maxHeight: "360px",
+            maxHeight: "460px",
             objectFit: "cover",
             transition: "transform 0.3s ease",
           }}

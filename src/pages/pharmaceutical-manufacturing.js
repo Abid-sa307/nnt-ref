@@ -3,7 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import Seo from "../components/seo";
 import Contact from "../components/contact";
 import Footer from "../components/footer";
-import { PharmaceuticalMeta } from '../data/metaData'; // Make sure you define this in metaData.js
+import { PharmaceuticalMeta } from '../data/metaData'; 
+import Pharmaceutical from '../static/images/Pharmaceutical-indus.png'
+import CitircAcid from '../static/images/citric-acid.jpg';
 
 const Pharmaceuticals = () => {
   return (
@@ -32,7 +34,7 @@ const Pharmaceuticals = () => {
             </Col>
             <Col md={6} className="text-center">
               <img
-                src="/assets/industries/pharma.jpg"
+                src={Pharmaceutical}
                 alt="Pharmaceuticals"
                 className="img-fluid rounded-4 shadow"
                 style={{ maxHeight: '400px', objectFit: 'cover' }}
@@ -60,7 +62,7 @@ const Pharmaceuticals = () => {
             </Col>
             <Col md={6} className="text-center">
               <img
-                src="https://cdn-icons-png.flaticon.com/512/3969/3969393.png"
+                src={CitircAcid}
                 alt="Citric Acid Pharma Grade"
                 className="img-fluid rounded-4 shadow"
                 style={{ maxHeight: '360px', objectFit: 'cover' }}

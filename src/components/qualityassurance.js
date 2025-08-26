@@ -1,14 +1,12 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import isoImage from '../Assests/iso-cert.png';
-import labTestImage from '../Assests/lab-testing.png';
-import packagingImage from '../Assests/packaging.png';
-import logisticsImage from '../Assests/logistics.png';
-import msdsImage from '../Assests/msds-sample.png';
+import isoImage from '../assests/iso-cert.png';
+
 import Contact from '../components/contact';
 import Footer from '../components/footer';
 import Seo from '../components/seo';
 import Whychooseus from '../components/Whychooseus';
+import RefineryClaySupplier from '../assests/refinery-clay-supp.png';
 
 const QualityAssurance = () => {
   return (
@@ -35,28 +33,37 @@ const QualityAssurance = () => {
               </p>
             </div>
 
-            {/* Right - Box */}
-            <div className="col-md-6 text-center">
-              <div
-                style={{
-                  height: '400px',
-                  width: '100%',
-                  backgroundColor: '#ffffff33',
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  borderRadius: '12px',
-                  boxShadow: '0 4px 16px rgba(0,0,0,0.2)',
-                  color: '#fff',
-                  fontSize: '1.25rem',
-                  fontWeight: '500',
-                }}
-              >
-                Testing Lab & Certification Visuals
-              </div>
+           {/* Right - Box with Image */}
+<div className="col-md-6 text-center">
+  <div
+    style={{
+      height: '400px',
+      width: '100%',
+      //backgroundColor: '#ffffff33',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      borderRadius: '12px',
+     // boxShadow: '0 4px 16px rgba(0,0,0,0.2)',
+      overflow: 'hidden', // ✅ Prevent image overflow
+    }}
+  >
+    <img
+      src={RefineryClaySupplier} // 👉 Replace with your image path
+      alt="Water Treatment Plant"
+      style={{
+        maxWidth: '100%',
+        maxHeight: '100%',
+       // objectFit: 'cover', // ✅ Ensures image fills nicely
+        borderRadius: '12px',
+      }}
+    />
+  </div>
+</div>
+
             </div>
           </div>
-        </div>
+        
       </section>
 
    

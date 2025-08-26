@@ -7,6 +7,10 @@ import Footer from '../../components/footer';
 import Contact from '../../components/contact';
 import WhyChooseUs from '../Whychooseus';
 import { CausticSodaFlakesMeta } from '../../data/metaData';
+import CausticSodaFlakes from '../../static/images/caustic-soda.jpg';
+import Clinkerization from '../../static/images/clinkerization.png';
+//import MsdsImg from '../../static/images/specification-causticsoda.png';
+import MsdsImg from '../../assests/refinery-clay-supp.png';
 
 const Caustic = () => {
   return (
@@ -37,29 +41,23 @@ const Caustic = () => {
               </p>
             </div>
 
-            {/* Right - Styled Box Instead of Image */}
-            <div className="col-md-6 text-center">
-              <div
-                style={{
-                  height: '400px',
-                  width: '100%',
-                  backgroundColor: '#ffffff33',
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  borderRadius: '12px',
-                  boxShadow: '0 4px 16px rgba(0,0,0,0.2)',
-                  color: '#fff',
-                  fontSize: '1.25rem',
-                  fontWeight: '500',
-                }}
-              >
-                Caustic Soda Flakes Packaging Preview
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+           {/* Right - Image */}
+      <div className="col-md-6 text-center">
+        <img
+          src={CausticSodaFlakes} 
+          alt="Caustic Soda Flakes Packaging Preview"
+          style={{
+            height: '400px',
+            width: '100%',
+            objectFit: 'cover',
+            borderRadius: '12px',
+            boxShadow: '0 4px 16px rgba(0,0,0,0.2)',
+          }}
+        />
+      </div>
+    </div>
+  </div>
+</section> 
 
       {/* ✅ Clinkerization-style Informational Section */}
 <section className="py-5 bg-white">
@@ -85,7 +83,7 @@ const Caustic = () => {
       {/* Right - Image */}
       <div className="col-md-6 text-center">
         <img
-          src="https://cdn-icons-png.flaticon.com/512/1726/1726347.png" // Replace this with your factory/product image
+          src={Clinkerization}
           alt="Caustic Soda Plant"
           className="img-fluid rounded-4 shadow"
           style={{ maxHeight: '360px', objectFit: 'cover' }}
@@ -147,7 +145,7 @@ const Caustic = () => {
                 <span>Density</span><strong>2.13 g/cm³</strong>
               </li>
               <li className="list-group-item d-flex justify-content-between">
-                <span>PH (1% Sol.)</span><strong>>13</strong>
+                <span>PH (1% Sol.)</span><strong>13</strong>
               </li>
               <li className="list-group-item d-flex justify-content-between">
                 <span>Solubility</span><strong>Completely Soluble in Water</strong>
@@ -169,27 +167,21 @@ const Caustic = () => {
         </div>
       </div>
 
-      {/* Right - Visual Placeholder for MSDS / Packaging */}
-      <div className="col-md-6">
-        <div
-          className="rounded-4 shadow-sm d-flex align-items-center justify-content-center"
-          style={{
-            height: '100%',
-            minHeight: '480px',
-            backgroundColor: '#f8f9fa',
-            border: '2px dashed #0d6efd55',
-            color: '#0d6efd',
-            fontSize: '1.2rem',
-            textAlign: 'center',
-            padding: '30px'
-          }}
-        >
-          Visual Placeholder for Product Packaging, MSDS Sheet, or Certificates (ISO / SGS / REACH)
-        </div>
-      </div>
-
-    </div>
-  </div>
+      {/* Right - Visual Placeholder replaced with Image */}
+<div className="col-md-6 text-center">
+  <img
+    src={MsdsImg} // ✅ import your MSDS image at the top
+    alt="MSDS Sheet - Caustic Soda Flakes"
+    className="img-fluid rounded-4 shadow"
+    style={{
+      maxHeight: '1000px',
+      objectFit: 'contain',
+      width: '100%',
+    }}
+  />
+</div>
+</div>
+</div>
 </section>
 
 

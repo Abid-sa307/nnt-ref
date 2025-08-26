@@ -4,6 +4,9 @@ import Seo from '../../components/seo';
 import Footer from '../../components/footer';
 import Contact from '../../components/contact';
 import WhyChooseUs from '../Whychooseus';
+import CitricAcid from '../../static/images/citric-acid.jpg'
+import Clinkerization from '../../static/images/clinkerization.png';
+import MsdsImg from '../../assests/refinery-clay-supp.png';
 
 const Citric = () => {
   return (
@@ -35,23 +38,17 @@ const Citric = () => {
 
             {/* Right Box */}
             <div className="col-md-6 text-center">
-              <div
-                style={{
-                  height: '400px',
-                  width: '100%',
-                  backgroundColor: '#ffffff33',
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  borderRadius: '12px',
-                  boxShadow: '0 4px 16px rgba(0,0,0,0.2)',
-                  color: '#fff',
-                  fontSize: '1.25rem',
-                  fontWeight: '500',
-                }}
-              >
-                Citric Acid Packaging Preview
-              </div>
+              <img
+                        src={CitricAcid} 
+                        alt="Citric Acid Packaging Preview"
+                        style={{
+                          height: '400px',
+                          width: '100%',
+                          objectFit: 'cover',
+                          borderRadius: '12px',
+                          boxShadow: '0 4px 16px rgba(0,0,0,0.2)',
+                        }}
+                      />
             </div>
           </div>
         </div>
@@ -80,7 +77,7 @@ const Citric = () => {
       {/* Right - Image */}
       <div className="col-md-6 text-center">
         <img
-          src="https://cdn-icons-png.flaticon.com/512/2812/2812471.png" // You can replace this with your actual image
+          src={Clinkerization} // You can replace this with your actual image
           alt="Citric Acid Powder"
           className="img-fluid rounded-4 shadow"
           style={{ maxHeight: '360px', objectFit: 'cover' }}
@@ -158,21 +155,16 @@ const Citric = () => {
 
       {/* Right - Visual Placeholder */}
       <div className="col-md-6">
-        <div
-          className="rounded-4 shadow-sm d-flex align-items-center justify-content-center"
+      <img
+          src={MsdsImg} // ✅ import your MSDS image at the top
+          alt="MSDS Sheet - Citric Acid"
+          className="img-fluid rounded-4 shadow"
           style={{
-            height: '100%',
-            minHeight: '480px',
-            backgroundColor: '#f8f9fa',
-            border: '2px dashed #0d6efd55',
-            color: '#0d6efd',
-            fontSize: '1.2rem',
-            textAlign: 'center',
-            padding: '30px'
+            maxHeight: '1000px',
+            objectFit: 'contain',
+            width: '100%',
           }}
-        >
-          Visual Placeholder for Product Packaging, MSDS Sheet, or Certificates (FCC / ISO / USP)
-        </div>
+        />  
       </div>
 
     </div>

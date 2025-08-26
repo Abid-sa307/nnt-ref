@@ -4,6 +4,8 @@ import Seo from "../components/seo";
 import Contact from "../components/contact";
 import Footer from "../components/footer";
 import { PetrochemicalIndustryMeta } from '../data/metaData'; // Make sure this exists
+import Petrochemical from '../static/images/Petrochemical-indus.png';
+import CausticSodaFlakes from '../static/images/caustic-soda.jpg';
 
 const PetrochemicalIndustry = () => {
   return (
@@ -32,7 +34,7 @@ const PetrochemicalIndustry = () => {
             </Col>
             <Col md={6} className="text-center">
               <img
-                src="/assets/industries/petrochemical.jpg"
+                src={Petrochemical}
                 alt="Petrochemical Industry"
                 className="img-fluid rounded-4 shadow"
                 style={{ maxHeight: '400px', objectFit: 'cover' }}
@@ -56,7 +58,7 @@ const PetrochemicalIndustry = () => {
             </Col>
             <Col md={6} className="text-center">
               <img
-                src="https://cdn-icons-png.flaticon.com/512/1199/1199311.png"
+                src={CausticSodaFlakes}
                 alt="Chemical Products"
                 className="img-fluid rounded-4 shadow"
                 style={{ maxHeight: '360px', objectFit: 'cover' }}

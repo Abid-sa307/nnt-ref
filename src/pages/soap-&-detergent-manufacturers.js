@@ -4,6 +4,8 @@ import Seo from "../components/seo";
 import Contact from "../components/contact";
 import Footer from "../components/footer";
 import { SoapAndDetergentMeta } from "../data/metaData";
+import SoapAndDetergent from '../static/images/soap-&-detergent.png';
+import CausticSodaFlakes from '../static/images/caustic-soda.jpg';
 
 const SoapAndDetergentManufacturers = () => {
   return (
@@ -32,7 +34,7 @@ const SoapAndDetergentManufacturers = () => {
             </Col>
             <Col md={6} className="text-center">
               <img
-                src="/assets/industries/soap-detergent.jpg"
+                src={SoapAndDetergent}
                 alt="Soap & Detergent"
                 className="img-fluid rounded-4 shadow"
                 style={{ maxHeight: '400px', objectFit: 'cover' }}
@@ -67,7 +69,7 @@ const SoapAndDetergentManufacturers = () => {
       {/* Right - Image */}
       <Col md={6} className="text-center">
         <img
-          src="https://cdn-icons-png.flaticon.com/512/2913/2913461.png"
+          src={CausticSodaFlakes}
           alt="Soap Ingredients"
           className="img-fluid rounded-4 shadow"
           style={{

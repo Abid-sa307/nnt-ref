@@ -1,5 +1,10 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CausticSoda from '../static/images/caustic-soda.jpg';
+import BleachingEarth from '../static/images/bleaching-earth.jpg';
+import FilterFlow from '../static/images/filter-aid.jpg';
+import CitricAcid from '../static/images/citric-acid.jpg';
+
 
 const ProductsPreview = () => {
   const products = [
@@ -7,7 +12,7 @@ const ProductsPreview = () => {
       title: 'Caustic Soda Flakes',
       description:
         'Caustic Soda Flakes are widely used in the manufacturing of paper, textiles, soaps and detergents. They are also essential for water treatment, petroleum refining and alumina production.',
-      image: '/images/caustic-soda.png', // 🖼️ Replace with your actual image path
+      image: CausticSoda, // 🖼️ Replace with your actual image path
      // slug: 'caustic-soda-flakes',
      slug: 'caustic-soda',
 
@@ -16,21 +21,21 @@ const ProductsPreview = () => {
       title: 'Bleaching Earth',
       description:
         'Bleaching Earth is a highly adsorptive clay used for decolorizing oils and removing impurities. It is extensively used in edible oil refineries and in the purification of mineral oils and lubricants.',
-      image: '/images/bleaching-earth.png',
+      image: BleachingEarth,
       slug: 'bleaching-earth',
     },
     {
       title: 'Filter Flow Aid',
       description:
         'Filter Flow Aid is used in industrial filtration systems to enhance the clarity and flow rate of liquids. It helps improve the efficiency and performance of filter presses and rotary vacuum filters.',
-      image: '/images/filter-flow.png',
+      image: FilterFlow,
       slug: 'filter-flow-aid',
     },
     {
       title: 'Citric Acid',
       description:
         'Citric Acid is a natural preservative and flavoring agent widely used in food and beverage production. It also finds application in pharmaceuticals, cosmetics and cleaning agents due to its acidic and chelating properties.',
-      image: '/images/citric-acid.png',
+      image: CitricAcid,
       slug: 'citric-acid',
     },
   ];
@@ -52,9 +57,12 @@ const ProductsPreview = () => {
         }
 
         .product-image {
-          width: 60px;
-          height: 60px;
-          object-fit: contain;
+  width: 100%;          /* take full card width */
+  height: 200px;        /* fixed height */
+  object-fit: cover;    /* crop to fit nicely */
+  border-radius: 12px;  /* optional: smooth corners */
+}
+
         }
       `}</style>
 

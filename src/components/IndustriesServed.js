@@ -4,53 +4,63 @@ import { Link } from 'react-router-dom';
 import Seo from './seo';
 import Footer from './footer';
 import Contact from './contact';
+import EdibleOil from '../static/images/edible.png';
+import SoapAndDetergent from '../static/images/soap-&-detergent.png';
+import WaterTreatment from '../static/images/water-treatment.png';
+import FoodAndBeverage from '../static/images/foodandbeverage.png';
+import Petrochemical from '../static/images/Petrochemical-indus.png';
+import Pharmaceutical from '../static/images/Pharmaceutical-indus.png';
+import BeverageAndJuice from '../static/images/beverageAndJuice-Plant.png';
+import AgricultureAndFetrilizers from '../static/images/agricultureAndfetrilizer.png'
+import RefineryClaySupplier from '../assests/refinery-clay-supp.png';
 
 const industries = [
   {
     title: 'Edible Oil Refineries',
-    image: '/assets/industries/edible-oil.jpg',
+    image: EdibleOil,
     description: 'Enhancing oil purification and removing impurities in edible oil production.',
     link: '/industries/edible-oil-refineries',
+
   },
   {
     title: 'Soap & Detergent Manufacturers',
-    image: '/assets/industries/soap.jpg',
+    image: SoapAndDetergent,
     description: 'Providing adsorbents for removing contaminants and improving clarity.',
     link: '/industries/soap-&-detergent-manufacturers',
   },
   {
     title: 'Water Treatment Plants',
-    image: '/assets/industries/water-treatment.jpg',
+    image: WaterTreatment,
     description: 'Used for filtration and contaminant removal in municipal and industrial water.',
     link: '/industries/water-treatment-plant',
   },
   {
     title: 'Food & Beverage Industry',
-    image: '/assets/industries/food-beverage.jpg',
+    image: FoodAndBeverage ,
     description: 'Used in purification and clarification of juices, syrups and ingredients.',
     link: '/industries/food-&-beverage-industry',
   },
   {
     title: 'Petrochemical Industry',
-    image: '/assets/industries/petrochemical.jpg',
+    image: Petrochemical,
     description: 'Refining support for catalyst treatment and impurity removal in hydrocarbons.',
     link: '/industries/petrochemical-industry',
   },
   {
     title: 'Pharmaceutical Manufacturing',
-    image: '/assets/industries/pharmaceutical.jpg',
+    image:Pharmaceutical ,
     description: 'Used as a filtration aid in drug synthesis and biological applications.',
     link: '/industries/pharmaceutical-manufacturing',
   },
   {
      title: 'Beverage & Juice Plants',
-    image: '/assets/industries/Beverage.jpg',
+    image: BeverageAndJuice,
     description: 'Used as a filtration aid in drug synthesis and biological applications.',
     link: '/industries/beverage-&-juice-plants',
   },
 {
    title: 'Agriculture & Fertilizers',
-    image: '/assets/industries/Agriculture.jpg',
+    image: AgricultureAndFetrilizers,
     description: 'Used as a filtration aid in drug synthesis and biological applications.',
     link: '/industries/agriculture-&-fertilizers',
 }
@@ -86,21 +96,27 @@ const IndustriesServed = () => {
         </p>
       </div>
 
-      {/* ✅ Right Side - Styled Placeholder Box */}
-      <div className="col-md-6 text-center">
-        <div
-          className="rounded-4 shadow-sm d-flex align-items-center justify-content-center"
-          style={{
-            height: '400px',
-            backgroundColor: '#ffffff33',
-            color: '#fff',
-            fontSize: '1.25rem',
-            fontWeight: '500',
-          }}
-        >
-          Industry Applications Visual Preview
-        </div>
-      </div>
+      {/* ✅ Right Side - Image Instead of Placeholder */}
+<div className="col-md-6 text-center">
+  <div
+    className="rounded-4 shadow-sm d-flex align-items-center justify-content-center"
+    style={{
+      height: '200px',
+      //backgroundColor: '#ffffff33',
+      width: '100%',
+            objectFit: 'cover',
+            borderRadius: '12px',
+    }}
+  >
+    <img
+      src={RefineryClaySupplier} // 👉 Replace with your image path
+      alt="Industry Applications"
+      className="img-fluid rounded-4"
+      
+    />
+  </div>
+</div>
+
     </div>
   </div>
 </section>
