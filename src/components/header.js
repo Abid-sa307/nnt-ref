@@ -477,8 +477,8 @@ import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import LogoGreen from '../assests/LogoGreen.png'; // Green logo for solid navbar
-import LogoWhite from '../assests/LogoWhite.png';
+import LogoGreen from '../assets/LogoGreen.png'; // Green logo for solid navbar
+import LogoWhite from '../assets/LogoWhite.png';
 import { Navbar, Container, Offcanvas, Button, Nav, Image } from 'react-bootstrap';
 import { Whatsapp } from 'react-bootstrap-icons';
 

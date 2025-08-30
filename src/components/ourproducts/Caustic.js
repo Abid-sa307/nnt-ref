@@ -10,7 +10,7 @@ import { CausticSodaFlakesMeta } from '../../data/metaData';
 import CausticSodaFlakes from '../../static/images/caustic-soda.jpg';
 import Clinkerization from '../../static/images/clinkerization.png';
 //import MsdsImg from '../../static/images/specification-causticsoda.png';
-import MsdsImg from '../../assests/refinery-clay-supp.png';
+import MsdsImg from '../../assets/refinery-clay-supp.png';
 
 const Caustic = () => {
   return (

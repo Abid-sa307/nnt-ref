@@ -4,7 +4,7 @@ import Seo from '../components/seo';
 import Footer from '../components/footer';
 import Contact from '../components/contact';
 import metadata from '../data/metaData';
-import RefineryClaySupplier from '../assests/refinery-clay-supp.png';
+import RefineryClaySupplier from '../assets/refinery-clay-supp.png';
 
 const AboutUs = () => {
   return (

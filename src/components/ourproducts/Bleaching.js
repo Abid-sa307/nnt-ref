@@ -6,7 +6,7 @@ import Contact from '../../components/contact';
 import WhyChooseUs from '../Whychooseus';
 import { BleachingEarthMeta } from '../../data/metaData';
 import BleachingEarthImg from '../../static/images/bleaching-earth.jpg'
-import MsdsImg from '../../assests/refinery-clay-supp.png';
+import MsdsImg from '../../assets/refinery-clay-supp.png';
 import Clinkerization from '../../static/images/clinkerization.png';
 const BleachingEarth = () => {
   return (

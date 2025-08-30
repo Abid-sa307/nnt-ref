@@ -24,16 +24,16 @@ const Footer = () => {
               Refinery chemicals homepage structure Refinery chemicals homepage structure Refinery chemicals homepage structure
             </p>
             <div className="d-flex gap-4 mt-2">
-              <a href="https://facebook.com" target="_blank" rel="noreferrer">
+              <a href="https://www.facebook.com/people/Refinery-Clay-Supplier/61578785995761/" target="_blank" rel="noreferrer">
                 <i className="fab fa-facebook fa-lg text-primary"></i>
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer">
+              <a href="https://www.instagram.com/nnt_cement/" target="_blank" rel="noreferrer">
                 <i className="fab fa-instagram fa-lg text-danger"></i>
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/yunus-khan-895335200/" target="_blank" rel="noreferrer">
                 <i className="fab fa-linkedin fa-lg text-primary"></i>
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noreferrer">
+              <a href="https://www.youtube.com/@Divison-" target="_blank" rel="noreferrer">
                 <i className="fab fa-youtube fa-lg text-danger"></i>
               </a>
             </div>
@@ -45,13 +45,13 @@ const Footer = () => {
             <ul className="list-unstyled" style={{ fontSize: "20px", lineHeight: "1.9" }}>
               <li>
                 <Link to="/" className="text-decoration-none text-dark">Home</Link>
-              </li>
+                </li>
               <li>
-                <Link to="/about" className="text-decoration-none text-dark">About</Link>
+                <Link to="/about-us" className="text-decoration-none text-dark">About</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/services" className="text-decoration-none text-dark">Service</Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/contact" className="text-decoration-none text-dark">Contact</Link>
               </li>

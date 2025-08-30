@@ -1,12 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import isoImage from '../assests/iso-cert.png';
-
+import isoImage1 from '../static/images/certification-1.png';
+import isoImage2 from '../static/images/certification-2.png';
+import isoImage3 from '../static/images/certification-3.png';
 import Contact from '../components/contact';
 import Footer from '../components/footer';
 import Seo from '../components/seo';
 import Whychooseus from '../components/Whychooseus';
-import RefineryClaySupplier from '../assests/refinery-clay-supp.png';
+import RefineryClaySupplier from '../assets/refinery-clay-supp.png';
 
 const QualityAssurance = () => {
   return (
@@ -133,11 +134,21 @@ const QualityAssurance = () => {
             Certifications & Global Compliance
           </h2>
           <div className="row align-items-center g-4">
-            <div className="col-lg-6 text-center">
+            <div className="col-lg-6 text-center" >
               <img
-                src={isoImage}
+                src={isoImage1}
                 alt="ISO Certification"
-                className="img-fluid rounded shadow"
+                className="img-fluid rounded shadow" style={{ marginRight: '60px' }}
+              />
+              <img
+                src={isoImage2}
+                alt="ISO Certification"
+                className="img-fluid rounded shadow" style={{ marginRight: '60px' }}
+              />
+              <img
+                src={isoImage3}
+                alt="ISO Certification"
+                className="img-fluid rounded shadow" style={{ marginRight: '10px' }}
               />
             </div>
             <div className="col-lg-6">

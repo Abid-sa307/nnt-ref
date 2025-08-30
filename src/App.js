@@ -5,6 +5,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './App.css'; // or './App.css'
+import TestSanity from "./components/TestSanity";
 
 import Header from './components/header'; 
 import Home from './components/home';
@@ -46,7 +47,8 @@ function App() {
             <Route path='/industries/agriculture-&-fertilizers' element={<AgricultureFertilizers/>}/>
             <Route path='/industries/petrochemical-industry' element={<PetrochemicalIndustry/>}/>
             <Route path="/industries/beverage-&-juice-plants" element={<BeverageJuicePlants/>}/>
-           <Route path="/blogdetail/:id" element={<BlogDetail />} />
+           {/* <Route path="/blogdetail/:id" element={<BlogDetail />} /> */}
+<Route path="/blogdetail/:slug" element={<BlogDetail />} />
 
             
 
@@ -56,6 +58,7 @@ function App() {
           <Route path="/our-products/citric-acid" element={<CitricAcid />} />
           <Route path="/quality-assurance" element={<QualityAssurance />} />
           <Route path="/about-us" element={<AboutUs />} />
+           <Route path="/test" element={<TestSanity />} />
 
         </Routes>
       </Router>

@@ -12,7 +12,7 @@ import Petrochemical from '../static/images/Petrochemical-indus.png';
 import Pharmaceutical from '../static/images/Pharmaceutical-indus.png';
 import BeverageAndJuice from '../static/images/beverageAndJuice-Plant.png';
 import AgricultureAndFetrilizers from '../static/images/agricultureAndfetrilizer.png'
-import RefineryClaySupplier from '../assests/refinery-clay-supp.png';
+import RefineryClaySupplier from '../assets/refinery-clay-supp.png';
 
 const industries = [
   {

@@ -7,7 +7,7 @@ import { FilterFlowAidMeta } from '../../data/metaData'; // Add this in your met
 import WhyChooseUs from '../Whychooseus';
 import FilterFlowAid from '../../static/images/filter-aid.jpg'
 import Clinkerization from '../../static/images/clinkerization.png';
-import MsdsImg from '../../assests/refinery-clay-supp.png';
+import MsdsImg from '../../assets/refinery-clay-supp.png';
 const Filter = () => {
   return (
     <>

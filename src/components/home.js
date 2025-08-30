@@ -1,11 +1,12 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProductsPreview from './Productpreview.js';
 import WhyChooseUs from './Whychooseus.js';
-import LatestBlogs from './Latestblog.js';
+//import LatestBlog from './Latestblog.js';
 //import HeroImage from '../Assests/hero-image.png';
-import HeroImage from '../assests/refinery-clay-supp.png';
+import HeroImage from '../assets/refinery-clay-supp.png';
 import Footer from './footer.js';
 import Contact from './contact.js';
 import Seo from '../components/seo';
@@ -13,6 +14,54 @@ import { HomeMeta } from '../data/metaData';
 import EdibleOil from '../static/images/edible.png';
 import WaterTreatment from '../static/images/water-treatment.png';
 import SoapDetergent from '../static/images/soap-&-detergent.png';
+ // adjust path if needed
+import { Link } from 'react-router-dom';
+import { client } from '../lib/sanityClient.js';
+import imageUrlBuilder from '@sanity/image-url';
+
+const builder = imageUrlBuilder(client);
+
+function urlFor(source) {
+  return builder.image(source);
+}
+
+function getSnippet(body, length = 120) {
+  if (!body) return "";
+  if (Array.isArray(body)) {
+    const firstBlock = body.find(b => b._type === 'block');
+    return firstBlock?.children?.map(c => c.text).join(' ').substring(0, length) + '...';
+  }
+  return body.substring(0, length) + '...';
+}
+const POSTS_QUERY = `*[
+  _type == "post" && defined(slug.current)
+]|order(publishedAt desc)[0...12]{_id,
+  title,
+  slug,
+  publishedAt,
+  mainImage,
+  body}`;
+
+export async function loader() {
+  const posts = await client.fetch(POSTS_QUERY);
+  return { posts };
+}
+
+const Home = () => {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      try {
+        const data = await client.fetch(POSTS_QUERY);
+        setPosts(data);
+      } catch (err) {
+        console.error("Error fetching posts:", err);
+      }
+    };
+
+    fetchPosts();
+  }, []);
 
 // ✅ Hero Banner
 const HeroBanner = () => (
@@ -168,6 +217,106 @@ const IndustriesServed = () => (
     `}</style>
   </section>
 );
+
+
+const LatestBlog = ({ posts }) => {
+  // Take only the latest 3 posts
+  const latestPosts = posts.slice(0, 3);
+
+  return (
+    <section className="py-5">
+      <div className="container">
+        <h2 className="mb-5 fw-bold text-center">Our Blogs</h2>
+        <div className="row g-4">
+          {latestPosts.map(post => (
+            <div className="col-md-4" key={post._id}>
+              <div className="card h-100 shadow-sm blog-card">
+                {post.mainImage && (
+                  <div className="card-img-wrapper">
+                    <img
+                      src={urlFor(post.mainImage).width(400).height(250).url()}
+                      className="card-img-top"
+                      alt={post.title}
+                    />
+                  </div>
+                )}
+                <div className="card-body d-flex flex-column">
+                  <h5 className="card-title">{post.title}</h5>
+                  <p className="card-text flex-grow-1">{getSnippet(post.body, 120)}</p>
+                  <p className="text-muted mb-2" style={{ fontSize: '0.85rem' }}>
+                    {new Date(post.publishedAt).toLocaleDateString()}
+                  </p>
+                  <Link to={`/blogdetail/${post.slug.current}`} className="read-more">
+                    Read More →
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* View More Button */}
+        <div className="text-center mt-4">
+          <Link to="/our-blog" className="btn btn-outline-primary btn-lg view-more-btn">
+            View More Blogs
+          </Link>
+        </div>
+      </div>
+
+      {/* Inline Styling */}
+      <style>
+        {`
+          .blog-card {
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+          }
+          .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+          }
+          .card-img-wrapper {
+            overflow: hidden;
+            height: 250px;
+          }
+          .card-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+          }
+          .blog-card:hover .card-img-wrapper img {
+            transform: scale(1.08);
+          }
+          .read-more {
+            margin-top: auto;
+            font-weight: 500;
+            color: #3366cc;
+            text-decoration: none;
+            position: relative;
+            transition: all 0.3s ease;
+          }
+          .read-more::after {
+            
+            margin-left: 5px;
+            transition: margin-left 0.3s ease;
+          }
+          .read-more:hover::after {
+            margin-left: 10px;
+          }
+            .view-more-btn {
+    font-family: 'Poppins', sans-serif; /* Or any font you like */
+    font-weight: 600;
+    font-size: 1.0rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+  }
+  
+        `}
+      </style>
+    </section>
+  );
+};
 
 
 
@@ -398,6 +547,7 @@ const Testimonials = () => (
           opacity: 1;
           transform: translateY(0);
         }
+          
       }
     `}
   </style>
@@ -451,14 +601,16 @@ const ChatWidget = () => (
 );
 
 // ✅ Main Home Component
-const Home = () => (
+return (
   <>
      <Seo meta={HomeMeta} />
     <HeroBanner />
     <ProductsPreview />
     <IndustriesServed />
     <WhyChooseUs />
-    <LatestBlogs />
+     {/* dynamic blog section */}
+     <LatestBlog posts={posts} />
+
     <QualityCommitment />
     <Testimonials />
     <Contact />
@@ -466,5 +618,5 @@ const Home = () => (
     <Footer />
   </>
 );
-
+};
 export default Home;
