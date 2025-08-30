@@ -594,7 +594,7 @@ const Testimonials = () => (
 // ✅ Chat Widget Placeholder
 const ChatWidget = () => (
   <div className="chat-widget position-fixed bottom-0 end-0 p-3" style={{ zIndex: 1050 }}>
-    <a href="https://wa.me/your-number" target="_blank" rel="noopener noreferrer">
+    <a href="https://wa.me/9723392753" target="_blank" rel="noopener noreferrer">
       <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="Chat" width={48} />
     </a>
   </div>

@@ -64,7 +64,7 @@ const Footer = () => {
 
             <div className="mb-3">
               <a
-                href="https://wa.me/919687431287"
+                href="https://wa.me/9723392753"
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-success d-inline-flex align-items-center gap-2 px-3 py-2"
@@ -91,8 +91,9 @@ const Footer = () => {
             <div className="d-flex">
               <Image src={locationIcon} alt="Location" width={20} className="me-2 mt-1" />
               <p className="mb-0 text-muted" style={{ fontSize: "17px", lineHeight: "1.5" }}>
-                3rd Floor, Diamond Complex, SH 41, <br />
-                Industrial Area, Chhapi, North Gujarat, India. 385210
+                {/* 3rd Floor, Diamond Complex, SH 41, <br />
+                Industrial Area, Chhapi, North Gujarat, India. 385210 */}
+                 3rd Floor, Sh 41 Industrial Area At Chhapi Palanpur Ahmedabad higheway, Vadgam, India. 385210 
               </p>
             </div>
           </Col>

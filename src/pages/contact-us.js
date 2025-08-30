@@ -234,7 +234,7 @@ const Contact = () => {
               >
                 <div className="me-2 bg-success bg-opacity-10 p-2 rounded-circle">📍</div>
                 <div className="fw-semibold">
-                  3rd Floor, Diamond Complex, SH 41, Industrial Area, Chhapi, North Gujarat, India. 385210
+                  3rd Floor, Sh 41 Industrial Area At Chhapi Palanpur Ahmedabad higheway, Vadgam, India. 385210 
                 </div>
               </a>
             </div>
