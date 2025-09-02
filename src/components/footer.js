@@ -6,7 +6,7 @@ import mailIcon from "../static/mail-icon.svg";
 import locationIcon from "../static/location-icon.svg";
 import footerMeta from "../data/metaData";
 import Seo from "../components/seo";
-import { HashLink } from 'react-router-hash-link';
+
 
 import { Link } from "react-router-dom";
 
