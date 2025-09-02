@@ -6,6 +6,8 @@ import mailIcon from "../static/mail-icon.svg";
 import locationIcon from "../static/location-icon.svg";
 import footerMeta from "../data/metaData";
 import Seo from "../components/seo";
+import { HashLink } from 'react-router-hash-link';
+
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -27,7 +29,7 @@ const Footer = () => {
               <a href="https://www.facebook.com/people/Refinery-Clay-Supplier/61578785995761/" target="_blank" rel="noreferrer">
                 <i className="fab fa-facebook fa-lg text-primary"></i>
               </a>
-              <a href="https://www.instagram.com/nnt_cement/" target="_blank" rel="noreferrer">
+              {/* <a href="https://www.instagram.com/nnt_cement/" target="_blank" rel="noreferrer">
                 <i className="fab fa-instagram fa-lg text-danger"></i>
               </a>
               <a href="https://www.linkedin.com/in/yunus-khan-895335200/" target="_blank" rel="noreferrer">
@@ -35,28 +37,32 @@ const Footer = () => {
               </a>
               <a href="https://www.youtube.com/@Divison-" target="_blank" rel="noreferrer">
                 <i className="fab fa-youtube fa-lg text-danger"></i>
-              </a>
-            </div>
+              </a>*/}
+            </div> 
           </Col>
 
-          {/* Section 2: Useful Links */}
-          <Col md={4} className="d-flex flex-column justify-content-start">
-            <h5 className="text-success fw-semibold mb-3">Useful links</h5>
-            <ul className="list-unstyled" style={{ fontSize: "20px", lineHeight: "1.9" }}>
-              <li>
-                <Link to="/" className="text-decoration-none text-dark">Home</Link>
-                </li>
-              <li>
-                <Link to="/about-us" className="text-decoration-none text-dark">About</Link>
-              </li>
-              <li>
-                <Link to="/" className="text-decoration-none text-dark">Products</Link>
-              </li>
-              <li>
-                <Link to="/contact" className="text-decoration-none text-dark">Contact</Link>
-              </li>
-            </ul>
-          </Col>
+
+       <div className="col-md-4">
+  <h5 className="mb-3" style={{ color: "green", fontWeight: "600" }}>
+    Useful links
+  </h5>
+  <ul className="list-unstyled" style={{ fontSize: "18px", lineHeight: "2" }}>
+    <li>
+      <a href="/" className="text-decoration-none text-dark">Home</a>
+    </li>
+    <li>
+      <a href="/about-us" className="text-decoration-none text-dark">About</a>
+    </li>
+    <li>
+      <a href="/#products" className="text-decoration-none text-dark">Products</a>
+    </li>
+    <li>
+      <a href="/contact" className="text-decoration-none text-dark">Contact</a>
+    </li>
+  </ul>
+</div>
+
+
 
           {/* Section 3: Contact Info */}
           <Col md={4} className="d-flex flex-column justify-content-start">

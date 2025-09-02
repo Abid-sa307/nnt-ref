@@ -27,12 +27,14 @@ import FilterFlowAid from './components/ourproducts/Filter';
 import CitricAcid from './components/ourproducts/Citric';
 import OurBlogs from './pages/our-blog';
 import BlogDetail from './pages/blogdetail';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <HelmetProvider>
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

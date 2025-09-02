@@ -5,7 +5,8 @@ import Footer from '../components/footer';
 import Contact from '../components/contact';
 import metadata from '../data/metaData';
 import RefineryClaySupplier from '../assets/refinery-clay-supp.png';
-
+import TeamImg1 from '../static/images/TeamImg.png'
+import TeamImg2 from '../static/images/TeamImg1.png';
 const AboutUs = () => {
   return (
     <>
@@ -256,51 +257,52 @@ const AboutUs = () => {
             <div className="team-card">
               <div className="team-img-wrapper">
                 <img
-                  src="https://via.placeholder.com/300x300"
-                  alt="John Smith"
+                  src={TeamImg1}
+                  alt="Riyaz Tunvar"
                   className="team-img"
                 />
               </div>
-              <h5 className="team-name">John Smith</h5>
-              <a href="#" className="linkedin-btn">
+              <h5 className="team-name">Riyaz Tunvar</h5>
+              {/* <a href="#" className="linkedin-btn">
                 <i className="bi bi-linkedin"></i> LinkedIn
-              </a>
-              <p className="team-role">Managing Director</p>
+              </a> */}
+              <p className="team-role">Director</p>
               <p className="team-bio">
-                John has over 20 years of experience leading large-scale industrial operations, 
+                {/* John has over 20 years of experience leading large-scale industrial operations, 
             driving innovation and ensuring world-class quality. He has successfully led 
             projects across multiple continents, building strong client relationships and 
             implementing sustainable business practices. John's vision focuses on expanding 
-            global presence while maintaining core values of trust, integrity and excellence.
+            global presence while maintaining core values of trust, integrity and excellence. */}
               </p>
             </div>
           </div>
 
-          {/* Team Member 2 */}
+          {/*Team Member 2 */}
           <div className="col-md-5 text-center mb-4">
             <div className="team-card">
               <div className="team-img-wrapper">
                 <img
-                  src="https://via.placeholder.com/300x300"
-                  alt="Sarah Johnson"
+                  src={TeamImg2}
+                  alt="Talemahmad Tunvar"
                   className="team-img"
                 />
               </div>
-              <h5 className="team-name">Sarah Johnson</h5>
-              <a href="#" className="linkedin-btn">
+              <h5 className="team-name">Talemahmad Tunvar</h5>
+              {/* <a href="#" className="linkedin-btn">
                 <i className="bi bi-linkedin"></i> LinkedIn
-              </a>
-              <p className="team-role">Operations Head</p>
+              </a> */}
+              <p className="team-role">Founder & MD</p>
               <p className="team-bio">
-                Sarah brings 15 years of expertise in quality management systems, ISO certifications, 
+                {/* Sarah brings 15 years of expertise in quality management systems, ISO certifications, 
             and process optimization. She has led multiple teams in implementing advanced 
             laboratory testing procedures and compliance protocols. Sarah’s dedication ensures 
-            that every product meets the highest safety, purity and performance standards.
+            that every product meets the highest safety, purity and performance standards. */}
               </p>
             </div>
           </div>
+        </div> 
         </div>
-      </div>
+      
 
       {/* CSS Inside JSX */}
       <style>{`
