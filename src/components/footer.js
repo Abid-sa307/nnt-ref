@@ -49,9 +49,9 @@ const Footer = () => {
               <li>
                 <Link to="/about-us" className="text-decoration-none text-dark">About</Link>
               </li>
-              {/* <li>
-                <Link to="/services" className="text-decoration-none text-dark">Service</Link>
-              </li> */}
+              <li>
+                <Link to="/" className="text-decoration-none text-dark">Products</Link>
+              </li>
               <li>
                 <Link to="/contact" className="text-decoration-none text-dark">Contact</Link>
               </li>
@@ -64,7 +64,7 @@ const Footer = () => {
 
             <div className="mb-3">
               <a
-                href="https://wa.me/9723392753"
+                href="https://wa.me/919723392753"
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-success d-inline-flex align-items-center gap-2 px-3 py-2"
@@ -76,7 +76,7 @@ const Footer = () => {
 
             <div className="d-flex align-items-center mb-2">
               <Image src={phoneIcon} alt="Phone" width={20} className="me-2" />
-              <a href="tel:+919687431287" className="text-decoration-none text-dark" style={{ fontSize: "17px" }}>
+              <a href="tel:+919723392753" className="text-decoration-none text-dark" style={{ fontSize: "17px" }}>
                 +91 9723392753
               </a>
             </div>

@@ -583,7 +583,7 @@ const Header = () => {
                  </li>
 
                  <a
-          href="https://wa.me/9723392753"
+          href="https://wa.me/919723392753"
           className="d-flex align-items-center justify-content-center"
           style={{
             backgroundColor: '#25D366',
@@ -711,7 +711,7 @@ const Header = () => {
           Contact Us
         </Link>
         <a
-          href="https://wa.me/919687431287"
+          href="https://wa.me/919723392753"
           className="d-flex align-items-center justify-content-center"
           style={{
             backgroundColor: '#25D366',
